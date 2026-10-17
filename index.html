@@ -1,0 +1,1137 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>عقار جدة — منصة نخبة العقارات الفاخرة</title>
+  <link rel="canonical" href="https://aqar-jeddah-ads.com/">
+  <meta name="description" content="منصة عقار جدة الأولى لامتلاك واستثمار نخبة العقارات والفلل والشقق والروف الفاخرة بأرقى أحياء جدة.">
+  <meta property="og:title" content="عقار جدة — منصة نخبة العقارات الفاخرة">
+  <meta property="og:description" content="منصة عقار جدة الأولى لامتلاك واستثمار نخبة العقارات والفلل والشقق والروف الفاخرة.">
+  <meta property="og:url" content="https://aqar-jeddah-ads.com/">
+  <meta property="og:type" content="website">
+
+  <!-- Favicon / أيقونة وهوية الموقع الرسمية -->
+  <link rel="icon" type="image/png" href="assets/images/logo.webp">
+  <link rel="apple-touch-icon" href="assets/images/logo.webp">
+
+  <!-- Google Fonts: Cairo + Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- FontAwesome (محلي وعبر CDN لضمان ظهور كافة الأيقونات والـ SVG فوراً) -->
+  <link rel="stylesheet" href="assets/fontawesome/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <script src="assets/fontawesome/all.min.js"></script>
+
+  <!-- Tailwind CSS Engine -->
+  <script src="assets/tailwind/tailwind.js"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            cairo: ['Cairo', 'sans-serif'],
+            sans: ['Plus Jakarta Sans', 'Cairo', 'sans-serif'],
+          },
+          colors: {
+            // استبدال اللون الكهرماني/الذهبي بلون الهوية الأخضر الملكي للشعار (#006c35) وتدرجاته
+            amber: {
+              50: '#f0fdf4',
+              100: '#dcfce7',
+              200: '#bbf7d0',
+              300: '#86efac',
+              400: '#22c55e',
+              500: '#00a940',
+              600: '#006c35',
+              700: '#00552a',
+              800: '#004221',
+              900: '#00331a',
+              950: '#001e0e'
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    html.lenis, html.lenis body {
+      height: auto;
+    }
+    .lenis.lenis-smooth {
+      scroll-behavior: auto !important;
+    }
+    .lenis.lenis-smooth [data-lenis-prevent] {
+      overscroll-behavior: contain;
+    }
+    .lenis.lenis-stopped {
+      overflow: hidden;
+    }
+    .lenis.lenis-smooth iframe {
+      pointer-events: none;
+    }
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: 'Cairo', sans-serif;
+    }
+    .watermark-text {
+      user-select: none;
+      -webkit-text-stroke: 1px rgba(255, 255, 255, 0.08);
+    }
+    @keyframes marquee-scroll {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(50%); }
+    }
+    .animate-marquee {
+      display: flex;
+      width: max-content;
+      animation: marquee-scroll 120s linear infinite;
+    }
+    .animate-marquee:hover {
+      animation-play-state: paused;
+    }
+  </style>
+  <!-- <body class="bg-black text-white m-0 p-0 overflow-x-hidden antialiased select-none"> -->
+<body class="bg-black text-white m-0 p-0 overflow-x-hidden antialiased">
+
+  <!-- Wrapper الخارجي مع حواف مستديرة وشاشة تشبه الصورة بالملي -->
+  <main class="relative w-full min-h-screen bg-[#080808] flex flex-col justify-between overflow-hidden">
+    
+    <!-- فيديو الخلفية الفنية للهيرو المحسّن للأداء -->
+    <div class="absolute inset-0 z-0 bg-black">
+      <video id="hero-bg-video" autoplay loop muted playsinline preload="metadata" poster="assets/images/hero-aqqar.webp" class="w-full h-full object-cover object-center pointer-events-none opacity-0 scale-105 scale-x-[-1] transition-all duration-[1600ms] ease-out will-change-transform">
+        <source src="assets/images/project-video-1.mp4" type="video/mp4">
+      </video>
+      <!-- طبقة إضاءة وظلال مطابقة للمشهد الداكن والفخامة -->
+      <div class="absolute inset-0 bg-gradient-to-l from-black/85 via-black/40 to-transparent"></div>
+      <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-black/40"></div>
+    </div>
+
+    <!-- 1. شريط التنقل العلوي الثابت والموحد (Fixed Floating Navbar Capsule) -->
+    <header class="fixed top-0 left-0 right-0 z-50 py-3 sm:py-5 px-3 sm:px-8 flex flex-col items-center w-full pointer-events-none transition-all duration-300">
+      <nav class="pointer-events-auto flex items-center justify-between w-full max-w-5xl bg-[#161616]/25 backdrop-blur-2xl border border-white/20 rounded-full px-4 sm:px-7 py-2.5 sm:py-3 shadow-2xl transition-all duration-300 hover:border-white/35">
+        
+        <!-- قسم الشعار - أقصى اليمين -->
+        <a href="#" class="h-9 sm:h-11 flex items-center justify-center transition hover:opacity-90 flex-shrink-0" title="عقار جدة">
+          <img src="assets/images/logo.webp" alt="شعار عقارات جدة" class="h-9 sm:h-11 w-auto object-contain">
+        </a>
+
+        <!-- في الموبايل: اسم الصفحة وزر احجز معاينتك في المنتصف تماماً مع تباعد مريح -->
+        <div class="md:hidden flex items-center justify-center gap-3 sm:gap-4 flex-1 mx-2">
+          <!-- اسم الصفحة الحالية بدون بوردر وتحتها خط رفيع أنيق -->
+          <span class="text-amber-400 text-xs font-black tracking-wide pb-0.5 border-b border-amber-400/60 whitespace-nowrap">
+            الرئيسية
+          </span>
+
+          <!-- خط فاصل خفيف جداً بين اسم الصفحة والزر -->
+          <span class="w-[1px] h-3.5 bg-white/20"></span>
+
+          <!-- زر الحبة الأبيض: احجز معاينتك -->
+          <a href="contact/" class="flex items-center gap-1.5 bg-white text-neutral-900 font-bold text-[11px] px-3 py-1.5 rounded-full hover:bg-neutral-100 transition-all shadow-md flex-shrink-0 whitespace-nowrap">
+            <span>احجز معاينتك</span>
+            <i class="fas fa-arrow-left text-[9px] transform -rotate-45"></i>
+          </a>
+        </div>
+
+        <!-- الروابط الخاصة بموقع العقارات - في المنتصف للشاشات الكبيرة (Desktop) -->
+        <div class="hidden md:flex items-center gap-7 lg:gap-8 text-[15px] text-neutral-200 font-medium tracking-wide mx-auto">
+          <a href="#" class="text-white font-bold transition hover:text-amber-400">الرئيسية</a>
+          <a href="#about" class="hover:text-white transition">من نحن</a>
+          <a href="#districts-properties-section" class="hover:text-white transition">مشاريع الأحياء</a>
+          <a href="#district-mushrifah" class="hover:text-white transition">حي مشرفة</a>
+          <a href="#district-hamraa" class="hover:text-white transition">حي الحمراء</a>
+          <a href="#district-rawdah" class="hover:text-white transition">حي الروضة</a>
+        </div>
+
+        <!-- الإجراءات في اليسار: زر الحجز للديسكتوب + زر التوجل للموبايل -->
+        <div class="flex items-center gap-2 sm:gap-3 flex-shrink-0">
+          <!-- زر الحبة للشاشات الكبيرة فقط -->
+          <a href="contact/" class="hidden md:flex items-center gap-2 bg-white text-neutral-900 font-bold text-[15px] px-6 py-2.5 rounded-full hover:bg-neutral-100 transition-all duration-300 shadow-lg hover:scale-105 flex-shrink-0">
+            <span>احجز معاينتك</span>
+            <i class="fas fa-arrow-left text-xs transform -rotate-45"></i>
+          </a>
+
+          <!-- زر التوجل للموبايل (Hamburger) في أقصى اليسار -->
+          <button id="mobile-menu-toggle-btn" type="button" aria-label="فتح القائمة" class="md:hidden w-9 h-9 rounded-full bg-white/10 hover:bg-white/20 border border-white/15 text-white flex items-center justify-center text-sm transition flex-shrink-0">
+            <i id="mobile-menu-icon" class="fas fa-bars"></i>
+          </button>
+        </div>
+      </nav>
+
+      <!-- القائمة المنسدلة لشاشات الموبايل بتصميم فاخر ومرتب مع مسافات متناسقة -->
+      <div id="mobile-menu-dropdown" class="pointer-events-auto hidden md:hidden w-full max-w-sm mt-3 bg-neutral-900/95 backdrop-blur-3xl border border-white/15 rounded-3xl p-3.5 sm:p-4 shadow-[0_25px_60px_rgba(0,0,0,0.8)] transition-all duration-300 text-right space-y-2 animate-in fade-in slide-in-from-top-2">
+        
+        <div class="px-2 py-1.5 flex items-center justify-between border-b border-white/10 mb-2">
+          <span class="text-[11px] font-bold text-amber-400 flex items-center gap-1.5">
+            <span class="w-1.5 h-1.5 rounded-full bg-amber-400 animate-pulse"></span>
+            استكشف عقارات جدة
+          </span>
+          <span class="text-[10px] text-neutral-400 font-medium">قائمة التنقل</span>
+        </div>
+
+        <!-- 1. مشاريع الأحياء -->
+        <a href="#districts-properties-section" class="mobile-nav-link group flex items-center justify-between px-3 py-2.5 rounded-2xl hover:bg-white/10 text-neutral-200 hover:text-white transition-all duration-200">
+          <div class="flex items-center gap-3">
+            <div class="w-8 h-8 rounded-xl bg-amber-500/10 group-hover:bg-amber-500/20 text-amber-400 flex items-center justify-center text-xs transition">
+              <i class="fas fa-city"></i>
+            </div>
+            <div>
+              <span class="text-xs sm:text-sm font-bold block text-white">مشاريع الأحياء المختارة</span>
+              <span class="text-[10px] text-neutral-400 block font-normal">مشرفة، الحمراء، الروضة، الشرفية، والزهراء</span>
+            </div>
+          </div>
+          <i class="fas fa-chevron-left text-[10px] text-neutral-500 group-hover:text-amber-400 group-hover:-translate-x-1 transition-all"></i>
+        </a>
+
+        <!-- 3. أحياء جدة ثالثاً -->
+        <a href="#districts-section" class="mobile-nav-link group flex items-center justify-between px-3 py-2.5 rounded-2xl hover:bg-white/10 text-neutral-200 hover:text-white transition-all duration-200">
+          <div class="flex items-center gap-3">
+            <div class="w-8 h-8 rounded-xl bg-white/5 group-hover:bg-amber-500/20 text-neutral-300 group-hover:text-amber-400 flex items-center justify-center text-xs transition">
+              <i class="fas fa-map-marked-alt"></i>
+            </div>
+            <div>
+              <span class="text-xs sm:text-sm font-bold block">أحياء جدة المتميزة</span>
+              <span class="text-[10px] text-neutral-400 block font-normal">أبحر، الشاطئ، الروضة والسلامة</span>
+            </div>
+          </div>
+          <i class="fas fa-chevron-left text-[10px] text-neutral-500 group-hover:text-amber-400 group-hover:-translate-x-1 transition-all"></i>
+        </a>
+
+        <!-- 4. من نحن رابعاً -->
+        <a href="#about" class="mobile-nav-link group flex items-center justify-between px-3 py-2.5 rounded-2xl hover:bg-white/10 text-neutral-200 hover:text-white transition-all duration-200">
+          <div class="flex items-center gap-3">
+            <div class="w-8 h-8 rounded-xl bg-white/5 group-hover:bg-amber-500/20 text-neutral-300 group-hover:text-amber-400 flex items-center justify-center text-xs transition">
+              <i class="fas fa-gem"></i>
+            </div>
+            <div>
+              <span class="text-xs sm:text-sm font-bold block">من نحن</span>
+              <span class="text-[10px] text-neutral-400 block font-normal">رؤيتنا وقيمنا في السوق العقاري</span>
+            </div>
+          </div>
+          <i class="fas fa-chevron-left text-[10px] text-neutral-500 group-hover:text-amber-400 group-hover:-translate-x-1 transition-all"></i>
+        </a>
+
+        <!-- 5. كارت تواصل معنا البارز في الأسفل -->
+        <div class="pt-1">
+          <a href="contact/" class="mobile-nav-link group flex items-center justify-between px-3.5 py-3 rounded-2xl bg-gradient-to-r from-amber-500/20 via-amber-500/10 to-transparent hover:from-amber-500/30 border border-amber-500/30 text-white transition-all duration-200">
+            <div class="flex items-center gap-3">
+              <div class="w-8 h-8 rounded-xl bg-gradient-to-tr from-amber-500 to-amber-600 text-white flex items-center justify-center text-xs shadow-md">
+                <i class="fas fa-headset"></i>
+              </div>
+              <div>
+                <span class="text-xs sm:text-sm font-black text-amber-400 block">صفحة تواصل معنا</span>
+                <span class="text-[10px] text-neutral-300 block font-normal">احجز استشارة ومعاينة ميدانية</span>
+              </div>
+            </div>
+            <i class="fas fa-arrow-left text-xs text-amber-400 group-hover:-translate-x-1 transition-transform"></i>
+          </a>
+        </div>
+
+      </div>
+    </header>
+
+    <!-- 2. المحتوى الرئيسي للهيرو: متوزع بتوازن مريح ومحكوم في الموبايل -->
+    <div class="relative z-20 flex-1 flex flex-col justify-center items-center lg:items-start px-6 sm:px-16 lg:px-24 pt-24 pb-14 sm:pt-28 sm:pb-12 w-full">
+      
+      <!-- كتلة النص: تباعدات متناسقة ومريحة بدون فراغ مبالغ فيه -->
+      <div class="max-w-3xl text-center lg:text-right flex flex-col items-center lg:items-start mx-auto lg:mx-0 w-full space-y-4 sm:space-y-6">
+        <!-- 1. الشريط الذهبي أولاً -->
+        <div class="inline-flex items-center gap-2.5 px-3 py-1 border-r-2 border-l-2 lg:border-l-0 border-amber-400">
+          <span class="text-xs sm:text-sm font-bold tracking-wide text-amber-400 drop-shadow-[0_2px_10px_rgba(251,191,36,0.25)]">
+            عقارات مختارة بعناية في أرقى أحياء جدة
+          </span>
+        </div>
+
+        <!-- 2. العنوان الرئيسي الكبير -->
+        <h1 class="text-3xl sm:text-5xl lg:text-[3.75rem] font-black text-white leading-[1.3] sm:leading-[1.25] tracking-tight">
+         العقار اللي تدور عليه.. هُنا تلاقيه<br>
+          <span class="text-transparent bg-clip-text bg-gradient-to-r from-white via-neutral-100 to-amber-200">
+           في  عقار جدة
+          </span>
+        </h1>
+
+        <!-- 3. الوصف النصي -->
+        <p class="text-neutral-300 text-sm sm:text-lg lg:text-xl font-normal leading-relaxed max-w-2xl text-center lg:text-right px-2 sm:px-0">
+           امتلك أسلوب حياة تستحقه في جدة — استشارات عقارية أمينة، معاينات حقيقية على أرض الواقع، وفرص سكنية واستثمارية نختارها لك بدقة وكأننا نشتريها لأنفسنا.
+        </p>
+
+        <!-- 4. أزرار الإجراء المباشر CTA -->
+        <div class="flex flex-wrap items-center justify-center lg:justify-start gap-3.5 pt-2">
+          <a href="#districts-section" class="inline-flex items-center gap-2.5 bg-white/10 hover:bg-white/20 text-white font-semibold text-xs sm:text-base px-6 py-3 rounded-full border border-white/25 backdrop-blur-md transition-all duration-300 shadow-xl hover:scale-105">
+            <span>استكشف العقارات المتاحة</span>
+            <i class="fas fa-chevron-down text-xs"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- الصورة في المنتصف (معطلة حالياً لإبراز خلفية الفيديو بكامل فخامتها) -->
+      <!--
+      <div class="flex-1 flex items-center justify-center">
+        <div class="relative w-72 sm:w-80 lg:w-[26rem] aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl border border-white/10 group">
+          <img src="assets/images/aqqar-hero-img.webp" alt="عقارات فاخرة في جدة" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent pointer-events-none"></div>
+          <div class="absolute inset-0 ring-1 ring-inset ring-white/15 rounded-3xl pointer-events-none"></div>
+        </div>
+      </div>
+      -->
+
+    </div>
+
+    <!-- 3. الجزء السفلي: الكارت الزجاجي في اليمين ونوتش الأيقونات في أقصى زاوية اليسار -->
+    <!-- <div class="relative z-20 w-full px-6 sm:px-12 lg:px-16 pb-8 flex items-end justify-between"> -->
+      
+      <!-- الكارت الزجاجي العائم في اليمين -->
+      <!-- <div class="bg-[#181818]/85 backdrop-blur-2xl border border-white/10 rounded-2xl p-4 flex items-center gap-4 max-w-sm shadow-2xl z-20"> -->
+        
+        <!-- أيقونة / مجسم العقار -->
+        <!-- <div class="w-16 h-20 rounded-xl bg-gradient-to-b from-neutral-800 to-neutral-900 border border-white/10 flex items-center justify-center p-1.5 shadow-inner">
+          <div class="w-full h-full rounded-lg bg-gradient-to-b from-amber-500 to-amber-600 flex flex-col items-center justify-center text-neutral-900 shadow">
+            <div class="w-3 h-1 bg-neutral-900/30 rounded-full mb-2"></div>
+            <i class="fas fa-gem text-xs text-white drop-shadow"></i>
+          </div>
+        </div> -->
+
+        <!-- بيانات الكارت العقاري -->
+        <!-- <div class="flex-1 text-right">
+          <span class="text-[11px] font-mono text-amber-400 block tracking-wider font-semibold">/01 عروض حصرية</span>
+          <h4 class="text-white font-bold text-sm sm:text-base leading-snug mt-0.5">
+            فلل الشاطئ وأبحر<br>تشطيبات VIP مودرن
+          </h4>
+        </div> -->
+
+        <!-- أزرار التنقل بين العروض المميزة -->
+        <!-- <div class="flex items-center gap-1.5 self-end">
+          <button class="w-7 h-7 rounded-full bg-white text-black flex items-center justify-center hover:bg-neutral-200 transition text-xs shadow" title="السابق">
+            <i class="fas fa-chevron-right text-[10px]"></i>
+          </button>
+          <button class="w-7 h-7 rounded-full bg-white text-black flex items-center justify-center hover:bg-neutral-200 transition text-xs shadow" title="التالي">
+            <i class="fas fa-chevron-left text-[10px]"></i>
+          </button>
+        </div>
+      </div>
+
+    </div> -->
+
+    <!-- كبسولة الأيقونات (واتساب، اتصال، جيميل) - خلفيات واضحة وهوفر ملون بالكامل -->
+    <div class="absolute bottom-0 left-0 z-30 bg-[#ffffff] pt-3 pr-4 pb-2 pl-3 rounded-tr-[2rem] flex items-center gap-2.5 shadow-md">
+      <!-- واتساب: هوفر أخضر كامل مع أيقونة بيضاء وتوهج -->
+      <a href="https://wa.me/966566399523" target="_blank" class="w-8 h-8 rounded-full bg-white border border-neutral-200/60 flex items-center justify-center text-[#25D366] hover:bg-[#25D366] hover:text-white hover:border-[#25D366] hover:shadow-[0_4px_12px_rgba(37,211,102,0.4)] hover:scale-110 transition-all duration-200 text-sm" title="واتساب (0566399523)">
+        <i class="fab fa-whatsapp"></i>
+      </a>
+      <!-- اتصال هاتفي: هوفر أزرق كامل مع أيقونة بيضاء وتوهج -->
+      <a href="tel:+966566399523" class="w-8 h-8 rounded-full bg-white border border-neutral-200/60 flex items-center justify-center text-[#0284c7] hover:bg-[#0284c7] hover:text-white hover:border-[#0284c7] hover:shadow-[0_4px_12px_rgba(2,132,199,0.4)] hover:scale-110 transition-all duration-200 text-xs" title="اتصال هاتفي (0566399523)">
+        <i class="fas fa-phone-alt"></i>
+      </a>
+      <!-- جيميل: هوفر أحمر كامل مع أيقونة بيضاء وتوهج -->
+      <a href="mailto:info@aqar-jeddah-ads.com" class="w-8 h-8 rounded-full bg-white border border-neutral-200/60 flex items-center justify-center text-[#EA4335] hover:bg-[#EA4335] hover:text-white hover:border-[#EA4335] hover:shadow-[0_4px_12px_rgba(234,67,53,0.4)] hover:scale-110 transition-all duration-200 text-xs" title="بريد إلكتروني (info@aqar-jeddah-ads.com)">
+        <i class="fas fa-envelope"></i>
+      </a>
+    </div>
+
+    <!-- نص العلامة المائية الشفاف أسفل الصفحة (عقار جدة - JEDDAH ESTATE) -->
+    <div class="absolute bottom-[-15px] left-1/2 -translate-x-1/2 w-full text-center pointer-events-none z-10 overflow-hidden">
+      <span class="watermark-text text-white/[0.06] font-black text-[5vw] tracking-tighter block whitespace-nowrap leading-none select-none">
+        AQAR_JEDDAH
+      </span>
+    </div>
+
+  </main>
+
+  <!-- 2. سكشن (من نحن / About Us) بتصميم سينمائي: نص راقي يميناً + صورة معمارية فاخرة يساراً -->
+  <section id="about" class="bg-white py-16 sm:py-24 px-6 sm:px-12 lg:px-20 border-t border-slate-100 overflow-hidden">
+    <div class="max-w-7xl mx-auto w-full">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+        
+        <!-- الجانب الأيمن: النص والهوية والرسالة -->
+        <div class="lg:col-span-6 text-right space-y-6">
+          <!-- شارة السكشن مع خط ذهبي -->
+          <div class="flex items-center gap-3">
+            <span class="text-xs sm:text-sm font-bold text-amber-600 tracking-wider">من نحن</span>
+            <div class="w-10 h-[1.5px] bg-amber-500"></div>
+            <span class="text-xs text-neutral-400 font-medium">عقار جدة — رؤية تليق بك</span>
+          </div>
+
+          <!-- العنوان الرئيسي المعماري الفخم -->
+          <h2 class="text-3xl sm:text-4xl lg:text-5xl font-black text-neutral-900 leading-[1.25] tracking-tight">
+            نختار لك مسكناً<br>
+            <span class="text-transparent bg-clip-text bg-gradient-to-l from-amber-600 to-neutral-900">
+              يجمع الفخامة وراحة البال.
+            </span>
+          </h2>
+
+          <!-- الفقرة التعريفية البشرية المريحة -->
+          <p class="text-base sm:text-lg text-neutral-600 leading-[1.9] font-normal">
+            نؤمن في "عقار جدة" بأن امتلاك المنزل هو أهم خطوة استقرار في حياتك. لذلك لا نكتفي بعرض العقارات، بل نختار لك بعناية فائقة فلل وشقق وروف بأرقى أحياء جدة تمتاز بروعة البناء العصري، والضمانات الإنشائية الموثقة، والإجراءات النظامية الميسرة.
+          </p>
+
+          <!-- ميزات سريعة بأيقونات ناعمة -->
+          <div class="grid grid-cols-2 gap-4 pt-2 border-t border-neutral-100">
+            <div class="flex items-center gap-3">
+              <div class="w-9 h-9 rounded-full bg-amber-50 text-amber-600 flex items-center justify-center text-sm flex-shrink-0">
+                <i class="fas fa-check"></i>
+              </div>
+              <span class="text-xs sm:text-sm font-semibold text-neutral-800">معاينات ميدانية خاصة</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <div class="w-9 h-9 rounded-full bg-amber-50 text-amber-600 flex items-center justify-center text-sm flex-shrink-0">
+                <i class="fas fa-check"></i>
+              </div>
+              <span class="text-xs sm:text-sm font-semibold text-neutral-800">إفراغ وتوثيق فوري معتمد</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <div class="w-9 h-9 rounded-full bg-amber-50 text-amber-600 flex items-center justify-center text-sm flex-shrink-0">
+                <i class="fas fa-check"></i>
+              </div>
+              <span class="text-xs sm:text-sm font-semibold text-neutral-800">ضمانات معتمدة تصل 25 سنة</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <div class="w-9 h-9 rounded-full bg-amber-50 text-amber-600 flex items-center justify-center text-sm flex-shrink-0">
+                <i class="fas fa-check"></i>
+              </div>
+              <span class="text-xs sm:text-sm font-semibold text-neutral-800">مواقع استراتيجية مميزة</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- الجانب الأيسر: الصورة المعمارية السينمائية مع كارت عائم -->
+        <div class="lg:col-span-6 relative">
+          <!-- الصورة المعمارية الفاخرة مع حواف ناعمة وظل عميق -->
+          <div class="relative rounded-3xl overflow-hidden shadow-2xl border border-neutral-200/70 group aspect-[4/3] sm:aspect-[16/11]">
+            <img 
+              src="assets/images/about-luxury-villa.webp" 
+              alt="فيلا معمارية فاخرة بجدة" 
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
+              loading="lazy"
+            >
+            <!-- تدرج ظل سفلي أنيق داخل الصورة -->
+            <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent pointer-events-none"></div>
+
+            <!-- شارة إشراف هندسي داخل الصورة -->
+            <div class="absolute bottom-5 right-5 text-right text-white z-10 pointer-events-none">
+              <span class="text-xs font-medium text-amber-300 block mb-0.5">معايير بناء عالمية</span>
+              <h4 class="text-lg font-bold">فلل وقصور عصرية في جدة</h4>
+            </div>
+          </div>
+
+          <!-- كارت عائم زجاجي في الزاوية العكسية لإضفاء عمق وفخامة -->
+          <div class="hidden sm:flex absolute -bottom-6 -left-6 bg-white/95 backdrop-blur-xl border border-neutral-200/80 rounded-2xl p-4 shadow-xl items-center gap-3.5 z-20">
+            <div class="w-11 h-11 rounded-xl bg-gradient-to-tr from-amber-500 to-amber-600 text-white flex items-center justify-center text-lg shadow-md flex-shrink-0">
+              <i class="fas fa-gem"></i>
+            </div>
+            <div class="text-right">
+              <span class="text-xs text-neutral-400 block font-normal">نخبة العقارات</span>
+              <span class="text-sm font-bold text-neutral-900 block leading-tight">تشطيبات VIP وضمانات ممتدة</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- شريط أحياء جدة المتحرك إلى ما لا نهاية (Infinite Marquee) -->
+  <section class="relative w-full py-4 bg-[#f8f9fa] border-y border-neutral-200/80 overflow-hidden">
+    <!-- تدرج تلاشي ناعم في الأطراف لإضفاء فخامة وانسيابية -->
+    <div class="absolute inset-y-0 right-0 w-24 sm:w-36 bg-gradient-to-l from-[#f8f9fa] to-transparent z-10 pointer-events-none"></div>
+    <div class="absolute inset-y-0 left-0 w-24 sm:w-36 bg-gradient-to-r from-[#f8f9fa] to-transparent z-10 pointer-events-none"></div>
+
+    <div class="animate-marquee items-center gap-3">
+      <!-- المجموعة الأولى -->
+      <div class="flex items-center gap-3 shrink-0">
+        <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-neutral-200/90 text-neutral-700 text-xs sm:text-sm font-medium hover:border-amber-500 hover:text-amber-600 shadow-sm transition"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>حي الشاطئ</span>
+        <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-neutral-200/90 text-neutral-700 text-xs sm:text-sm font-medium hover:border-amber-500 hover:text-amber-600 shadow-sm transition"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>حي أبحر الشمالية</span>
+        <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-neutral-200/90 text-neutral-700 text-xs sm:text-sm font-medium hover:border-amber-500 hover:text-amber-600 shadow-sm transition"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>حي أبحر الجنوبية</span>
+        <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-neutral-200/90 text-neutral-700 text-xs sm:text-sm font-medium hover:border-amber-500 hover:text-amber-600 shadow-sm transition"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>حي المحمدية</span>
+        <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-neutral-200/90 text-neutral-700 text-xs sm:text-sm font-medium hover:border-amber-500 hover:text-amber-600 shadow-sm transition"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>حي المرجان</span>
+        <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-neutral-200/90 text-neutral-700 text-xs sm:text-sm font-medium hover:border-amber-500 hover:text-amber-600 shadow-sm transition"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>حي البساتين</span>
+        <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-neutral-200/90 text-neutral-700 text-xs sm:text-sm font-medium hover:border-amber-500 hover:text-amber-600 shadow-sm transition"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>حي النعيم</span>
+        <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-neutral-200/90 text-neutral-700 text-xs sm:text-sm font-medium hover:border-amber-500 hover:text-amber-600 shadow-sm transition"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>حي النهضة</span>
+        <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-neutral-200/90 text-neutral-700 text-xs sm:text-sm font-medium hover:border-amber-500 hover:text-amber-600 shadow-sm transition"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>حي الزهراء</span>
+        <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-neutral-200/90 text-neutral-700 text-xs sm:text-sm font-medium hover:border-amber-500 hover:text-amber-600 shadow-sm transition"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>حي الشراع</span>
+        <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-neutral-200/90 text-neutral-700 text-xs sm:text-sm font-medium hover:border-amber-500 hover:text-amber-600 shadow-sm transition"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>حي الياقوت</span>
+        <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-neutral-200/90 text-neutral-700 text-xs sm:text-sm font-medium hover:border-amber-500 hover:text-amber-600 shadow-sm transition"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>حي اللؤلؤ</span>
+        <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-neutral-200/90 text-neutral-700 text-xs sm:text-sm font-medium hover:border-amber-500 hover:text-amber-600 shadow-sm transition"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>حي الأمواج</span>
+        <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-neutral-200/90 text-neutral-700 text-xs sm:text-sm font-medium hover:border-amber-500 hover:text-amber-600 shadow-sm transition"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>حي الأصالة</span>
+        <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-neutral-200/90 text-neutral-700 text-xs sm:text-sm font-medium hover:border-amber-500 hover:text-amber-600 shadow-sm transition"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>حي الصواري</span>
+        <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-neutral-200/90 text-neutral-700 text-xs sm:text-sm font-medium hover:border-amber-500 hover:text-amber-600 shadow-sm transition"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>حي الفردوس</span>
+        <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-neutral-200/90 text-neutral-700 text-xs sm:text-sm font-medium hover:border-amber-500 hover:text-amber-600 shadow-sm transition"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>حي الرياض</span>
+        <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-neutral-200/90 text-neutral-700 text-xs sm:text-sm font-medium hover:border-amber-500 hover:text-amber-600 shadow-sm transition"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>حي الكورنيش</span>
+        <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-neutral-200/90 text-neutral-700 text-xs sm:text-sm font-medium hover:border-amber-500 hover:text-amber-600 shadow-sm transition"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>حي النزهة</span>
+        <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-neutral-200/90 text-neutral-700 text-xs sm:text-sm font-medium hover:border-amber-500 hover:text-amber-600 shadow-sm transition"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>حي المروة</span>
+        <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-neutral-200/90 text-neutral-700 text-xs sm:text-sm font-medium hover:border-amber-500 hover:text-amber-600 shadow-sm transition"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>حي الروضة</span>
+        <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-neutral-200/90 text-neutral-700 text-xs sm:text-sm font-medium hover:border-amber-500 hover:text-amber-600 shadow-sm transition"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>حي السلامة</span>
+        <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-neutral-200/90 text-neutral-700 text-xs sm:text-sm font-medium hover:border-amber-500 hover:text-amber-600 shadow-sm transition"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>حي الخالدية</span>
+        <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-neutral-200/90 text-neutral-700 text-xs sm:text-sm font-medium hover:border-amber-500 hover:text-amber-600 shadow-sm transition"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>حي الحمراء</span>
+        <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-neutral-200/90 text-neutral-700 text-xs sm:text-sm font-medium hover:border-amber-500 hover:text-amber-600 shadow-sm transition"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>حي الأندلس</span>
+        <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-neutral-200/90 text-neutral-700 text-xs sm:text-sm font-medium hover:border-amber-500 hover:text-amber-600 shadow-sm transition"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>حي العزيزية</span>
+        <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-neutral-200/90 text-neutral-700 text-xs sm:text-sm font-medium hover:border-amber-500 hover:text-amber-600 shadow-sm transition"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>حي الفيصلية</span>
+        <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-neutral-200/90 text-neutral-700 text-xs sm:text-sm font-medium hover:border-amber-500 hover:text-amber-600 shadow-sm transition"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>حي مشرفة</span>
+        <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-neutral-200/90 text-neutral-700 text-xs sm:text-sm font-medium hover:border-amber-500 hover:text-amber-600 shadow-sm transition"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>حي الرويس</span>
+        <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-neutral-200/90 text-neutral-700 text-xs sm:text-sm font-medium hover:border-amber-500 hover:text-amber-600 shadow-sm transition"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>حي البغدادية الشرقية</span>
+        <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-neutral-200/90 text-neutral-700 text-xs sm:text-sm font-medium hover:border-amber-500 hover:text-amber-600 shadow-sm transition"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>حي البغدادية الغربية</span>
+        <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-neutral-200/90 text-neutral-700 text-xs sm:text-sm font-medium hover:border-amber-500 hover:text-amber-600 shadow-sm transition"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>حي العمارية</span>
+        <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-neutral-200/90 text-neutral-700 text-xs sm:text-sm font-medium hover:border-amber-500 hover:text-amber-600 shadow-sm transition"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>حي الصحيفة</span>
+        <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-neutral-200/90 text-neutral-700 text-xs sm:text-sm font-medium hover:border-amber-500 hover:text-amber-600 shadow-sm transition"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>حي الشرفية</span>
+        <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-neutral-200/90 text-neutral-700 text-xs sm:text-sm font-medium hover:border-amber-500 hover:text-amber-600 shadow-sm transition"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>حي بني مالك</span>
+        <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-neutral-200/90 text-neutral-700 text-xs sm:text-sm font-medium hover:border-amber-500 hover:text-amber-600 shadow-sm transition"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>حي الرحاب</span>
+        <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-neutral-200/90 text-neutral-700 text-xs sm:text-sm font-medium hover:border-amber-500 hover:text-amber-600 shadow-sm transition"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>حي الربوة</span>
+        <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-neutral-200/90 text-neutral-700 text-xs sm:text-sm font-medium hover:border-amber-500 hover:text-amber-600 shadow-sm transition"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>حي الورود</span>
+        <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-neutral-200/90 text-neutral-700 text-xs sm:text-sm font-medium hover:border-amber-500 hover:text-amber-600 shadow-sm transition"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>حي النسيم</span>
+        <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-neutral-200/90 text-neutral-700 text-xs sm:text-sm font-medium hover:border-amber-500 hover:text-amber-600 shadow-sm transition"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>حي الحمدانية</span>
+        <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-neutral-200/90 text-neutral-700 text-xs sm:text-sm font-medium hover:border-amber-500 hover:text-amber-600 shadow-sm transition"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>حي السامر</span>
+        <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-neutral-200/90 text-neutral-700 text-xs sm:text-sm font-medium hover:border-amber-500 hover:text-amber-600 shadow-sm transition"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>حي المنار</span>
+        <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-neutral-200/90 text-neutral-700 text-xs sm:text-sm font-medium hover:border-amber-500 hover:text-amber-600 shadow-sm transition"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>حي الأجواد</span>
+        <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-neutral-200/90 text-neutral-700 text-xs sm:text-sm font-medium hover:border-amber-500 hover:text-amber-600 shadow-sm transition"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>حي الريان</span>
+        <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-neutral-200/90 text-neutral-700 text-xs sm:text-sm font-medium hover:border-amber-500 hover:text-amber-600 shadow-sm transition"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>حي الصفا</span>
+        <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-neutral-200/90 text-neutral-700 text-xs sm:text-sm font-medium hover:border-amber-500 hover:text-amber-600 shadow-sm transition"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>حي التوفيق</span>
+        <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-neutral-200/90 text-neutral-700 text-xs sm:text-sm font-medium hover:border-amber-500 hover:text-amber-600 shadow-sm transition"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>حي الصالحية</span>
+        <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-neutral-200/90 text-neutral-700 text-xs sm:text-sm font-medium hover:border-amber-500 hover:text-amber-600 shadow-sm transition"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>حي الفروسية</span>
+        <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-neutral-200/90 text-neutral-700 text-xs sm:text-sm font-medium hover:border-amber-500 hover:text-amber-600 shadow-sm transition"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>حي أم حبلين</span>
+        <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-neutral-200/90 text-neutral-700 text-xs sm:text-sm font-medium hover:border-amber-500 hover:text-amber-600 shadow-sm transition"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>حي الكوثر</span>
+        <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-neutral-200/90 text-neutral-700 text-xs sm:text-sm font-medium hover:border-amber-500 hover:text-amber-600 shadow-sm transition"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>حي المريخ</span>
+        <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-neutral-200/90 text-neutral-700 text-xs sm:text-sm font-medium hover:border-amber-500 hover:text-amber-600 shadow-sm transition"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>حي الواحة</span>
+        <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-neutral-200/90 text-neutral-700 text-xs sm:text-sm font-medium hover:border-amber-500 hover:text-amber-600 shadow-sm transition"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>حي المنتزهات</span>
+        <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-neutral-200/90 text-neutral-700 text-xs sm:text-sm font-medium hover:border-amber-500 hover:text-amber-600 shadow-sm transition"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>حي الحرازات</span>
+        <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-neutral-200/90 text-neutral-700 text-xs sm:text-sm font-medium hover:border-amber-500 hover:text-amber-600 shadow-sm transition"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>حي قويزة</span>
+        <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-neutral-200/90 text-neutral-700 text-xs sm:text-sm font-medium hover:border-amber-500 hover:text-amber-600 shadow-sm transition"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>حي بريمان</span>
+        <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-neutral-200/90 text-neutral-700 text-xs sm:text-sm font-medium hover:border-amber-500 hover:text-amber-600 shadow-sm transition"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>حي التيسير</span>
+        <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-neutral-200/90 text-neutral-700 text-xs sm:text-sm font-medium hover:border-amber-500 hover:text-amber-600 shadow-sm transition"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>حي الفلاح</span>
+        <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-neutral-200/90 text-neutral-700 text-xs sm:text-sm font-medium hover:border-amber-500 hover:text-amber-600 shadow-sm transition"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>حي طيبة</span>
+        <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-neutral-200/90 text-neutral-700 text-xs sm:text-sm font-medium hover:border-amber-500 hover:text-amber-600 shadow-sm transition"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>حي البلد</span>
+        <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-neutral-200/90 text-neutral-700 text-xs sm:text-sm font-medium hover:border-amber-500 hover:text-amber-600 shadow-sm transition"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>حي الكندرة</span>
+        <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-neutral-200/90 text-neutral-700 text-xs sm:text-sm font-medium hover:border-amber-500 hover:text-amber-600 shadow-sm transition"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>حي الهنداوية</span>
+        <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-neutral-200/90 text-neutral-700 text-xs sm:text-sm font-medium hover:border-amber-500 hover:text-amber-600 shadow-sm transition"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>حي السبيل</span>
+        <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-neutral-200/90 text-neutral-700 text-xs sm:text-sm font-medium hover:border-amber-500 hover:text-amber-600 shadow-sm transition"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>حي النزلة اليمانية</span>
+        <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-neutral-200/90 text-neutral-700 text-xs sm:text-sm font-medium hover:border-amber-500 hover:text-amber-600 shadow-sm transition"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>حي النزلة الشرقية</span>
+        <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-neutral-200/90 text-neutral-700 text-xs sm:text-sm font-medium hover:border-amber-500 hover:text-amber-600 shadow-sm transition"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>حي غليل</span>
+        <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-neutral-200/90 text-neutral-700 text-xs sm:text-sm font-medium hover:border-amber-500 hover:text-amber-600 shadow-sm transition"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>حي القريات</span>
+        <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-neutral-200/90 text-neutral-700 text-xs sm:text-sm font-medium hover:border-amber-500 hover:text-amber-600 shadow-sm transition"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>حي الثعالبة</span>
+        <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-neutral-200/90 text-neutral-700 text-xs sm:text-sm font-medium hover:border-amber-500 hover:text-amber-600 shadow-sm transition"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>حي الخمرة</span>
+        <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-neutral-200/90 text-neutral-700 text-xs sm:text-sm font-medium hover:border-amber-500 hover:text-amber-600 shadow-sm transition"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>حي الفضيلة</span>
+        <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-neutral-200/90 text-neutral-700 text-xs sm:text-sm font-medium hover:border-amber-500 hover:text-amber-600 shadow-sm transition"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>حي السنابل</span>
+        <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-neutral-200/90 text-neutral-700 text-xs sm:text-sm font-medium hover:border-amber-500 hover:text-amber-600 shadow-sm transition"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>حي الأجاويد</span>
+        <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-neutral-200/90 text-neutral-700 text-xs sm:text-sm font-medium hover:border-amber-500 hover:text-amber-600 shadow-sm transition"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>حي الأمير عبدالمجيد</span>
+        <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-neutral-200/90 text-neutral-700 text-xs sm:text-sm font-medium hover:border-amber-500 hover:text-amber-600 shadow-sm transition"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>حي الجامعة</span>
+        <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-neutral-200/90 text-neutral-700 text-xs sm:text-sm font-medium hover:border-amber-500 hover:text-amber-600 shadow-sm transition"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>حي الثغر</span>
+        <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-neutral-200/90 text-neutral-700 text-xs sm:text-sm font-medium hover:border-amber-500 hover:text-amber-600 shadow-sm transition"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>حي الوزيرية</span>
+        <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-neutral-200/90 text-neutral-700 text-xs sm:text-sm font-medium hover:border-amber-500 hover:text-amber-600 shadow-sm transition"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>حي المحجر</span>
+        <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-neutral-200/90 text-neutral-700 text-xs sm:text-sm font-medium hover:border-amber-500 hover:text-amber-600 shadow-sm transition"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>حي مدائن الفهد</span>
+        <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-neutral-200/90 text-neutral-700 text-xs sm:text-sm font-medium hover:border-amber-500 hover:text-amber-600 shadow-sm transition"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>حي الأمير فواز</span>
+      </div>
+
+      <!-- تكرار المجموعة لضمان حركة مستمرة لا نهائية وسلسة بدون أي انقطاع -->
+      <div class="flex items-center gap-3 shrink-0" aria-hidden="true">
+        <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-neutral-200/90 text-neutral-700 text-xs sm:text-sm font-medium hover:border-amber-500 hover:text-amber-600 shadow-sm transition"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>حي الشاطئ</span>
+        <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-neutral-200/90 text-neutral-700 text-xs sm:text-sm font-medium hover:border-amber-500 hover:text-amber-600 shadow-sm transition"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>حي أبحر الشمالية</span>
+        <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-neutral-200/90 text-neutral-700 text-xs sm:text-sm font-medium hover:border-amber-500 hover:text-amber-600 shadow-sm transition"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>حي أبحر الجنوبية</span>
+        <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-neutral-200/90 text-neutral-700 text-xs sm:text-sm font-medium hover:border-amber-500 hover:text-amber-600 shadow-sm transition"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>حي المحمدية</span>
+        <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-neutral-200/90 text-neutral-700 text-xs sm:text-sm font-medium hover:border-amber-500 hover:text-amber-600 shadow-sm transition"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>حي المرجان</span>
+        <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-neutral-200/90 text-neutral-700 text-xs sm:text-sm font-medium hover:border-amber-500 hover:text-amber-600 shadow-sm transition"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>حي البساتين</span>
+        <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-neutral-200/90 text-neutral-700 text-xs sm:text-sm font-medium hover:border-amber-500 hover:text-amber-600 shadow-sm transition"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>حي النعيم</span>
+        <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-neutral-200/90 text-neutral-700 text-xs sm:text-sm font-medium hover:border-amber-500 hover:text-amber-600 shadow-sm transition"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>حي النهضة</span>
+        <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-neutral-200/90 text-neutral-700 text-xs sm:text-sm font-medium hover:border-amber-500 hover:text-amber-600 shadow-sm transition"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>حي الزهراء</span>
+        <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-neutral-200/90 text-neutral-700 text-xs sm:text-sm font-medium hover:border-amber-500 hover:text-amber-600 shadow-sm transition"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>حي الشراع</span>
+        <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-neutral-200/90 text-neutral-700 text-xs sm:text-sm font-medium hover:border-amber-500 hover:text-amber-600 shadow-sm transition"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>حي الياقوت</span>
+        <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-neutral-200/90 text-neutral-700 text-xs sm:text-sm font-medium hover:border-amber-500 hover:text-amber-600 shadow-sm transition"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>حي اللؤلؤ</span>
+        <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-neutral-200/90 text-neutral-700 text-xs sm:text-sm font-medium hover:border-amber-500 hover:text-amber-600 shadow-sm transition"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>حي الأمواج</span>
+        <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-neutral-200/90 text-neutral-700 text-xs sm:text-sm font-medium hover:border-amber-500 hover:text-amber-600 shadow-sm transition"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>حي الأصالة</span>
+        <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-neutral-200/90 text-neutral-700 text-xs sm:text-sm font-medium hover:border-amber-500 hover:text-amber-600 shadow-sm transition"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>حي الصواري</span>
+        <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-neutral-200/90 text-neutral-700 text-xs sm:text-sm font-medium hover:border-amber-500 hover:text-amber-600 shadow-sm transition"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>حي الفردوس</span>
+        <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-neutral-200/90 text-neutral-700 text-xs sm:text-sm font-medium hover:border-amber-500 hover:text-amber-600 shadow-sm transition"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>حي الرياض</span>
+        <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-neutral-200/90 text-neutral-700 text-xs sm:text-sm font-medium hover:border-amber-500 hover:text-amber-600 shadow-sm transition"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>حي الكورنيش</span>
+        <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-neutral-200/90 text-neutral-700 text-xs sm:text-sm font-medium hover:border-amber-500 hover:text-amber-600 shadow-sm transition"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>حي النزهة</span>
+        <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-neutral-200/90 text-neutral-700 text-xs sm:text-sm font-medium hover:border-amber-500 hover:text-amber-600 shadow-sm transition"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>حي المروة</span>
+        <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-neutral-200/90 text-neutral-700 text-xs sm:text-sm font-medium hover:border-amber-500 hover:text-amber-600 shadow-sm transition"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>حي الروضة</span>
+        <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-neutral-200/90 text-neutral-700 text-xs sm:text-sm font-medium hover:border-amber-500 hover:text-amber-600 shadow-sm transition"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>حي السلامة</span>
+        <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-neutral-200/90 text-neutral-700 text-xs sm:text-sm font-medium hover:border-amber-500 hover:text-amber-600 shadow-sm transition"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>حي الخالدية</span>
+        <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-neutral-200/90 text-neutral-700 text-xs sm:text-sm font-medium hover:border-amber-500 hover:text-amber-600 shadow-sm transition"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>حي الحمراء</span>
+        <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-neutral-200/90 text-neutral-700 text-xs sm:text-sm font-medium hover:border-amber-500 hover:text-amber-600 shadow-sm transition"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>حي الأندلس</span>
+        <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-neutral-200/90 text-neutral-700 text-xs sm:text-sm font-medium hover:border-amber-500 hover:text-amber-600 shadow-sm transition"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>حي العزيزية</span>
+        <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-neutral-200/90 text-neutral-700 text-xs sm:text-sm font-medium hover:border-amber-500 hover:text-amber-600 shadow-sm transition"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>حي الفيصلية</span>
+        <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-neutral-200/90 text-neutral-700 text-xs sm:text-sm font-medium hover:border-amber-500 hover:text-amber-600 shadow-sm transition"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>حي مشرفة</span>
+        <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-neutral-200/90 text-neutral-700 text-xs sm:text-sm font-medium hover:border-amber-500 hover:text-amber-600 shadow-sm transition"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>حي الرويس</span>
+        <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-neutral-200/90 text-neutral-700 text-xs sm:text-sm font-medium hover:border-amber-500 hover:text-amber-600 shadow-sm transition"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>حي البغدادية الشرقية</span>
+        <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-neutral-200/90 text-neutral-700 text-xs sm:text-sm font-medium hover:border-amber-500 hover:text-amber-600 shadow-sm transition"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>حي البغدادية الغربية</span>
+        <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-neutral-200/90 text-neutral-700 text-xs sm:text-sm font-medium hover:border-amber-500 hover:text-amber-600 shadow-sm transition"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>حي العمارية</span>
+        <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-neutral-200/90 text-neutral-700 text-xs sm:text-sm font-medium hover:border-amber-500 hover:text-amber-600 shadow-sm transition"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>حي الصحيفة</span>
+        <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-neutral-200/90 text-neutral-700 text-xs sm:text-sm font-medium hover:border-amber-500 hover:text-amber-600 shadow-sm transition"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>حي الشرفية</span>
+        <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-neutral-200/90 text-neutral-700 text-xs sm:text-sm font-medium hover:border-amber-500 hover:text-amber-600 shadow-sm transition"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>حي بني مالك</span>
+        <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-neutral-200/90 text-neutral-700 text-xs sm:text-sm font-medium hover:border-amber-500 hover:text-amber-600 shadow-sm transition"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>حي الرحاب</span>
+        <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-neutral-200/90 text-neutral-700 text-xs sm:text-sm font-medium hover:border-amber-500 hover:text-amber-600 shadow-sm transition"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>حي الربوة</span>
+        <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-neutral-200/90 text-neutral-700 text-xs sm:text-sm font-medium hover:border-amber-500 hover:text-amber-600 shadow-sm transition"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>حي الورود</span>
+        <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-neutral-200/90 text-neutral-700 text-xs sm:text-sm font-medium hover:border-amber-500 hover:text-amber-600 shadow-sm transition"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>حي النسيم</span>
+        <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-neutral-200/90 text-neutral-700 text-xs sm:text-sm font-medium hover:border-amber-500 hover:text-amber-600 shadow-sm transition"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>حي الحمدانية</span>
+        <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-neutral-200/90 text-neutral-700 text-xs sm:text-sm font-medium hover:border-amber-500 hover:text-amber-600 shadow-sm transition"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>حي السامر</span>
+        <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-neutral-200/90 text-neutral-700 text-xs sm:text-sm font-medium hover:border-amber-500 hover:text-amber-600 shadow-sm transition"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>حي المنار</span>
+        <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-neutral-200/90 text-neutral-700 text-xs sm:text-sm font-medium hover:border-amber-500 hover:text-amber-600 shadow-sm transition"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>حي الأجواد</span>
+        <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-neutral-200/90 text-neutral-700 text-xs sm:text-sm font-medium hover:border-amber-500 hover:text-amber-600 shadow-sm transition"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>حي الريان</span>
+        <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-neutral-200/90 text-neutral-700 text-xs sm:text-sm font-medium hover:border-amber-500 hover:text-amber-600 shadow-sm transition"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>حي الصفا</span>
+        <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-neutral-200/90 text-neutral-700 text-xs sm:text-sm font-medium hover:border-amber-500 hover:text-amber-600 shadow-sm transition"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>حي التوفيق</span>
+        <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-neutral-200/90 text-neutral-700 text-xs sm:text-sm font-medium hover:border-amber-500 hover:text-amber-600 shadow-sm transition"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>حي الصالحية</span>
+        <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-neutral-200/90 text-neutral-700 text-xs sm:text-sm font-medium hover:border-amber-500 hover:text-amber-600 shadow-sm transition"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>حي الفروسية</span>
+        <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-neutral-200/90 text-neutral-700 text-xs sm:text-sm font-medium hover:border-amber-500 hover:text-amber-600 shadow-sm transition"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>حي أم حبلين</span>
+        <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-neutral-200/90 text-neutral-700 text-xs sm:text-sm font-medium hover:border-amber-500 hover:text-amber-600 shadow-sm transition"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>حي الكوثر</span>
+        <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-neutral-200/90 text-neutral-700 text-xs sm:text-sm font-medium hover:border-amber-500 hover:text-amber-600 shadow-sm transition"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>حي المريخ</span>
+        <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-neutral-200/90 text-neutral-700 text-xs sm:text-sm font-medium hover:border-amber-500 hover:text-amber-600 shadow-sm transition"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>حي الواحة</span>
+        <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-neutral-200/90 text-neutral-700 text-xs sm:text-sm font-medium hover:border-amber-500 hover:text-amber-600 shadow-sm transition"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>حي المنتزهات</span>
+        <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-neutral-200/90 text-neutral-700 text-xs sm:text-sm font-medium hover:border-amber-500 hover:text-amber-600 shadow-sm transition"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>حي الحرازات</span>
+        <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-neutral-200/90 text-neutral-700 text-xs sm:text-sm font-medium hover:border-amber-500 hover:text-amber-600 shadow-sm transition"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>حي قويزة</span>
+        <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-neutral-200/90 text-neutral-700 text-xs sm:text-sm font-medium hover:border-amber-500 hover:text-amber-600 shadow-sm transition"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>حي بريمان</span>
+        <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-neutral-200/90 text-neutral-700 text-xs sm:text-sm font-medium hover:border-amber-500 hover:text-amber-600 shadow-sm transition"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>حي التيسير</span>
+        <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-neutral-200/90 text-neutral-700 text-xs sm:text-sm font-medium hover:border-amber-500 hover:text-amber-600 shadow-sm transition"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>حي الفلاح</span>
+        <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-neutral-200/90 text-neutral-700 text-xs sm:text-sm font-medium hover:border-amber-500 hover:text-amber-600 shadow-sm transition"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>حي طيبة</span>
+        <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-neutral-200/90 text-neutral-700 text-xs sm:text-sm font-medium hover:border-amber-500 hover:text-amber-600 shadow-sm transition"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>حي البلد</span>
+        <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-neutral-200/90 text-neutral-700 text-xs sm:text-sm font-medium hover:border-amber-500 hover:text-amber-600 shadow-sm transition"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>حي الكندرة</span>
+        <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-neutral-200/90 text-neutral-700 text-xs sm:text-sm font-medium hover:border-amber-500 hover:text-amber-600 shadow-sm transition"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>حي الهنداوية</span>
+        <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-neutral-200/90 text-neutral-700 text-xs sm:text-sm font-medium hover:border-amber-500 hover:text-amber-600 shadow-sm transition"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>حي السبيل</span>
+        <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-neutral-200/90 text-neutral-700 text-xs sm:text-sm font-medium hover:border-amber-500 hover:text-amber-600 shadow-sm transition"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>حي النزلة اليمانية</span>
+        <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-neutral-200/90 text-neutral-700 text-xs sm:text-sm font-medium hover:border-amber-500 hover:text-amber-600 shadow-sm transition"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>حي النزلة الشرقية</span>
+        <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-neutral-200/90 text-neutral-700 text-xs sm:text-sm font-medium hover:border-amber-500 hover:text-amber-600 shadow-sm transition"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>حي غليل</span>
+        <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-neutral-200/90 text-neutral-700 text-xs sm:text-sm font-medium hover:border-amber-500 hover:text-amber-600 shadow-sm transition"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>حي القريات</span>
+        <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-neutral-200/90 text-neutral-700 text-xs sm:text-sm font-medium hover:border-amber-500 hover:text-amber-600 shadow-sm transition"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>حي الثعالبة</span>
+        <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-neutral-200/90 text-neutral-700 text-xs sm:text-sm font-medium hover:border-amber-500 hover:text-amber-600 shadow-sm transition"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>حي الخمرة</span>
+        <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-neutral-200/90 text-neutral-700 text-xs sm:text-sm font-medium hover:border-amber-500 hover:text-amber-600 shadow-sm transition"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>حي الفضيلة</span>
+        <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-neutral-200/90 text-neutral-700 text-xs sm:text-sm font-medium hover:border-amber-500 hover:text-amber-600 shadow-sm transition"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>حي السنابل</span>
+        <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-neutral-200/90 text-neutral-700 text-xs sm:text-sm font-medium hover:border-amber-500 hover:text-amber-600 shadow-sm transition"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>حي الأجاويد</span>
+        <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-neutral-200/90 text-neutral-700 text-xs sm:text-sm font-medium hover:border-amber-500 hover:text-amber-600 shadow-sm transition"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>حي الأمير عبدالمجيد</span>
+        <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-neutral-200/90 text-neutral-700 text-xs sm:text-sm font-medium hover:border-amber-500 hover:text-amber-600 shadow-sm transition"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>حي الجامعة</span>
+        <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-neutral-200/90 text-neutral-700 text-xs sm:text-sm font-medium hover:border-amber-500 hover:text-amber-600 shadow-sm transition"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>حي الثغر</span>
+        <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-neutral-200/90 text-neutral-700 text-xs sm:text-sm font-medium hover:border-amber-500 hover:text-amber-600 shadow-sm transition"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>حي الوزيرية</span>
+        <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-neutral-200/90 text-neutral-700 text-xs sm:text-sm font-medium hover:border-amber-500 hover:text-amber-600 shadow-sm transition"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>حي المحجر</span>
+        <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-neutral-200/90 text-neutral-700 text-xs sm:text-sm font-medium hover:border-amber-500 hover:text-amber-600 shadow-sm transition"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>حي مدائن الفهد</span>
+        <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-neutral-200/90 text-neutral-700 text-xs sm:text-sm font-medium hover:border-amber-500 hover:text-amber-600 shadow-sm transition"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>حي الأمير فواز</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== سكشن مشاريع الأحياء المختارة ==================== -->
+  <section id="districts-properties-section" class="bg-[#fafbfc] py-24 sm:py-32 px-6 sm:px-12 lg:px-20 border-t border-neutral-200/60">
+    <div class="max-w-7xl mx-auto space-y-24">
+      
+      <!-- رأس السكشن العام -->
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 pb-8 border-b border-neutral-200/70 text-right">
+        <div>
+          <div class="flex items-center gap-3 mb-4">
+            <span class="text-xs sm:text-sm font-semibold text-amber-600 tracking-wider">مشاريع النخبة في أرقى المواقع</span>
+            <div class="w-10 h-[1.5px] bg-amber-500"></div>
+          </div>
+          <h2 class="text-3xl sm:text-4xl lg:text-5xl font-black text-neutral-900 leading-tight">
+            مشاريع وعقارات أحياء جدة
+          </h2>
+          <p class="text-sm sm:text-base text-neutral-500 mt-3 max-w-2xl leading-relaxed">
+            استكشف نخبة المشاريع السكنية والتمليك الموثقة رسمياً في أهم خمسة أحياء حيوية ومرموقة في مدينة جدة.
+          </p>
+        </div>
+
+        <!-- أزرار التنقل السريع بين الأحياء الخمسة -->
+        <div class="flex flex-wrap items-center gap-2.5 self-start md:self-end">
+          <a href="#district-mushrifah" class="px-3.5 py-2 rounded-xl bg-white border border-neutral-200 text-neutral-800 text-xs font-bold hover:border-amber-500 hover:text-amber-600 shadow-sm transition">
+            <i class="fas fa-map-marker-alt text-amber-500 ml-1"></i> حي مشرفة
+          </a>
+          <a href="#district-hamraa" class="px-3.5 py-2 rounded-xl bg-white border border-neutral-200 text-neutral-800 text-xs font-bold hover:border-amber-500 hover:text-amber-600 shadow-sm transition">
+            <i class="fas fa-map-marker-alt text-amber-500 ml-1"></i> حي الحمراء
+          </a>
+          <a href="#district-rawdah" class="px-3.5 py-2 rounded-xl bg-white border border-neutral-200 text-neutral-800 text-xs font-bold hover:border-amber-500 hover:text-amber-600 shadow-sm transition">
+            <i class="fas fa-map-marker-alt text-amber-500 ml-1"></i> حي الروضة
+          </a>
+          <a href="#district-sharafiyah" class="px-3.5 py-2 rounded-xl bg-white border border-neutral-200 text-neutral-800 text-xs font-bold hover:border-amber-500 hover:text-amber-600 shadow-sm transition">
+            <i class="fas fa-map-marker-alt text-amber-500 ml-1"></i> حي الشرفية
+          </a>
+          <a href="#district-zahraa" class="px-3.5 py-2 rounded-xl bg-white border border-neutral-200 text-neutral-800 text-xs font-bold hover:border-amber-500 hover:text-amber-600 shadow-sm transition">
+            <i class="fas fa-map-marker-alt text-amber-500 ml-1"></i> حي الزهراء
+          </a>
+        </div>
+      </div>
+
+      <!-- ================= 1. حي مشرفة ================= -->
+      <div id="district-mushrifah" class="space-y-10 scroll-mt-28">
+        <div class="space-y-5 pt-2">
+          <div class="flex items-center justify-between text-right">
+            <div>
+              <h4 class="text-xl sm:text-2xl font-bold text-neutral-900 flex items-center gap-2">
+                <i class="fas fa-building text-amber-600 text-lg"></i>
+                مشاريع وعقارات حي مشرفة
+              </h4>
+              <span class="text-xs text-neutral-400">موقع استراتيجي وسط جدة بالقرب من الطرق والمحاور الرئيسية</span>
+            </div>
+            <span class="text-xs font-bold text-amber-600 bg-amber-50 px-3 py-1.5 rounded-full border border-amber-200/60">وحدات حي مشرفة</span>
+          </div>
+
+          <div id="mushrifah-cards-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+            <!-- تتولد الكروت ديناميكياً بنفس التصميم الدقيق -->
+          </div>
+
+          <!-- زر عرض المزيد لحي مشرفة -->
+          <div class="flex justify-center pt-4">
+            <button id="load-more-mushrifah-btn" type="button" class="group relative inline-flex items-center gap-3 px-8 py-3.5 rounded-full bg-white hover:bg-neutral-900 text-neutral-800 hover:text-white border border-neutral-300/80 hover:border-neutral-900 text-xs sm:text-sm font-bold shadow-sm hover:shadow-xl transition-all duration-300">
+              <span class="w-2 h-2 rounded-full bg-amber-500 group-hover:scale-125 transition-transform"></span>
+              <span id="load-more-mushrifah-text">عرض المزيد من مشاريع حي مشرفة</span>
+              <i id="load-more-mushrifah-icon" class="fas fa-chevron-down text-[11px] text-amber-500 group-hover:translate-y-0.5 transition-transform"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="w-full h-px bg-neutral-200/80"></div>
+
+      <!-- ================= 2. حي الحمراء ================= -->
+      <div id="district-hamraa" class="space-y-10 scroll-mt-28">
+        <div class="space-y-5 pt-2">
+          <div class="flex items-center justify-between text-right">
+            <div>
+              <h4 class="text-xl sm:text-2xl font-bold text-neutral-900 flex items-center gap-2">
+                <i class="fas fa-building text-amber-600 text-lg"></i>
+                مشاريع وعقارات حي الحمراء
+              </h4>
+              <span class="text-xs text-neutral-400">وجهة راقية بالقرب من كورنيش الحمراء ونافورة الملك فهد</span>
+            </div>
+            <span class="text-xs font-bold text-amber-600 bg-amber-50 px-3 py-1.5 rounded-full border border-amber-200/60">وحدات حي الحمراء</span>
+          </div>
+
+          <div id="hamraa-cards-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+            <!-- تتولد الكروت ديناميكياً -->
+          </div>
+
+          <!-- زر عرض المزيد لحي الحمراء -->
+          <div class="flex justify-center pt-4">
+            <button id="load-more-hamraa-btn" type="button" class="group relative inline-flex items-center gap-3 px-8 py-3.5 rounded-full bg-white hover:bg-neutral-900 text-neutral-800 hover:text-white border border-neutral-300/80 hover:border-neutral-900 text-xs sm:text-sm font-bold shadow-sm hover:shadow-xl transition-all duration-300">
+              <span class="w-2 h-2 rounded-full bg-amber-500 group-hover:scale-125 transition-transform"></span>
+              <span id="load-more-hamraa-text">عرض المزيد من مشاريع حي الحمراء</span>
+              <i id="load-more-hamraa-icon" class="fas fa-chevron-down text-[11px] text-amber-500 group-hover:translate-y-0.5 transition-transform"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="w-full h-px bg-neutral-200/80"></div>
+
+      <!-- ================= 3. حي الروضة ================= -->
+      <div id="district-rawdah" class="space-y-10 scroll-mt-28">
+        <div class="space-y-5 pt-2">
+          <div class="flex items-center justify-between text-right">
+            <div>
+              <h4 class="text-xl sm:text-2xl font-bold text-neutral-900 flex items-center gap-2">
+                <i class="fas fa-building text-amber-600 text-lg"></i>
+                مشاريع وعقارات حي الروضة
+              </h4>
+              <span class="text-xs text-neutral-400">أرقى أحياء جدة السكنية مع قرب كامل لأفضل الخدمات والمراكز</span>
+            </div>
+            <span class="text-xs font-bold text-amber-600 bg-amber-50 px-3 py-1.5 rounded-full border border-amber-200/60">وحدات حي الروضة</span>
+          </div>
+
+          <div id="rawdah-cards-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+            <!-- تتولد الكروت ديناميكياً -->
+          </div>
+
+          <!-- زر عرض المزيد لحي الروضة -->
+          <div class="flex justify-center pt-4">
+            <button id="load-more-rawdah-btn" type="button" class="group relative inline-flex items-center gap-3 px-8 py-3.5 rounded-full bg-white hover:bg-neutral-900 text-neutral-800 hover:text-white border border-neutral-300/80 hover:border-neutral-900 text-xs sm:text-sm font-bold shadow-sm hover:shadow-xl transition-all duration-300">
+              <span class="w-2 h-2 rounded-full bg-amber-500 group-hover:scale-125 transition-transform"></span>
+              <span id="load-more-rawdah-text">عرض المزيد من مشاريع حي الروضة</span>
+              <i id="load-more-rawdah-icon" class="fas fa-chevron-down text-[11px] text-amber-500 group-hover:translate-y-0.5 transition-transform"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="w-full h-px bg-neutral-200/80"></div>
+
+      <!-- ================= 4. حي الشرفية ================= -->
+      <div id="district-sharafiyah" class="space-y-10 scroll-mt-28">
+        <div class="space-y-5 pt-2">
+          <div class="flex items-center justify-between text-right">
+            <div>
+              <h4 class="text-xl sm:text-2xl font-bold text-neutral-900 flex items-center gap-2">
+                <i class="fas fa-building text-amber-600 text-lg"></i>
+                مشاريع وعقارات حي الشرفية
+              </h4>
+              <span class="text-xs text-neutral-400">حي أصيل وحيوي يوفر فرص تملك وسكن عائلي بمواصفات متكاملة</span>
+            </div>
+            <span class="text-xs font-bold text-amber-600 bg-amber-50 px-3 py-1.5 rounded-full border border-amber-200/60">وحدات حي الشرفية</span>
+          </div>
+
+          <div id="sharafiyah-cards-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+            <!-- تتولد الكروت ديناميكياً -->
+          </div>
+
+          <!-- زر عرض المزيد لحي الشرفية -->
+          <div class="flex justify-center pt-4">
+            <button id="load-more-sharafiyah-btn" type="button" class="group relative inline-flex items-center gap-3 px-8 py-3.5 rounded-full bg-white hover:bg-neutral-900 text-neutral-800 hover:text-white border border-neutral-300/80 hover:border-neutral-900 text-xs sm:text-sm font-bold shadow-sm hover:shadow-xl transition-all duration-300">
+              <span class="w-2 h-2 rounded-full bg-amber-500 group-hover:scale-125 transition-transform"></span>
+              <span id="load-more-sharafiyah-text">عرض المزيد من مشاريع حي الشرفية</span>
+              <i id="load-more-sharafiyah-icon" class="fas fa-chevron-down text-[11px] text-amber-500 group-hover:translate-y-0.5 transition-transform"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="w-full h-px bg-neutral-200/80"></div>
+
+      <!-- ================= 5. حي الزهراء ================= -->
+      <div id="district-zahraa" class="space-y-10 scroll-mt-28">
+        <div class="space-y-5 pt-2">
+          <div class="flex items-center justify-between text-right">
+            <div>
+              <h4 class="text-xl sm:text-2xl font-bold text-neutral-900 flex items-center gap-2">
+                <i class="fas fa-building text-amber-600 text-lg"></i>
+                مشاريع وعقارات حي الزهراء
+              </h4>
+              <span class="text-xs text-neutral-400">حي النخبة في شمال جدة بالقرب من شارع البترجي والأماكن الحيوية</span>
+            </div>
+            <span class="text-xs font-bold text-amber-600 bg-amber-50 px-3 py-1.5 rounded-full border border-amber-200/60">وحدات حي الزهراء</span>
+          </div>
+
+          <div id="zahraa-cards-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+            <!-- تتولد الكروت ديناميكياً -->
+          </div>
+
+          <!-- زر عرض المزيد لحي الزهراء -->
+          <div class="flex justify-center pt-4">
+            <button id="load-more-zahraa-btn" type="button" class="group relative inline-flex items-center gap-3 px-8 py-3.5 rounded-full bg-white hover:bg-neutral-900 text-neutral-800 hover:text-white border border-neutral-300/80 hover:border-neutral-900 text-xs sm:text-sm font-bold shadow-sm hover:shadow-xl transition-all duration-300">
+              <span class="w-2 h-2 rounded-full bg-amber-500 group-hover:scale-125 transition-transform"></span>
+              <span id="load-more-zahraa-text">عرض المزيد من مشاريع حي الزهراء</span>
+              <i id="load-more-zahraa-icon" class="fas fa-chevron-down text-[11px] text-amber-500 group-hover:translate-y-0.5 transition-transform"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 3. سكشن مستقل للأرقام والإحصائيات التفاعلية (Stats Section) -->
+  <section id="stats-section" class="bg-[#fafbfc] py-12 sm:py-16 px-6 sm:px-12 lg:px-20 border-t border-neutral-100">
+    <div class="max-w-7xl mx-auto">
+      
+      <!-- الكروت الثلاثة بالأرقام الكبيرة مع العداد التفاعلي (6 ثوانٍ) -->
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-8 lg:gap-12 text-right">
+        
+        <!-- الكرت 1: نخدم أكثر من 150 حي -->
+        <div class="space-y-2 group">
+          <div class="text-5xl sm:text-6xl lg:text-7xl font-light text-neutral-900 tracking-tight font-sans flex items-baseline">
+            <span class="counter-number inline-block" data-target="150">0</span>
+            <span class="text-amber-600 font-normal mr-1 group-hover:scale-125 transition-transform duration-300 inline-block">+</span>
+          </div>
+          <p class="text-xs sm:text-sm text-neutral-500 leading-relaxed max-w-xs font-normal">
+            حي ومخطط استراتيجي نغطيه ونخدمه بكافة أنحاء مدينة جدة
+          </p>
+        </div>
+
+        <!-- الكرت 2: عملاء تعاملوا معنا أكثر من 250+ -->
+        <div class="space-y-2 group">
+          <div class="text-5xl sm:text-6xl lg:text-7xl font-light text-neutral-900 tracking-tight font-sans flex items-baseline">
+            <span class="counter-number inline-block" data-target="250">0</span>
+            <span class="text-amber-600 font-normal mr-1 group-hover:scale-125 transition-transform duration-300 inline-block">+</span>
+          </div>
+          <p class="text-xs sm:text-sm text-neutral-500 leading-relaxed max-w-xs font-normal">
+            عميل وشريك استثماري نفخر بخدمتهم وتحقيق تطلعاتهم العقارية
+          </p>
+        </div>
+
+        <!-- الكرت 3: نسبة رضا وثقة العملاء 99% -->
+        <div class="space-y-2 group">
+          <div class="text-5xl sm:text-6xl lg:text-7xl font-light text-neutral-900 tracking-tight font-sans flex items-baseline">
+            <span class="counter-number inline-block" data-target="99">0</span>
+            <span class="text-neutral-400 font-normal text-3xl sm:text-4xl lg:text-5xl mr-1 align-top group-hover:text-amber-600 transition-colors duration-300">%</span>
+          </div>
+          <p class="text-xs sm:text-sm text-neutral-500 leading-relaxed max-w-xs font-normal">
+            نسبة رضا وثقة العملاء في مطابقة العقارات للمواصفات والضمانات الإنشائية
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== 4. سكشن استكشاف أحياء جدة الرئيسية (Districts Showcase) ==================== -->
+  <section id="districts-section" class="bg-white py-8 sm:py-12 px-6 sm:px-12 lg:px-20 border-t border-neutral-100">
+    <div class="max-w-7xl mx-auto space-y-8">
+      
+      <!-- عنوان السكشن -->
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 pb-6 border-b border-neutral-100 text-right">
+        <div>
+          <div class="flex items-center gap-3 mb-3">
+            <span class="text-xs sm:text-sm font-semibold text-amber-600 tracking-wider">مواقع استراتيجية</span>
+            <div class="w-10 h-[1.5px] bg-amber-500"></div>
+          </div>
+          <h2 class="text-3xl sm:text-4xl lg:text-5xl font-black text-neutral-900 leading-tight">
+            استكشف نخبة أحياء جدة.
+          </h2>
+          <p class="text-sm sm:text-base text-neutral-500 mt-2 max-w-2xl leading-relaxed">
+            تغطية شاملة لأكثر الوجهات طلباً واستقراراً استثمارياً وسكنياً في عروس البحر الأحمر.
+          </p>
+        </div>
+
+        <a href="#districts-section" class="inline-flex items-center gap-2 text-xs sm:text-sm font-bold text-neutral-900 hover:text-emerald-700 transition group self-start md:self-end">
+          <span>عرض جميع عقارات الأحياء</span>
+          <i class="fas fa-arrow-left text-[11px] transform group-hover:-translate-x-1 transition-transform"></i>
+        </a>
+      </div>
+
+      <!-- شبكة كروت الأحياء الفاخرة (4 أحياء رئيسية) -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+        <!-- حي الشاطئ -->
+        <a href="#districts-section" class="group relative rounded-3xl overflow-hidden aspect-[3/4] bg-neutral-900 border border-neutral-200/80 shadow-sm hover:shadow-2xl transition-all duration-500 flex flex-col justify-between p-6">
+          <img src="assets/images/about-luxury-villa.webp" alt="حي الشاطئ جدة" class="absolute inset-0 w-full h-full object-cover opacity-85 group-hover:scale-110 group-hover:opacity-75 transition-all duration-700">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/95 via-black/40 to-black/20"></div>
+
+          <div class="relative z-10 flex items-center justify-between">
+            <span class="bg-white/20 backdrop-blur-md text-white text-[11px] font-bold px-3 py-1 rounded-full border border-white/20">
+              واجهة بحرية
+            </span>
+            <div class="w-8 h-8 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-white flex items-center justify-center text-xs group-hover:bg-emerald-600 group-hover:border-emerald-600 transition-colors">
+              <i class="fas fa-arrow-left transform -rotate-45"></i>
+            </div>
+          </div>
+
+          <div class="relative z-10 text-right space-y-1.5">
+            <span class="text-xs text-emerald-400 font-semibold block">شمال جدة</span>
+            <h3 class="text-2xl font-black text-white">حي الشاطئ</h3>
+            <p class="text-xs text-neutral-300 line-clamp-1">الكورنيش، الفلل الراقية، إطلالات بحرية</p>
+            <div class="pt-3 border-t border-white/15 flex items-center justify-between text-xs text-neutral-200">
+              <span>+34 عقار متاح</span>
+              <span class="text-emerald-400 font-bold">فلل وقصور</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- حي أبحر الشمالية -->
+        <a href="#districts-section" class="group relative rounded-3xl overflow-hidden aspect-[3/4] bg-neutral-900 border border-neutral-200/80 shadow-sm hover:shadow-2xl transition-all duration-500 flex flex-col justify-between p-6">
+          <img src="assets/images/about-luxury-villa.webp" alt="حي أبحر الشمالية" class="absolute inset-0 w-full h-full object-cover opacity-85 group-hover:scale-110 group-hover:opacity-75 transition-all duration-700">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/95 via-black/40 to-black/20"></div>
+
+          <div class="relative z-10 flex items-center justify-between">
+            <span class="bg-white/20 backdrop-blur-md text-white text-[11px] font-bold px-3 py-1 rounded-full border border-white/20">
+              نمو استثماري
+            </span>
+            <div class="w-8 h-8 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-white flex items-center justify-center text-xs group-hover:bg-emerald-600 group-hover:border-emerald-600 transition-colors">
+              <i class="fas fa-arrow-left transform -rotate-45"></i>
+            </div>
+          </div>
+
+          <div class="relative z-10 text-right space-y-1.5">
+            <span class="text-xs text-emerald-400 font-semibold block">الوجهة العصرية</span>
+            <h3 class="text-2xl font-black text-white">أبحر الشمالية</h3>
+            <p class="text-xs text-neutral-300 line-clamp-1">المرسى، الهدوء، أحدث المخططات المعمارية</p>
+            <div class="pt-3 border-t border-white/15 flex items-center justify-between text-xs text-neutral-200">
+              <span>+58 عقار متاح</span>
+              <span class="text-emerald-400 font-bold">فلل ومودرن</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- حي المحمدية -->
+        <a href="#districts-section" class="group relative rounded-3xl overflow-hidden aspect-[3/4] bg-neutral-900 border border-neutral-200/80 shadow-sm hover:shadow-2xl transition-all duration-500 flex flex-col justify-between p-6">
+          <img src="assets/images/about-luxury-villa.webp" alt="حي المحمدية" class="absolute inset-0 w-full h-full object-cover opacity-85 group-hover:scale-110 group-hover:opacity-75 transition-all duration-700">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/95 via-black/40 to-black/20"></div>
+
+          <div class="relative z-10 flex items-center justify-between">
+            <span class="bg-white/20 backdrop-blur-md text-white text-[11px] font-bold px-3 py-1 rounded-full border border-white/20">
+              موقع استراتيجي
+            </span>
+            <div class="w-8 h-8 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-white flex items-center justify-center text-xs group-hover:bg-emerald-600 group-hover:border-emerald-600 transition-colors">
+              <i class="fas fa-arrow-left transform -rotate-45"></i>
+            </div>
+          </div>
+
+          <div class="relative z-10 text-right space-y-1.5">
+            <span class="text-xs text-emerald-400 font-semibold block">طريق المدينة المنورة</span>
+            <h3 class="text-2xl font-black text-white">حي المحمدية</h3>
+            <p class="text-xs text-neutral-300 line-clamp-1">قريب من المطار والخدمات والمدارس العالمية</p>
+            <div class="pt-3 border-t border-white/15 flex items-center justify-between text-xs text-neutral-200">
+              <span>+42 عقار متاح</span>
+              <span class="text-emerald-400 font-bold">شقق وأدوار</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- حي الحمراء والروضة -->
+        <a href="#districts-section" class="group relative rounded-3xl overflow-hidden aspect-[3/4] bg-neutral-900 border border-neutral-200/80 shadow-sm hover:shadow-2xl transition-all duration-500 flex flex-col justify-between p-6">
+          <img src="assets/images/about-luxury-villa.webp" alt="حي الحمراء والروضة" class="absolute inset-0 w-full h-full object-cover opacity-85 group-hover:scale-110 group-hover:opacity-75 transition-all duration-700">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/95 via-black/40 to-black/20"></div>
+
+          <div class="relative z-10 flex items-center justify-between">
+            <span class="bg-white/20 backdrop-blur-md text-white text-[11px] font-bold px-3 py-1 rounded-full border border-white/20">
+              عراقة وحيوية
+            </span>
+            <div class="w-8 h-8 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-white flex items-center justify-center text-xs group-hover:bg-emerald-600 group-hover:border-emerald-600 transition-colors">
+              <i class="fas fa-arrow-left transform -rotate-45"></i>
+            </div>
+          </div>
+
+          <div class="relative z-10 text-right space-y-1.5">
+            <span class="text-xs text-emerald-400 font-semibold block">قلب جدة النابض</span>
+            <h3 class="text-2xl font-black text-white">الحمراء والروضة</h3>
+            <p class="text-xs text-neutral-300 line-clamp-1">نافورة الملك فهد، المطاعم الفاخرة، المراكز</p>
+            <div class="pt-3 border-t border-white/15 flex items-center justify-between text-xs text-neutral-200">
+              <span>+29 عقار متاح</span>
+              <span class="text-emerald-400 font-bold">روف وأبراج</span>
+            </div>
+          </div>
+        </a>
+
+      </div>
+
+    </div>
+  </section>
+
+
+
+  <!-- ==================== 6. بانر الدعوة للتواصل والمعاينة (VIP Consultation CTA - Light Minimal Luxury) ==================== -->
+  <section id="contact-banner" class="relative bg-gradient-to-b from-[#f8f9fa] via-white to-amber-50/30 py-8 sm:py-12 px-6 sm:px-12 lg:px-20 border-t border-neutral-200/60 overflow-hidden">
+    <!-- هالات إضاءة ناعمة فاتحة وخلفية مريحة للعين -->
+    <div class="absolute -top-24 right-1/4 w-80 h-80 bg-amber-100/60 rounded-full blur-3xl pointer-events-none"></div>
+    <div class="absolute -bottom-24 left-1/4 w-80 h-80 bg-amber-200/40 rounded-full blur-3xl pointer-events-none"></div>
+
+    <div class="max-w-4xl mx-auto relative z-10 text-center space-y-6 bg-white/90 backdrop-blur-xl p-6 sm:p-10 rounded-[2.5rem] border border-neutral-200/80 shadow-[0_20px_50px_rgba(0,0,0,0.04)]">
+      
+      <!-- شارة الفئة الفاتحة -->
+      <div class="inline-flex items-center gap-2 bg-amber-50 border border-amber-200/90 px-4 py-1.5 rounded-full text-xs font-bold text-amber-800 shadow-sm">
+        <i class="fas fa-crown text-amber-600"></i>
+        <span>خدمة الاستشارات والمعاينات الخاصة</span>
+      </div>
+
+      <!-- العنوان الرئيسي باللون الفاحم النظيف -->
+      <h2 class="text-2xl sm:text-3xl lg:text-4xl font-black text-neutral-900 leading-[1.35] tracking-tight max-w-2xl mx-auto">
+        تبحث عن عقار استثنائي بمواصفات خاصة في جدة؟
+      </h2>
+
+      <!-- النص التوضيحي بلون رمادي مريح وفاخر -->
+      <p class="text-xs sm:text-sm text-neutral-600 max-w-2xl mx-auto leading-relaxed font-normal">
+        فريقنا المتخصص في عقارات جدة الفاخرة مستعد لمرافقتك في جولة معاينة خاصة وتجهيز ملف كامل بفرص التملك والاستثمار المتوافقة مع ميزانيتك.
+      </p>
+
+      <!-- أزرار الإجراء السريعة الفاتحة والأنيقة -->
+      <div class="flex flex-wrap items-center justify-center gap-3 pt-2">
+        <!-- زر الواتساب الذهبي الفاخر -->
+        <a href="https://wa.me/966566399523" target="_blank" class="flex items-center gap-2.5 bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-white font-bold text-xs sm:text-sm px-7 py-3 rounded-full shadow-lg shadow-amber-500/20 hover:shadow-amber-500/35 hover:scale-105 transition-all duration-300">
+          <i class="fab fa-whatsapp text-base"></i>
+          <span>تواصل عبر واتساب فوراً</span>
+          <i class="fas fa-arrow-left text-[10px]"></i>
+        </a>
+        
+        <!-- زر الاتصال الهاتفي النظيف -->
+        <a href="tel:+966566399523" class="flex items-center gap-2.5 bg-white hover:bg-neutral-50 text-neutral-900 font-bold text-xs sm:text-sm px-7 py-3 rounded-full border border-neutral-200 shadow-sm hover:border-neutral-300 transition-all duration-300">
+          <i class="fas fa-phone-alt text-[11px] text-amber-600"></i>
+          <span>اتصال هاتفي (0566399523)</span>
+        </a>
+      </div>
+
+      <!-- رابط توجيه لصفحة بيانات العقار والمشاريع الحصرية -->
+      <div class="pt-3 border-t border-neutral-100">
+        <a href="project/?id=AQ-15001" class="inline-flex items-center gap-2 text-xs font-semibold text-neutral-500 hover:text-emerald-700 transition">
+          <span>أو تصفح نموذج صفحة بيانات ومخططات المشروع الحصري</span>
+          <i class="fas fa-arrow-left text-[10px]"></i>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== تذييل الصفحة Footer ==================== -->
+  
+  <!-- أزرار الاتصال والواتساب العائمة (اسفل الشاشة يسار / Bottom Left) - تظهر بنعومة عند السكرول -->
+  <div id="floating-actions-container" class="fixed bottom-6 left-6 z-50 flex flex-col items-center gap-3 select-none pointer-events-none opacity-0 translate-y-6 transition-all duration-500">
+    
+    <!-- زر الواتساب العائم الأخضر الفاخر مع تأثير نبض ناعم -->
+    <a href="https://wa.me/966566399523" target="_blank" rel="noopener noreferrer" 
+       class="group relative flex items-center justify-center w-14 h-14 rounded-full bg-emerald-500 hover:bg-emerald-600 text-white shadow-[0_10px_25px_rgba(16,185,129,0.4)] hover:shadow-[0_15px_30px_rgba(16,185,129,0.55)] hover:scale-110 active:scale-95 transition-all duration-300" 
+       title="تواصل عبر واتساب" aria-label="واتساب عقار جدة">
+      
+      <!-- موجة نبضية خلفية لجذب الانتباه بفخامة -->
+      <span class="absolute inset-0 rounded-full bg-emerald-400 opacity-40 animate-ping pointer-events-none"></span>
+      
+      <!-- أيقونة الواتساب -->
+      <i class="fab fa-whatsapp text-2xl relative z-10"></i>
+
+      <!-- تلميح توضيحي Tooltip أنيق يظهر عند الوقوف على الزر جهة اليمين -->
+      <span class="absolute right-16 px-3 py-1.5 rounded-xl bg-neutral-900/90 backdrop-blur-md text-white text-xs font-bold whitespace-nowrap opacity-0 translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300 pointer-events-none shadow-xl border border-white/10 hidden sm:block">
+        محادثة واتساب فورية
+      </span>
+    </a>
+
+    <!-- زر الاتصال الهاتفي العائم الذهبي/الداكن الفاخر -->
+    <a href="tel:+966566399523" 
+       class="group relative flex items-center justify-center w-14 h-14 rounded-full bg-neutral-900 hover:bg-amber-600 text-white shadow-[0_10px_25px_rgba(0,0,0,0.3)] hover:shadow-[0_15px_30px_rgba(217,119,6,0.45)] hover:scale-110 active:scale-95 transition-all duration-300 border border-white/15" 
+       title="اتصال هاتفي مباشر" aria-label="اتصال هاتفي 0566399523">
+      
+      <!-- أيقونة الهاتف المباشر -->
+      <i class="fas fa-phone-alt text-lg relative z-10"></i>
+
+      <!-- تلميح توضيحي Tooltip أنيق يظهر عند الوقوف على الزر جهة اليمين -->
+      <span class="absolute right-16 px-3 py-1.5 rounded-xl bg-neutral-900/90 backdrop-blur-md text-white text-xs font-bold whitespace-nowrap opacity-0 translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300 pointer-events-none shadow-xl border border-white/10 hidden sm:block">
+        اتصال هاتفي مباشر
+      </span>
+    </a>
+
+  </div>
+
+  <!-- تذييل الصفحة الموحد والفاخر -->
+  <footer class="bg-white border-t border-neutral-200/80 pt-10 pb-8 px-6 sm:px-12 text-xs text-neutral-600">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6 pb-6 border-b border-neutral-100">
+      
+      <!-- اللوجو والهوية -->
+      <div class="flex items-center gap-3">
+        <img src="assets/images/logo.webp" alt="عقار جدة" class="h-10 w-auto object-contain">
+        <div>
+          <span class="font-extrabold text-sm text-neutral-900 block">عقار جدة</span>
+          <span class="text-[11px] text-neutral-400">بوابتك العقارية الأولى للمشاريع والوحدات الفاخرة</span>
+        </div>
+      </div>
+
+      <!-- روابط سريعة موحدة -->
+      <div class="flex flex-wrap items-center justify-center gap-5 sm:gap-7 text-xs font-semibold text-neutral-600">
+        <a href="index.html" class="hover:text-emerald-700 transition">الرئيسية</a>
+        <a href="index.html#districts-section" class="hover:text-emerald-700 transition">مشاريع الأحياء</a>
+        <a href="project/?id=AQ-15001" class="hover:text-emerald-700 transition">المشاريع الحصرية</a>
+        <a href="property/?id=1" class="hover:text-emerald-700 transition">تفاصيل الوحدات</a>
+        <a href="contact/" class="hover:text-emerald-700 transition">تواصل معنا</a>
+      </div>
+
+    </div>
+
+    <!-- شريط الحقوق وشركة التصميم والتطوير -->
+    <div class="max-w-7xl mx-auto pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-neutral-400 text-center sm:text-right">
+      <span>
+        جميع الحقوق محفوظة © 2026 عقار جدة
+      </span>
+      <div class="flex items-center gap-1.5 font-medium text-neutral-500">
+        <span>تم التصميم والتطوير بواسطة</span>
+        <a href="https://fashne.net/" target="_blank" rel="noopener noreferrer" 
+           class="font-bold text-emerald-700 hover:text-emerald-800 underline underline-offset-4 decoration-emerald-400 hover:decoration-emerald-700 transition inline-flex items-center gap-1">
+          <span>شركة الفشني للدعاية والاعلان والتسويق الإلكتروني</span>
+          <i class="fas fa-external-link-alt text-[9px]"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- مكتبة السكرول فائق النعومة (Lenis Smooth Scroll) لضمان تجربة تصفح فاخرة وسلسة -->
+  <script src="https://unpkg.com/lenis@1.1.20/dist/lenis.min.js"></script>
+  <script>
+    // تفعيل التمرير فائق النعومة والسلاسة
+    const lenis = new Lenis({
+      duration: 1.2,
+      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+      smoothWheel: true,
+      wheelMultiplier: 1,
+      touchMultiplier: 1.5,
+    });
+
+    function raf(time) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+    requestAnimationFrame(raf);
+  </script>
+  <!-- ملف الجافاسكريبت التفاعلي -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
+

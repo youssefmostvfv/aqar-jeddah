@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>تواصل معنا | عقار جدة — منصة نخبة العقارات الفاخرة</title>
+  <link rel="canonical" href="https://aqar-jeddah-ads.com/contact/">
+  <meta name="description" content="تواصل مع فريق عقار جدة للاستشارات والمعاينات الخاصة لفرص التملك والاستثمار الفاخر.">
+
+  <!-- Favicon / أيقونة وهوية الموقع الرسمية -->
+  <link rel="icon" type="image/png" href="../assets/images/logo.webp">
+  <link rel="apple-touch-icon" href="../assets/images/logo.webp">
+
+  <!-- Google Fonts: Cairo + Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="../assets/fontawesome/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Tailwind CSS Engine -->
+  <script src="../assets/tailwind/tailwind.js"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            cairo: ['Cairo', 'sans-serif'],
+            sans: ['Plus Jakarta Sans', 'Cairo', 'sans-serif'],
+          },
+          colors: {
+            amber: {
+              50: '#f0fdf4',
+              100: '#dcfce7',
+              200: '#bbf7d0',
+              300: '#86efac',
+              400: '#22c55e',
+              500: '#00a940',
+              600: '#006c35',
+              700: '#00552a',
+              800: '#004221',
+              900: '#00331a',
+              950: '#001e0e'
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body {
+      font-family: 'Cairo', sans-serif;
+    }
+  </style>
+<body class="bg-[#fafbfc] text-neutral-900 m-0 p-0 antialiased min-h-screen flex flex-col justify-between">
+
+  <!-- 1. شريط التنقل العلوي الثابت والموحد (Fixed Floating Navbar Capsule) -->
+  <header class="fixed top-0 left-0 right-0 z-50 py-3 sm:py-5 px-3 sm:px-8 flex flex-col items-center w-full pointer-events-none transition-all duration-300">
+    <nav class="pointer-events-auto flex items-center justify-between w-full max-w-5xl bg-[#002b15]/90 backdrop-blur-2xl border border-emerald-500/25 rounded-full px-4 sm:px-7 py-2.5 sm:py-3 shadow-2xl transition-all duration-300 hover:border-emerald-500/40">
+      
+      <!-- قسم الشعار - أقصى اليمين -->
+      <a href="../" class="h-9 sm:h-11 flex items-center justify-center transition hover:opacity-90 flex-shrink-0" title="عقار جدة">
+        <img src="../assets/images/logo.webp" alt="شعار عقارات جدة" class="h-9 sm:h-11 w-auto object-contain">
+      </a>
+
+      <!-- في الموبايل: اسم الصفحة وزر احجز معاينتك في المنتصف تماماً مع تباعد مريح -->
+      <div class="md:hidden flex items-center justify-center gap-3 sm:gap-4 flex-1 mx-2">
+        <!-- اسم الصفحة الحالية بدون بوردر وتحتها خط رفيع أنيق -->
+        <span class="text-amber-400 text-xs font-black tracking-wide pb-0.5 border-b border-amber-400/60 whitespace-nowrap">
+          تواصل معنا
+        </span>
+
+        <!-- خط فاصل خفيف جداً بين اسم الصفحة والزر -->
+        <span class="w-[1px] h-3.5 bg-white/20"></span>
+
+        <!-- زر الحبة الأبيض: احجز معاينتك -->
+        <a href="#contact-form-section" class="flex items-center gap-1.5 bg-white text-neutral-900 font-bold text-[11px] px-3 py-1.5 rounded-full hover:bg-neutral-100 transition-all shadow-md flex-shrink-0 whitespace-nowrap">
+          <span>احجز معاينتك</span>
+          <i class="fas fa-arrow-left text-[9px] transform -rotate-45"></i>
+        </a>
+      </div>
+
+      <!-- الروابط الموحدة للشاشات الكبيرة - في المنتصف تماماً -->
+      <div class="hidden md:flex items-center gap-7 lg:gap-8 text-[15px] text-neutral-300 font-medium tracking-wide mx-auto">
+        <a href="../" class="hover:text-white transition">الرئيسية</a>
+        <a href="../#about" class="hover:text-white transition">من نحن</a>
+        <a href="../#apartments-sub-section" class="hover:text-white transition">الشقق</a>
+        <a href="../#roofs-sub-section" class="hover:text-white transition">الروف</a>
+        <a href="../#districts-section" class="hover:text-white transition">أحياء جدة</a>
+      </div>
+
+      <!-- الإجراءات في اليسار: زر الحجز للديسكتوب + زر التوجل في الموبايل -->
+      <div class="flex items-center gap-2 sm:gap-3 flex-shrink-0">
+        <!-- زر الحبة للشاشات الكبيرة فقط -->
+        <a href="#contact-form-section" class="hidden md:flex items-center gap-2 bg-white text-neutral-900 font-bold text-[15px] px-6 py-2.5 rounded-full hover:bg-neutral-100 transition-all duration-300 shadow-lg hover:scale-105 flex-shrink-0">
+          <span>احجز معاينتك</span>
+          <i class="fas fa-arrow-left text-xs transform -rotate-45"></i>
+        </a>
+
+        <!-- زر التوجل للموبايل (Hamburger) في أقصى اليسار -->
+        <button id="mobile-menu-toggle-btn" type="button" aria-label="فتح القائمة" class="md:hidden w-9 h-9 rounded-full bg-white/10 hover:bg-white/20 border border-white/15 text-white flex items-center justify-center text-sm transition flex-shrink-0">
+          <i id="mobile-menu-icon" class="fas fa-bars"></i>
+        </button>
+      </div>
+    </nav>
+
+    <!-- القائمة المنسدلة لشاشات الموبايل بتصميم فاخر ومرتب مع مسافات متناسقة -->
+    <div id="mobile-menu-dropdown" class="pointer-events-auto hidden md:hidden w-full max-w-sm mt-3 bg-neutral-900/95 backdrop-blur-3xl border border-white/15 rounded-3xl p-3.5 sm:p-4 shadow-[0_25px_60px_rgba(0,0,0,0.8)] transition-all duration-300 text-right space-y-2 animate-in fade-in slide-in-from-top-2">
+      
+      <div class="px-2 py-1.5 flex items-center justify-between border-b border-white/10 mb-2">
+        <span class="text-[11px] font-bold text-amber-400 flex items-center gap-1.5">
+          <span class="w-1.5 h-1.5 rounded-full bg-amber-400 animate-pulse"></span>
+          استكشف عقارات جدة
+        </span>
+        <span class="text-[10px] text-neutral-400 font-medium">قائمة التنقل</span>
+      </div>
+
+      <!-- 1. الرئيسية -->
+      <a href="../" class="mobile-nav-link group flex items-center justify-between px-3 py-2.5 rounded-2xl hover:bg-white/10 text-neutral-200 hover:text-white transition-all duration-200">
+        <div class="flex items-center gap-3">
+          <div class="w-8 h-8 rounded-xl bg-amber-500/10 group-hover:bg-amber-500/20 text-amber-400 flex items-center justify-center text-xs transition">
+            <i class="fas fa-home"></i>
+          </div>
+          <div>
+            <span class="text-xs sm:text-sm font-bold block text-white">الرئيسية</span>
+            <span class="text-[10px] text-neutral-400 block font-normal">بوابتك لنخبة عقارات جدة</span>
+          </div>
+        </div>
+        <i class="fas fa-chevron-left text-[10px] text-neutral-500 group-hover:text-amber-400 group-hover:-translate-x-1 transition-all"></i>
+      </a>
+
+      <!-- 2. الشقق الفاخرة -->
+      <a href="../#apartments-sub-section" class="mobile-nav-link group flex items-center justify-between px-3 py-2.5 rounded-2xl hover:bg-white/10 text-neutral-200 hover:text-white transition-all duration-200">
+        <div class="flex items-center gap-3">
+          <div class="w-8 h-8 rounded-xl bg-amber-500/10 group-hover:bg-amber-500/20 text-amber-400 flex items-center justify-center text-xs transition">
+            <i class="fas fa-building"></i>
+          </div>
+          <div>
+            <span class="text-xs sm:text-sm font-bold block text-white">فئة الشقق الفاخرة</span>
+            <span class="text-[10px] text-neutral-400 block font-normal">شقق تمليك واستثمار راقية (+48 وحدة)</span>
+          </div>
+        </div>
+        <i class="fas fa-chevron-left text-[10px] text-neutral-500 group-hover:text-amber-400 group-hover:-translate-x-1 transition-all"></i>
+      </a>
+
+      <!-- 3. أجنحة الروف -->
+      <a href="../#roofs-sub-section" class="mobile-nav-link group flex items-center justify-between px-3 py-2.5 rounded-2xl hover:bg-white/10 text-neutral-200 hover:text-white transition-all duration-200">
+        <div class="flex items-center gap-3">
+          <div class="w-8 h-8 rounded-xl bg-amber-500/10 group-hover:bg-amber-500/20 text-amber-400 flex items-center justify-center text-xs transition">
+            <i class="fas fa-umbrella-beach"></i>
+          </div>
+          <div>
+            <span class="text-xs sm:text-sm font-bold block text-white">أجنحة الروف والبنتهاوس</span>
+            <span class="text-[10px] text-neutral-400 block font-normal">أسطح خاصة وإطلالات بانورامية</span>
+          </div>
+        </div>
+        <i class="fas fa-chevron-left text-[10px] text-neutral-500 group-hover:text-amber-400 group-hover:-translate-x-1 transition-all"></i>
+      </a>
+
+      <!-- 4. أحياء جدة -->
+      <a href="../#districts-section" class="mobile-nav-link group flex items-center justify-between px-3 py-2.5 rounded-2xl hover:bg-white/10 text-neutral-200 hover:text-white transition-all duration-200">
+        <div class="flex items-center gap-3">
+          <div class="w-8 h-8 rounded-xl bg-white/5 group-hover:bg-amber-500/20 text-neutral-300 group-hover:text-amber-400 flex items-center justify-center text-xs transition">
+            <i class="fas fa-map-marked-alt"></i>
+          </div>
+          <div>
+            <span class="text-xs sm:text-sm font-bold block">أحياء جدة المتميزة</span>
+            <span class="text-[10px] text-neutral-400 block font-normal">أبحر، الشاطئ، الروضة والسلامة</span>
+          </div>
+        </div>
+        <i class="fas fa-chevron-left text-[10px] text-neutral-500 group-hover:text-amber-400 group-hover:-translate-x-1 transition-all"></i>
+      </a>
+
+      <!-- 5. من نحن -->
+      <a href="../#about" class="mobile-nav-link group flex items-center justify-between px-3 py-2.5 rounded-2xl hover:bg-white/10 text-neutral-200 hover:text-white transition-all duration-200">
+        <div class="flex items-center gap-3">
+          <div class="w-8 h-8 rounded-xl bg-white/5 group-hover:bg-amber-500/20 text-neutral-300 group-hover:text-amber-400 flex items-center justify-center text-xs transition">
+            <i class="fas fa-gem"></i>
+          </div>
+          <div>
+            <span class="text-xs sm:text-sm font-bold block">من نحن</span>
+            <span class="text-[10px] text-neutral-400 block font-normal">رؤيتنا وقيمنا في السوق العقاري</span>
+          </div>
+        </div>
+        <i class="fas fa-chevron-left text-[10px] text-neutral-500 group-hover:text-amber-400 group-hover:-translate-x-1 transition-all"></i>
+      </a>
+
+    </div>
+  </header>
+
+  <!-- 2. محتوى صفحة تواصل معنا مع الفورم التفاعلي للواتساب -->
+  <main class="max-w-3xl mx-auto px-6 pt-28 pb-12 text-right">
+    
+    <div class="text-center space-y-4 mb-10">
+      <div class="inline-flex items-center gap-2 bg-amber-50 border border-amber-200/90 px-4 py-1.5 rounded-full text-xs font-bold text-amber-800 shadow-sm">
+        <i class="fas fa-headset text-amber-600"></i>
+        <span>خدمة الاستشارات والمعاينات الخاصة</span>
+      </div>
+      
+      <h1 class="text-xl sm:text-2xl lg:text-2xl font-black text-neutral-900">
+        تواصل معنا واحجز موعد معاينتك
+      </h1>
+      
+      <p class="text-xs sm:text-sm text-neutral-600 max-w-xl mx-auto leading-relaxed font-normal">
+        أدخل بياناتك ونوع العقار المطلوب، وسيتم تحويلك مباشرة إلى محادثة واتساب مع مستشارك العقاري برسالة جاهزة ومنسقة بكافة التفاصيل.
+      </p>
+    </div>
+
+    <!-- بطاقة النموذج الفاخرة (Contact Form Card) -->
+    <div class="bg-white rounded-3xl border border-neutral-200/90 p-6 sm:p-10 shadow-[0_15px_40px_rgba(0,0,0,0.03)] space-y-6">
+      
+      <form id="whatsapp-contact-form" class="space-y-5">
+        
+        <!-- صف الاسم ورقم الهاتف -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+          <!-- الاسم الكامل -->
+          <div class="space-y-1.5">
+            <label for="client-name" class="block text-xs font-bold text-neutral-800">
+              الاسم الكامل <span class="text-red-500">*</span>
+            </label>
+            <div class="relative">
+              <span class="absolute inset-y-0 right-0 flex items-center pr-3.5 pointer-events-none text-neutral-400 text-xs">
+                <i class="fas fa-user"></i>
+              </span>
+              <input type="text" id="client-name" required placeholder="مثال: محمد العمري" 
+                     class="w-full pr-10 pl-4 py-3 bg-neutral-50 border border-neutral-200 rounded-xl text-xs sm:text-sm text-neutral-900 placeholder:text-neutral-400 focus:bg-white focus:outline-none focus:border-amber-500 focus:ring-2 focus:ring-amber-500/20 transition">
+            </div>
+          </div>
+
+          <!-- رقم الجوال بتصميم عصري وأنيق مع بادئة 05 ثابتة -->
+          <div class="space-y-1.5">
+            <label for="client-phone" class="block text-xs font-bold text-neutral-800">
+              رقم الجوال <span class="text-red-500">*</span>
+            </label>
+            <div class="relative flex items-center">
+              <!-- شارة 05 المدمجة والأنيقة داخل الحقل من جهة اليمين -->
+              <div class="absolute right-3.5 flex items-center gap-1.5 pointer-events-none select-none text-neutral-800 text-xs sm:text-sm font-extrabold font-sans">
+                <i class="fas fa-phone-alt text-[10px] text-amber-500"></i>
+                <span class="bg-amber-100/70 text-amber-900 px-2 py-0.5 rounded-md font-bold tracking-wider">05</span>
+                <span class="text-neutral-300">|</span>
+              </div>
+              
+              <!-- حقل كتابة باقي الأرقام الـ 8 فقط -->
+              <input type="tel" id="client-phone" required maxlength="8" placeholder="12345678" 
+                     class="w-full pr-20 pl-4 py-3 bg-neutral-50 border border-neutral-200 rounded-xl text-xs sm:text-sm font-bold text-neutral-900 placeholder:text-neutral-400 placeholder:font-normal focus:bg-white focus:outline-none focus:border-amber-500 focus:ring-2 focus:ring-amber-500/20 font-sans tracking-widest text-right transition">
+            </div>
+            <span class="text-[10px] text-neutral-400 block pr-1">أدخل الـ 8 أرقام بعد (05)</span>
+          </div>
+        </div>
+
+        <!-- صف نوع العقار (شقق فاخرة أو روف وبنتهاوس فقط) والحي المفضل -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+          <!-- نوع العقار: شقق أو روف فقط مع أزرار راديو بصرية فخمة -->
+          <div class="space-y-2">
+            <label class="block text-xs font-bold text-neutral-800">
+              نوع العقار المطلوب <span class="text-red-500">*</span>
+            </label>
+            <div class="grid grid-cols-2 gap-3">
+              <label class="property-type-option relative flex items-center justify-center gap-2.5 p-3 rounded-2xl border-2 border-amber-500 bg-amber-50/50 cursor-pointer transition-all duration-200 select-none text-center">
+                <input type="radio" name="property_type" value="شقق فاخرة" checked class="hidden">
+                <i class="fas fa-building text-amber-600 text-sm"></i>
+                <span class="text-xs font-bold text-neutral-900">شقق فاخرة</span>
+              </label>
+              
+              <label class="property-type-option relative flex items-center justify-center gap-2.5 p-3 rounded-2xl border-2 border-neutral-200 bg-neutral-50/70 hover:bg-white hover:border-neutral-300 cursor-pointer transition-all duration-200 select-none text-center">
+                <input type="radio" name="property_type" value="روف وبنتهاوس" class="hidden">
+                <i class="fas fa-umbrella-beach text-neutral-500 text-sm"></i>
+                <span class="text-xs font-bold text-neutral-700">روف وبنتهاوس</span>
+              </label>
+            </div>
+          </div>
+
+          <!-- الحي المفضل في جدة -->
+          <div class="space-y-2">
+            <label for="preferred-district" class="block text-xs font-bold text-neutral-800">
+              الحي المفضل بجدة
+            </label>
+            <div class="relative">
+              <span class="absolute inset-y-0 right-0 flex items-center pr-3.5 pointer-events-none text-neutral-400 text-xs">
+                <i class="fas fa-map-marker-alt"></i>
+              </span>
+              <input type="text" id="preferred-district" placeholder="مثال: أبحر الشمالية، الشاطئ، السلامة" 
+                     class="w-full pr-10 pl-4 py-3 bg-neutral-50 border border-neutral-200 rounded-xl text-xs sm:text-sm text-neutral-900 placeholder:text-neutral-400 focus:bg-white focus:outline-none focus:border-amber-500 focus:ring-2 focus:ring-amber-500/20 transition">
+            </div>
+          </div>
+        </div>
+
+        <!-- نظام تحديد الميزانية الشيك (Interactive Budget Picker) -->
+        <div class="space-y-3 pt-1">
+          <div class="flex items-center justify-between">
+            <label class="block text-xs font-bold text-neutral-800">
+              الميزانية المستهدفة
+            </label>
+            <span id="budget-display-badge" class="px-3 py-1 bg-amber-50 border border-amber-200/80 rounded-full text-xs font-black text-amber-700 font-sans">
+              750,000 ريال
+            </span>
+          </div>
+
+          <!-- شريط السلايدر الشيك للميزانية -->
+          <div class="p-4 bg-neutral-50 rounded-2xl border border-neutral-200/80 space-y-4">
+            <input type="range" id="budget-range-slider" min="150000" max="5000000" step="25000" value="750000" 
+                   class="w-full h-2 bg-neutral-200 rounded-lg appearance-none cursor-pointer accent-amber-500">
+            
+            <div class="flex items-center justify-between text-[11px] text-neutral-400 font-sans">
+              <span>150 ألف ريال</span>
+              <span>2.5 مليون ريال</span>
+              <span>+5 مليون ريال</span>
+            </div>
+
+            <!-- خيارات سريعة للميزانية تبدأ من 150 ألف (Quick Preset Pills) -->
+            <div class="flex flex-wrap gap-2 pt-1 border-t border-neutral-200/60">
+              <button type="button" class="budget-pill px-3 py-1.5 rounded-xl text-[11px] font-bold border transition bg-white text-neutral-700 border-neutral-200 hover:border-amber-500" data-value="150000">
+                150 ألف
+              </button>
+              <button type="button" class="budget-pill px-3 py-1.5 rounded-xl text-[11px] font-bold border transition bg-white text-neutral-700 border-neutral-200 hover:border-amber-500" data-value="350000">
+                350 ألف
+              </button>
+              <button type="button" class="budget-pill active px-3 py-1.5 rounded-xl text-[11px] font-bold border transition bg-neutral-900 text-white border-neutral-900" data-value="750000">
+                750 ألف
+              </button>
+              <button type="button" class="budget-pill px-3 py-1.5 rounded-xl text-[11px] font-bold border transition bg-white text-neutral-700 border-neutral-200 hover:border-amber-500" data-value="1500000">
+                1.5 مليون
+              </button>
+              <button type="button" class="budget-pill px-3 py-1.5 rounded-xl text-[11px] font-bold border transition bg-white text-neutral-700 border-neutral-200 hover:border-amber-500" data-value="3000000">
+                3 مليون+
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- ملاحظات أو متطلبات خاصة -->
+        <div class="space-y-1.5">
+          <label for="client-notes" class="block text-xs font-bold text-neutral-800">
+            مواصفات أو تفاصيل إضافية تود إضافتها
+          </label>
+          <textarea id="client-notes" rows="3" placeholder="مثال: عدد الغرف المطلوبة، إطلالة بحرية، موقف خاص، روف مع جلسة خارجية..." 
+                    class="w-full p-3.5 bg-neutral-50 border border-neutral-200 rounded-xl text-xs sm:text-sm text-neutral-900 placeholder:text-neutral-400 focus:bg-white focus:outline-none focus:border-amber-500 focus:ring-2 focus:ring-amber-500/20 transition"></textarea>
+        </div>
+
+        <!-- زر الإرسال والتحويل المباشر للواتساب -->
+        <div class="pt-2">
+          <button type="submit" 
+                  class="w-full py-4 px-6 rounded-2xl bg-gradient-to-r from-emerald-500 to-emerald-600 hover:from-emerald-600 hover:to-emerald-700 text-white font-bold text-sm sm:text-base flex items-center justify-center gap-3 shadow-lg shadow-emerald-500/20 hover:shadow-emerald-500/35 hover:scale-[1.01] active:scale-[0.99] transition-all duration-300 cursor-pointer">
+            <i class="fab fa-whatsapp text-xl"></i>
+            <span>إرسال البيانات ومتابعة المحادثة عبر واتساب فوراً</span>
+            <i class="fas fa-arrow-left text-xs"></i>
+          </button>
+          
+          <div class="flex items-center justify-center gap-2 mt-3 text-neutral-400 text-[11px]">
+            <i class="fas fa-shield-alt text-emerald-600"></i>
+            <span>بياناتك سرية ومحمية وتُرسل مباشرة لمستشارك العقاري المعتمد</span>
+          </div>
+        </div>
+
+      </form>
+
+    </div>
+
+    <!-- بطاقات التواصل البديلة النظيفة -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-lg mx-auto pt-8">
+      <a href="https://wa.me/966566399523" target="_blank" class="p-4 bg-white rounded-2xl border border-neutral-200/80 shadow-sm hover:border-emerald-500 hover:shadow-md transition text-center space-y-1.5 group">
+        <div class="w-10 h-10 mx-auto rounded-full bg-emerald-50 text-emerald-600 flex items-center justify-center text-lg group-hover:scale-110 transition">
+          <i class="fab fa-whatsapp"></i>
+        </div>
+        <div class="font-bold text-xs text-neutral-900">محادثة واتساب سريعة مباشرة</div>
+        <div class="text-[11px] text-neutral-500 font-sans" dir="ltr">+966 56 639 9523</div>
+      </a>
+
+      <a href="tel:+966566399523" class="p-4 bg-white rounded-2xl border border-neutral-200/80 shadow-sm hover:border-amber-500 hover:shadow-md transition text-center space-y-1.5 group">
+        <div class="w-10 h-10 mx-auto rounded-full bg-amber-50 text-amber-600 flex items-center justify-center text-lg group-hover:scale-110 transition">
+          <i class="fas fa-phone-alt"></i>
+        </div>
+        <div class="font-bold text-xs text-neutral-900">الاتصال الهاتفي المباشر</div>
+        <div class="text-[11px] text-neutral-500 font-sans" dir="ltr">0566399523</div>
+      </a>
+    </div>
+
+  </main>
+
+  <!-- سكربت الفورم للتحويل التلقائي المنسق للواتساب والتفاعل الشيك للميزانية -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // 1. تفاعل اختيار نوع العقار (شقق فاخرة / روف وبنتهاوس)
+      const typeOptions = document.querySelectorAll('.property-type-option');
+      typeOptions.forEach(opt => {
+        opt.addEventListener('click', () => {
+          typeOptions.forEach(o => {
+            o.classList.remove('border-amber-500', 'bg-amber-50/50');
+            o.classList.add('border-neutral-200', 'bg-neutral-50/70');
+            const icon = o.querySelector('i');
+            const text = o.querySelector('span');
+            if (icon) { icon.classList.remove('text-amber-600'); icon.classList.add('text-neutral-500'); }
+            if (text) { text.classList.remove('text-neutral-900'); text.classList.add('text-neutral-700'); }
+          });
+
+          opt.classList.add('border-amber-500', 'bg-amber-50/50');
+          opt.classList.remove('border-neutral-200', 'bg-neutral-50/70');
+          const activeIcon = opt.querySelector('i');
+          const activeText = opt.querySelector('span');
+          if (activeIcon) { activeIcon.classList.remove('text-neutral-500'); activeIcon.classList.add('text-amber-600'); }
+          if (activeText) { activeText.classList.remove('text-neutral-700'); activeText.classList.add('text-neutral-900'); }
+          
+          const radio = opt.querySelector('input[type="radio"]');
+          if (radio) radio.checked = true;
+        });
+      });
+
+      // 2. محرك تحديد الميزانية التفاعلي الشيك
+      const slider = document.getElementById('budget-range-slider');
+      const badge = document.getElementById('budget-display-badge');
+      const pills = document.querySelectorAll('.budget-pill');
+
+      const formatBudget = (val) => {
+        const num = parseInt(val, 10);
+        return num.toLocaleString('en-US') + ' ريال';
+      };
+
+      if (slider && badge) {
+        slider.addEventListener('input', () => {
+          badge.textContent = formatBudget(slider.value);
+          // إلغاء تفعيل الأزرار المحددة مسبقاً إذا تغير السلايدر
+          pills.forEach(p => {
+            if (p.getAttribute('data-value') === slider.value) {
+              p.classList.add('bg-neutral-900', 'text-white', 'border-neutral-900');
+              p.classList.remove('bg-white', 'text-neutral-700', 'border-neutral-200');
+            } else {
+              p.classList.remove('bg-neutral-900', 'text-white', 'border-neutral-900');
+              p.classList.add('bg-white', 'text-neutral-700', 'border-neutral-200');
+            }
+          });
+        });
+      }
+
+      pills.forEach(pill => {
+        pill.addEventListener('click', () => {
+          const val = pill.getAttribute('data-value');
+          if (slider) slider.value = val;
+          if (badge) badge.textContent = formatBudget(val);
+
+          pills.forEach(p => {
+            p.classList.remove('bg-neutral-900', 'text-white', 'border-neutral-900');
+            p.classList.add('bg-white', 'text-neutral-700', 'border-neutral-200');
+          });
+          pill.classList.add('bg-neutral-900', 'text-white', 'border-neutral-900');
+          pill.classList.remove('bg-white', 'text-neutral-700', 'border-neutral-200');
+        });
+      });
+
+      // 3. إرسال النموذج المباشر للواتساب
+      const form = document.getElementById('whatsapp-contact-form');
+      if (form) {
+        form.addEventListener('submit', (e) => {
+          e.preventDefault();
+
+          const name = document.getElementById('client-name').value.trim();
+          const rawPhone = document.getElementById('client-phone').value.trim();
+          // دمج بادئة 05+ مع الرقم المكتوب
+          const phone = rawPhone ? `05${rawPhone}` : 'غير محدد';
+          const selectedRadio = document.querySelector('input[name="property_type"]:checked');
+          const propertyType = selectedRadio ? selectedRadio.value : 'شقق فاخرة';
+          const district = document.getElementById('preferred-district').value.trim() || 'جميع أحياء جدة الراقية';
+          const budget = badge ? badge.textContent.trim() : formatBudget(slider ? slider.value : 1200000);
+          const notes = document.getElementById('client-notes').value.trim() || 'لا توجد ملاحظات إضافية';
+
+          // صياغة رسالة واتساب أنيقة وموثقة
+          const message = 
+`السلام عليكم ورحمة الله وبركاته،
+أرغب في الاستفسار وحجز موعد معاينة عبر منصة *عقار جدة*:
+
+👤 *الاسم:* ${name}
+📱 *رقم الجوال:* ${phone}
+🏢 *نوع العقار المطلوب:* ${propertyType}
+📍 *الحي المفضل:* ${district}
+💰 *الميزانية المستهدفة:* ${budget}
+📝 *مواصفات وتفاصيل إضافية:*
+${notes}
+
+---
+مرسل عبر الموقع الإلكتروني (عقار جدة)`;
+
+          const whatsappNumber = '966566399523';
+          const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
+
+          window.open(whatsappUrl, '_blank');
+        });
+      }
+
+      // 4. تشغيل زر توجل القائمة لشاشات الموبايل
+      const mobileToggleBtn = document.getElementById('mobile-menu-toggle-btn');
+      const mobileDropdown = document.getElementById('mobile-menu-dropdown');
+      const mobileIcon = document.getElementById('mobile-menu-icon');
+
+      if (mobileToggleBtn && mobileDropdown) {
+        mobileToggleBtn.addEventListener('click', (e) => {
+          e.stopPropagation();
+          const isHidden = mobileDropdown.classList.contains('hidden');
+          if (isHidden) {
+            mobileDropdown.classList.remove('hidden');
+            if (mobileIcon) mobileIcon.className = 'fas fa-times';
+          } else {
+            mobileDropdown.classList.add('hidden');
+            if (mobileIcon) mobileIcon.className = 'fas fa-bars';
+          }
+        });
+
+        // إغلاق القائمة عند النقر خارجها
+        document.addEventListener('click', (e) => {
+          if (!mobileDropdown.contains(e.target) && !mobileToggleBtn.contains(e.target)) {
+            mobileDropdown.classList.add('hidden');
+            if (mobileIcon) mobileIcon.className = 'fas fa-bars';
+          }
+        });
+      }
+    });
+  </script>
+
+  <!-- 3. الأزرار العائمة الموحدة أسفل اليسار -->
+  <div class="fixed bottom-6 left-6 z-50 flex flex-col items-center gap-3 select-none pointer-events-auto">
+    <a href="https://wa.me/966566399523" target="_blank" rel="noopener noreferrer" 
+       class="group relative flex items-center justify-center w-14 h-14 rounded-full bg-emerald-500 hover:bg-emerald-600 text-white shadow-[0_10px_25px_rgba(16,185,129,0.4)] hover:shadow-[0_15px_30px_rgba(16,185,129,0.55)] hover:scale-110 active:scale-95 transition-all duration-300" 
+       title="تواصل عبر واتساب" aria-label="واتساب عقار جدة">
+      <span class="absolute inset-0 rounded-full bg-emerald-400 opacity-40 animate-ping pointer-events-none"></span>
+      <i class="fab fa-whatsapp text-2xl relative z-10"></i>
+    </a>
+    <a href="tel:+966566399523" 
+       class="group relative flex items-center justify-center w-14 h-14 rounded-full bg-neutral-900 hover:bg-amber-600 text-white shadow-[0_10px_25px_rgba(0,0,0,0.3)] hover:shadow-[0_15px_30px_rgba(217,119,6,0.45)] hover:scale-110 active:scale-95 transition-all duration-300 border border-white/15" 
+       title="اتصال هاتفي مباشر" aria-label="اتصال هاتفي 0566399523">
+      <i class="fas fa-phone-alt text-lg relative z-10"></i>
+    </a>
+  </div>
+
+  <!-- تذييل الصفحة الموحد والفاخر -->
+  <footer class="bg-white border-t border-neutral-200/80 pt-10 pb-8 px-6 sm:px-12 text-xs text-neutral-600 mt-16">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6 pb-6 border-b border-neutral-100">
+      
+      <!-- اللوجو والهوية -->
+      <div class="flex items-center gap-3">
+        <img src="../assets/images/logo.webp" alt="عقار جدة" class="h-10 w-auto object-contain">
+        <div>
+          <span class="font-extrabold text-sm text-neutral-900 block">عقار جدة</span>
+          <span class="text-[11px] text-neutral-400">بوابتك العقارية الأولى للمشاريع والوحدات الفاخرة</span>
+        </div>
+      </div>
+
+      <!-- روابط سريعة موحدة -->
+      <div class="flex flex-wrap items-center justify-center gap-5 sm:gap-7 text-xs font-semibold text-neutral-600">
+        <a href="../index.html" class="hover:text-emerald-700 transition">الرئيسية</a>
+        <a href="../index.html#districts-section" class="hover:text-emerald-700 transition">مشاريع الأحياء</a>
+        <a href="../project/?id=AQ-15001" class="hover:text-emerald-700 transition">المشاريع الحصرية</a>
+        <a href="../property/?id=1" class="hover:text-emerald-700 transition">تفاصيل الوحدات</a>
+        <a href="../contact/" class="hover:text-emerald-700 transition">تواصل معنا</a>
+      </div>
+
+    </div>
+
+    <!-- شريط الحقوق وشركة التصميم والتطوير -->
+    <div class="max-w-7xl mx-auto pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-neutral-400 text-center sm:text-right">
+      <span>
+        جميع الحقوق محفوظة © 2026 عقار جدة
+      </span>
+      <div class="flex items-center gap-1.5 font-medium text-neutral-500">
+        <span>تم التصميم والتطوير بواسطة</span>
+        <a href="https://fashne.net/" target="_blank" rel="noopener noreferrer" 
+           class="font-bold text-emerald-700 hover:text-emerald-800 underline underline-offset-4 decoration-emerald-400 hover:decoration-emerald-700 transition inline-flex items-center gap-1">
+          <span>شركة الفشني للدعاية والاعلان والتسويق الإلكتروني</span>
+          <i class="fas fa-external-link-alt text-[9px]"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
