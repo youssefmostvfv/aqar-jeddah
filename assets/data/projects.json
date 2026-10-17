@@ -1014,6 +1014,148 @@
     }
   },
   {
+    "_comment": "================ عقارات حي مشرفة — شقة فاخرة تمليك AQ-10002 ================",
+    "id": "AQ-10002",
+    "adNumber": "AQ-10002",
+    "type": "property",
+    "licenseNumber": "7201029594",
+    "title": "شقة للبيع بحي مشرفة — 4 غرف وبلكونة",
+    "name": "شقة فاخرة بحي مشرفة",
+    "category": "apartments",
+    "categoryName": "شقق تمليك",
+    "purpose": "للبيع",
+    "price": 490000,
+    "priceFormatted": "490,000 ريال",
+    "city": "جدة",
+    "district": "حي مشرفة",
+    "street": "موقع مميز بحي مشرفة",
+    "rating": 4.9,
+    "reviewsCount": 18,
+    "publishedDate": "17 أكتوبر 2026",
+    "status": "متاح",
+    "mainImage": "assets/images/AQ-10002/AQ-10002-mushrifah.png",
+    "images": [
+      "assets/images/AQ-10002/AQ-10002-mushrifah.png"
+    ],
+    "specs": {
+      "totalArea": "126 م²",
+      "bedrooms": "4 غرف",
+      "balconies": "1 بلكونة",
+      "bathrooms": "3 دورات مياه",
+      "livingRooms": "صالة معيشة",
+      "kitchens": "مطبخ متكامل",
+      "age": "جديد جاهز للإفراغ",
+      "furnished": "غير مفروش",
+      "falNumber": "1200004360",
+      "licenseNumber": "7201029594"
+    },
+    "features": [
+      { "name": "بلكونة بإطلالة مميزة", "icon": "fas fa-door-open" },
+      { "name": "موقف خاص للسيارة", "icon": "fas fa-car" },
+      { "name": "دخول ذكي للشقة", "icon": "fas fa-fingerprint" },
+      { "name": "عداد كهرباء ومياه مستقل", "icon": "fas fa-bolt" },
+      { "name": "خزانات مياه مستقلة سفلية وعلوية", "icon": "fas fa-tint" },
+      { "name": "بالقرب من الخدمات والمحاور الرئيسية", "icon": "fas fa-map-marked-alt" }
+    ],
+    "description": {
+      "p1": "شقة سكنية عصرية راقية للبيع في حي مشرفة المتميز وسط جدة بمساحة 126 م² وبسعر منافس 490,000 ريال فقط. تمتاز بتصميم متوازن وتشطيبات حديثة وجودة بناء عالية تحت إشراف هندسي معتمد من شركة رسوخ للتطوير العقاري.",
+      "p2": "تتكون الشقة من 4 غرف واسعة، صالة معيشة رحبة ومشرقة، مطبخ متكامل، 3 دورات مياه مجهزة بتأسيسات فندقية، وبلكونة بإطلالة لطيفة.",
+      "warranty": "ضمانات معتمدة متكاملة: 15 سنة على الهيكل الإنشائي، 25 سنة على القواطع والأفياش، سنتان على أعمال السباكة والكهرباء، وسنة اتحاد ملاك مجاناً."
+    },
+    "warranties": [
+      { "title": "الهيكل الإنشائي والخرساني", "duration": "15 سنة", "icon": "fas fa-building" },
+      { "title": "القواطع والأفياش", "duration": "25 سنة", "icon": "fas fa-plug" },
+      { "title": "تأسيسات السباكة والكهرباء", "duration": "سنتان", "icon": "fas fa-tools" },
+      { "title": "ماكينة المصعد", "duration": "5 سنوات", "icon": "fas fa-arrow-circle-up" },
+      { "title": "إتحاد الملاك", "duration": "سنة مجاناً", "icon": "fas fa-handshake" }
+    ],
+    "location": {
+      "mapEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d118744.15570077978!2d39.09117079726562!3d21.579450800000007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c3d01f81155555%3A0x6b4efb387431c4f5!2sMishrifah%2C%20Jeddah!5e0!3m2!1sar!2ssa!4v1710000000000!5m2!1sar!2ssa"
+    },
+    "advertiser": {
+      "name": "شركة رسوخ العقارية",
+      "license": "وسيط عقاري معتمد — رخصة فال #1200004360",
+      "phone": "+966566399523",
+      "whatsapp": "966566399523",
+      "isVerified": true,
+      "logo": "assets/images/rsoukh.webp"
+    }
+  },
+  {
+    "_comment": "================ عقارات حي مشرفة — روف فاخر تمليك AQ-10003 ================",
+    "id": "AQ-10003",
+    "adNumber": "AQ-10003",
+    "type": "property",
+    "licenseNumber": "7201145056",
+    "title": "روف فاخر للبيع بحي مشرفة — مشروع رسوخ 251",
+    "name": "روف فاخر بحي مشرفة (رسوخ 251)",
+    "category": "roofs",
+    "categoryName": "روف فاخر",
+    "purpose": "للبيع",
+    "price": 680000,
+    "originalPrice": 730000,
+    "priceFormatted": "680,000 ريال",
+    "city": "جدة",
+    "district": "حي مشرفة",
+    "street": "شارع حيوي بحي مشرفة",
+    "rating": 4.9,
+    "reviewsCount": 23,
+    "publishedDate": "17 أكتوبر 2026",
+    "status": "متاح",
+    "badge": "عرض خاص مخفض",
+    "mainImage": "assets/images/AQ-10003/AQ-10003-mushrifah.png",
+    "images": [
+      "assets/images/AQ-10003/AQ-10003-mushrifah.png"
+    ],
+    "specs": {
+      "totalArea": "172 م²",
+      "bedrooms": "3 غرف",
+      "balconies": "3 بلكونات + سطح خاص",
+      "bathrooms": "3 دورات مياه",
+      "livingRooms": "صالة معيشة واسعة",
+      "maidRoom": "غرفة عاملة + غرفة سائق",
+      "kitchens": "مطبخ",
+      "floors": "روف علوي",
+      "age": "جديد جاهز للإفراغ",
+      "furnished": "غير مفروش",
+      "falNumber": "1200004360",
+      "licenseNumber": "7201145056"
+    },
+    "features": [
+      { "name": "سطح خاص بتراس رحب", "icon": "fas fa-umbrella-beach" },
+      { "name": "3 بلكونات بإطلالات مفتوحة", "icon": "fas fa-door-open" },
+      { "name": "غرفة سائق مستقلة", "icon": "fas fa-user-shield" },
+      { "name": "غرفة عاملة خاصة", "icon": "fas fa-female" },
+      { "name": "موقف سيارة خاص مغطى", "icon": "fas fa-car" },
+      { "name": "دخول ذكي للشقة والملحق", "icon": "fas fa-fingerprint" },
+      { "name": "عداد كهرباء ومياه مستقل", "icon": "fas fa-bolt" },
+      { "name": "خزانات مياه مستقلة سفلية وعلوية", "icon": "fas fa-tint" }
+    ],
+    "description": {
+      "p1": "روف سكني فاخر وحصري للبيع في حي مشرفة المتميز بقلب جدة (مشروع رسوخ 251) بمساحة واسعة 172 م² وبعرض سعري خاص وحصري 680,000 ريال بدلاً من 730,000 ريال. يمتاز بإطلالة علوية ممتازة واستقلالية كاملة.",
+      "p2": "يشتمل الروف على 3 غرف نوم مريحة، صالة معيشة رحبة، مطبخ، 3 دورات مياه، سطح خاص واسع، 3 بلكونات مميزة، بالإضافة إلى غرفة عاملة منزلية وغرفة سائق خاصة وموقف سيارة.",
+      "warranty": "ضمانات معتمدة متكاملة: 15 سنة على الهيكل الإنشائي والخرساني، 25 سنة على القواطع والأفياش، سنتان على أعمال السباكة والكهرباء، و 5 سنوات على ماكينة المصعد، وسنة اتحاد ملاك مجاناً."
+    },
+    "warranties": [
+      { "title": "الهيكل الإنشائي والخرساني", "duration": "15 سنة", "icon": "fas fa-building" },
+      { "title": "القواطع والأفياش", "duration": "25 سنة", "icon": "fas fa-plug" },
+      { "title": "تأسيسات السباكة والكهرباء", "duration": "سنتان", "icon": "fas fa-tools" },
+      { "title": "ماكينة المصعد", "duration": "5 سنوات", "icon": "fas fa-arrow-circle-up" },
+      { "title": "إتحاد الملاك", "duration": "سنة مجاناً", "icon": "fas fa-handshake" }
+    ],
+    "location": {
+      "mapEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d118744.15570077978!2d39.09117079726562!3d21.579450800000007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c3d01f81155555%3A0x6b4efb387431c4f5!2sMishrifah%2C%20Jeddah!5e0!3m2!1sar!2ssa!4v1710000000000!5m2!1sar!2ssa"
+    },
+    "advertiser": {
+      "name": "شركة رسوخ العقارية",
+      "license": "وسيط عقاري معتمد — رخصة فال #1200004360",
+      "phone": "+966566399523",
+      "whatsapp": "966566399523",
+      "isVerified": true,
+      "logo": "assets/images/rsoukh.webp"
+    }
+  },
+  {
     "_comment": "================ مشاريع حي مشرفة — رسوخ 258 ================",
     "id": "AQ-15005",
     "adNumber": "AQ-15005",
@@ -1211,6 +1353,74 @@
     ],
     "location": {
       "mapEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d118744.15570077978!2d39.09117079726562!3d21.579450800000007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c3d01f81155555%3A0x6b4efb387431c4f5!2sMishrifah%2C%20Jeddah!5e0!3m2!1sar!2ssa!4v1710000000000!5m2!1sar!2ssa"
+    },
+    "advertiser": {
+      "name": "شركة رسوخ العقارية",
+      "license": "وسيط عقاري معتمد — رخصة فال #1200004360",
+      "phone": "+966566399523",
+      "whatsapp": "966566399523",
+      "isVerified": true,
+      "logo": "assets/images/rsoukh.webp"
+    }
+  },
+  {
+    "_comment": "================ عقارات حي الشرفية — شقة فاخرة تمليك AQ-10006 ================",
+    "id": "AQ-10006",
+    "adNumber": "AQ-10006",
+    "type": "property",
+    "licenseNumber": "7201145194",
+    "title": "شقة للبيع بحي الشرفية — مشروع رسوخ 257",
+    "name": "شقة فاخرة بحي الشرفية (رسوخ 257)",
+    "category": "apartments",
+    "categoryName": "شقق تمليك",
+    "purpose": "للبيع",
+    "price": 560000,
+    "priceFormatted": "560,000 ريال",
+    "city": "جدة",
+    "district": "حي الشرفية",
+    "street": "شارع رئيسي بحي الشرفية",
+    "rating": 4.9,
+    "reviewsCount": 19,
+    "publishedDate": "17 أكتوبر 2026",
+    "status": "متاح",
+    "mainImage": "assets/images/AQ-10006/AQ-10006-al-sharafiyah.png",
+    "images": [
+      "assets/images/AQ-10006/AQ-10006-al-sharafiyah.png"
+    ],
+    "specs": {
+      "totalArea": "140 م²",
+      "bedrooms": "3 غرف",
+      "balconies": "2 بلكونة",
+      "bathrooms": "3 دورات مياه",
+      "livingRooms": "صالة معيشة",
+      "kitchens": "مطبخ متكامل",
+      "age": "جديد جاهز للإفراغ",
+      "furnished": "غير مفروش",
+      "falNumber": "1200004360",
+      "licenseNumber": "7201145194"
+    },
+    "features": [
+      { "name": "2 بلكونة بإطلالات مميزة", "icon": "fas fa-door-open" },
+      { "name": "موقف خاص مغطى", "icon": "fas fa-car" },
+      { "name": "دخول ذكي للشقة", "icon": "fas fa-fingerprint" },
+      { "name": "عداد كهرباء ومياه مستقل", "icon": "fas fa-bolt" },
+      { "name": "خزانات مياه مستقلة سفلية وعلوية", "icon": "fas fa-tint" },
+      { "name": "بالقرب من الخدمات والمحاور الرئيسية", "icon": "fas fa-map-marked-alt" }
+    ],
+    "description": {
+      "p1": "شقة سكنية راقية للبيع في حي الشرفية الحيوي بجدة (مشروع رسوخ 257) بمساحة 140 م² وبسعر مميز 560,000 ريال. تمتاز بموقع استراتيجي قريب من كافة المراكز الحيوية وسط جدة وتشطيبات عصرية بمواصفات معتمدة.",
+      "p2": "تضم الشقة 3 غرف واسعة، صالة معيشة عائلية، مطبخ متكامل، 3 دورات مياه، و 2 بلكونة بإطلالة مريحة، بالإضافة لموقف خاص وأنظمة دخول ذكية.",
+      "warranty": "ضمانات معتمدة متكاملة: 15 سنة على الهيكل الإنشائي، 25 سنة على القواطع والأفياش، سنتان على أعمال السباكة والكهرباء، وسنة اتحاد ملاك مجاناً."
+    },
+    "warranties": [
+      { "title": "الهيكل الإنشائي والخرساني", "duration": "15 سنة", "icon": "fas fa-building" },
+      { "title": "القواطع والأفياش", "duration": "25 سنة", "icon": "fas fa-plug" },
+      { "title": "تأسيسات السباكة والكهرباء", "duration": "سنتان", "icon": "fas fa-tools" },
+      { "title": "ماكينة المصعد", "duration": "5 سنوات", "icon": "fas fa-arrow-circle-up" },
+      { "title": "إتحاد الملاك", "duration": "سنة مجاناً", "icon": "fas fa-handshake" }
+    ],
+    "location": {
+      "mapEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d118744.15570077978!2d39.09117079726562!3d21.579450800000007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c3d01f81155555%3A0x6b4efb387431c4f5!2sAsh%20Sharafiyah%2C%20Jeddah!5e0!3m2!1sar!2ssa!4v1710000000000!5m2!1sar!2ssa"
     },
     "advertiser": {
       "name": "شركة رسوخ العقارية",
