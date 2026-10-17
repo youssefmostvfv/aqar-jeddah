@@ -139,13 +139,15 @@
         </div>
 
         <!-- الروابط الخاصة بموقع العقارات - في المنتصف للشاشات الكبيرة (Desktop) -->
-        <div class="hidden md:flex items-center gap-7 lg:gap-8 text-[15px] text-neutral-200 font-medium tracking-wide mx-auto">
+        <div class="hidden md:flex items-center gap-5 lg:gap-6 text-[14px] lg:text-[15px] text-neutral-200 font-medium tracking-wide mx-auto whitespace-nowrap">
           <a href="#" class="text-white font-bold transition hover:text-amber-400">الرئيسية</a>
           <a href="#about" class="hover:text-white transition">من نحن</a>
-          <a href="#districts-properties-section" class="hover:text-white transition">مشاريع الأحياء</a>
           <a href="#district-mushrifah" class="hover:text-white transition">حي مشرفة</a>
           <a href="#district-hamraa" class="hover:text-white transition">حي الحمراء</a>
           <a href="#district-rawdah" class="hover:text-white transition">حي الروضة</a>
+          <a href="#district-sharafiyah" class="hover:text-white transition">حي الشرفية</a>
+          <a href="#district-zahraa" class="hover:text-white transition">حي الزهراء</a>
+          <a href="#district-darb-alharamain" class="hover:text-white transition">درب الحرمين</a>
         </div>
 
         <!-- الإجراءات في اليسار: زر الحجز للديسكتوب + زر التوجل للموبايل -->
@@ -181,8 +183,8 @@
               <i class="fas fa-city"></i>
             </div>
             <div>
-              <span class="text-xs sm:text-sm font-bold block text-white">مشاريع الأحياء المختارة</span>
-              <span class="text-[10px] text-neutral-400 block font-normal">مشرفة، الحمراء، الروضة، الشرفية، والزهراء</span>
+              <span class="text-xs sm:text-sm font-bold block text-white">مشاريع الأحياء الستة</span>
+              <span class="text-[10px] text-neutral-400 block font-normal">مشرفة، الحمراء، الروضة، الشرفية، الزهراء، ودرب الحرمين</span>
             </div>
           </div>
           <i class="fas fa-chevron-left text-[10px] text-neutral-500 group-hover:text-amber-400 group-hover:-translate-x-1 transition-all"></i>
@@ -624,11 +626,11 @@
             مشاريع وعقارات أحياء جدة
           </h2>
           <p class="text-sm sm:text-base text-neutral-500 mt-3 max-w-2xl leading-relaxed">
-            استكشف نخبة المشاريع السكنية والتمليك الموثقة رسمياً في أهم خمسة أحياء حيوية ومرموقة في مدينة جدة.
+            استكشف نخبة المشاريع السكنية والتمليك الموثقة رسمياً في أهم ستة أحياء حيوية ومرموقة في مدينة جدة.
           </p>
         </div>
 
-        <!-- أزرار التنقل السريع بين الأحياء الخمسة -->
+        <!-- أزرار التنقل السريع بين الأحياء الستة -->
         <div class="flex flex-wrap items-center gap-2.5 self-start md:self-end">
           <a href="#district-mushrifah" class="px-3.5 py-2 rounded-xl bg-white border border-neutral-200 text-neutral-800 text-xs font-bold hover:border-amber-500 hover:text-amber-600 shadow-sm transition">
             <i class="fas fa-map-marker-alt text-amber-500 ml-1"></i> حي مشرفة
@@ -644,6 +646,9 @@
           </a>
           <a href="#district-zahraa" class="px-3.5 py-2 rounded-xl bg-white border border-neutral-200 text-neutral-800 text-xs font-bold hover:border-amber-500 hover:text-amber-600 shadow-sm transition">
             <i class="fas fa-map-marker-alt text-amber-500 ml-1"></i> حي الزهراء
+          </a>
+          <a href="#district-darb-alharamain" class="px-3.5 py-2 rounded-xl bg-white border border-neutral-200 text-neutral-800 text-xs font-bold hover:border-amber-500 hover:text-amber-600 shadow-sm transition">
+            <i class="fas fa-map-marker-alt text-amber-500 ml-1"></i> درب الحرمين
           </a>
         </div>
       </div>
@@ -796,6 +801,37 @@
               <span class="w-2 h-2 rounded-full bg-amber-500 group-hover:scale-125 transition-transform"></span>
               <span id="load-more-zahraa-text">عرض المزيد من مشاريع حي الزهراء</span>
               <i id="load-more-zahraa-icon" class="fas fa-chevron-down text-[11px] text-amber-500 group-hover:translate-y-0.5 transition-transform"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="w-full h-px bg-neutral-200/80"></div>
+
+      <!-- ================= 6. درب الحرمين ================= -->
+      <div id="district-darb-alharamain" class="space-y-10 scroll-mt-28">
+        <div class="space-y-5 pt-2">
+          <div class="flex items-center justify-between text-right">
+            <div>
+              <h4 class="text-xl sm:text-2xl font-bold text-neutral-900 flex items-center gap-2">
+                <i class="fas fa-building text-amber-600 text-lg"></i>
+                مشاريع وعقارات درب الحرمين
+              </h4>
+              <span class="text-xs text-neutral-400">موقع استثنائي ومخطط نموذجي متكامل بالقرب من محطة قطار الحرمين وجامعة الملك عبدالعزيز</span>
+            </div>
+            <span class="text-xs font-bold text-amber-600 bg-amber-50 px-3 py-1.5 rounded-full border border-amber-200/60">وحدات درب الحرمين</span>
+          </div>
+
+          <div id="darb-alharamain-cards-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+            <!-- تتولد الكروت ديناميكياً -->
+          </div>
+
+          <!-- زر عرض المزيد لدرب الحرمين -->
+          <div class="flex justify-center pt-4">
+            <button id="load-more-darb-alharamain-btn" type="button" class="group relative inline-flex items-center gap-3 px-8 py-3.5 rounded-full bg-white hover:bg-neutral-900 text-neutral-800 hover:text-white border border-neutral-300/80 hover:border-neutral-900 text-xs sm:text-sm font-bold shadow-sm hover:shadow-xl transition-all duration-300">
+              <span class="w-2 h-2 rounded-full bg-amber-500 group-hover:scale-125 transition-transform"></span>
+              <span id="load-more-darb-alharamain-text">عرض المزيد من مشاريع درب الحرمين</span>
+              <i id="load-more-darb-alharamain-icon" class="fas fa-chevron-down text-[11px] text-amber-500 group-hover:translate-y-0.5 transition-transform"></i>
             </button>
           </div>
         </div>

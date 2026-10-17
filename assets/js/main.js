@@ -148,7 +148,7 @@ document.addEventListener('DOMContentLoaded', async () => {
           <div class="pt-3 border-t border-neutral-100 flex items-center justify-between">
             <div>
               <div class="flex items-center gap-1.5">
-                <span class="text-[11px] text-neutral-400 block">السعر</span>
+                <span class="text-[11px] text-neutral-400 block">السعر يبدأ من :</span>
                 ${card.originalPrice && card.originalPrice > card.price ? `<span class="text-[10px] text-rose-500 line-through font-mono font-bold">${card.originalPrice.toLocaleString('en-US')}</span>` : ''}
               </div>
               <span class="text-base sm:text-lg font-black text-neutral-900 font-sans">${(card.priceFormatted || `${card.price.toLocaleString('en-US')} ريال`).replace(' ريال', '')} <span class="text-xs font-bold text-amber-600 font-cairo">ريال</span></span>
@@ -170,7 +170,8 @@ document.addEventListener('DOMContentLoaded', async () => {
     { key: 'hamraa', name: 'حي الحمراء', filter: p => Boolean(p.district && p.district.includes('الحمراء')) },
     { key: 'rawdah', name: 'حي الروضة', filter: p => Boolean(p.district && p.district.includes('الروضة')) },
     { key: 'sharafiyah', name: 'حي الشرفية', filter: p => Boolean(p.district && p.district.includes('الشرفية')) },
-    { key: 'zahraa', name: 'حي الزهراء', filter: p => Boolean(p.district && p.district.includes('الزهراء')) }
+    { key: 'zahraa', name: 'حي الزهراء', filter: p => Boolean(p.district && p.district.includes('الزهراء')) },
+    { key: 'darb-alharamain', name: 'درب الحرمين', filter: p => Boolean(p.district && (p.district.includes('الحرمين') || p.district.includes('درب'))) }
   ];
 
   const loadPropertiesData = async () => {
