@@ -301,31 +301,34 @@
 
           <!-- شريط السلايدر الشيك للميزانية -->
           <div class="p-4 bg-neutral-50 rounded-2xl border border-neutral-200/80 space-y-4">
-            <input type="range" id="budget-range-slider" min="150000" max="5000000" step="25000" value="750000" 
+            <input type="range" id="budget-range-slider" min="400000" max="5000000" step="25000" value="750000" 
                    class="w-full h-2 bg-neutral-200 rounded-lg appearance-none cursor-pointer accent-amber-500">
             
             <div class="flex items-center justify-between text-[11px] text-neutral-400 font-sans">
-              <span>150 ألف ريال</span>
+              <span>400 ألف ريال</span>
               <span>2.5 مليون ريال</span>
               <span>+5 مليون ريال</span>
             </div>
 
-            <!-- خيارات سريعة للميزانية تبدأ من 150 ألف (Quick Preset Pills) -->
+            <!-- خيارات سريعة للميزانية تبدأ من 400 ألف (Quick Preset Pills) -->
             <div class="flex flex-wrap gap-2 pt-1 border-t border-neutral-200/60">
-              <button type="button" class="budget-pill px-3 py-1.5 rounded-xl text-[11px] font-bold border transition bg-white text-neutral-700 border-neutral-200 hover:border-amber-500" data-value="150000">
-                150 ألف
+              <button type="button" class="budget-pill px-3 py-1.5 rounded-xl text-[11px] font-bold border transition bg-white text-neutral-700 border-neutral-200 hover:border-amber-500" data-value="400000">
+                400 ألف
               </button>
-              <button type="button" class="budget-pill px-3 py-1.5 rounded-xl text-[11px] font-bold border transition bg-white text-neutral-700 border-neutral-200 hover:border-amber-500" data-value="350000">
-                350 ألف
+              <button type="button" class="budget-pill px-3 py-1.5 rounded-xl text-[11px] font-bold border transition bg-white text-neutral-700 border-neutral-200 hover:border-amber-500" data-value="550000">
+                550 ألف
               </button>
               <button type="button" class="budget-pill active px-3 py-1.5 rounded-xl text-[11px] font-bold border transition bg-neutral-900 text-white border-neutral-900" data-value="750000">
                 750 ألف
               </button>
-              <button type="button" class="budget-pill px-3 py-1.5 rounded-xl text-[11px] font-bold border transition bg-white text-neutral-700 border-neutral-200 hover:border-amber-500" data-value="1500000">
-                1.5 مليون
+              <button type="button" class="budget-pill px-3 py-1.5 rounded-xl text-[11px] font-bold border transition bg-white text-neutral-700 border-neutral-200 hover:border-amber-500" data-value="1200000">
+                1.2 مليون
               </button>
-              <button type="button" class="budget-pill px-3 py-1.5 rounded-xl text-[11px] font-bold border transition bg-white text-neutral-700 border-neutral-200 hover:border-amber-500" data-value="3000000">
-                3 مليون+
+              <button type="button" class="budget-pill px-3 py-1.5 rounded-xl text-[11px] font-bold border transition bg-white text-neutral-700 border-neutral-200 hover:border-amber-500" data-value="2500000">
+                2.5 مليون
+              </button>
+              <button type="button" class="budget-pill px-3 py-1.5 rounded-xl text-[11px] font-bold border transition bg-white text-neutral-700 border-neutral-200 hover:border-amber-500" data-value="4000000">
+                +4 مليون
               </button>
             </div>
           </div>
