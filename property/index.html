@@ -603,6 +603,39 @@
       </div>
 
     </div>
+
+    <!-- ==================== سكشن ترشيحات الوحدات والعقارات المتغيرة حسب الميزانية (Horizontal Scroll) ==================== -->
+    <div id="recommendations-section" class="w-full mt-14 pt-10 border-t border-neutral-200/80">
+      <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-6 text-right">
+        <div>
+          <div class="flex items-center gap-2 mb-1.5">
+            <span class="w-2.5 h-2.5 rounded-full bg-amber-500 animate-pulse"></span>
+            <span class="text-xs font-bold text-amber-600">ترشيحات ذكية تناسب اختياراتك</span>
+          </div>
+          <h3 class="text-xl sm:text-2xl font-black text-neutral-900">
+            عقارات ومشاريع مقترحة تناسب ميزانيتك
+          </h3>
+          <span class="text-xs text-neutral-400 mt-1 block">
+            فرص تملك واستثمار بنطاق سعري مقارب للوحدة الحالية وبأرقى أحياء جدة
+          </span>
+        </div>
+
+        <!-- أزرار التمرير الأفقي يمين ويسار -->
+        <div class="flex items-center gap-2 self-start sm:self-auto">
+          <button id="rec-scroll-right" type="button" aria-label="التالي" class="w-10 h-10 rounded-full bg-white border border-neutral-200 text-neutral-800 hover:bg-neutral-900 hover:text-white hover:border-neutral-900 transition flex items-center justify-center shadow-sm">
+            <i class="fas fa-arrow-right text-xs"></i>
+          </button>
+          <button id="rec-scroll-left" type="button" aria-label="السابق" class="w-10 h-10 rounded-full bg-white border border-neutral-200 text-neutral-800 hover:bg-neutral-900 hover:text-white hover:border-neutral-900 transition flex items-center justify-center shadow-sm">
+            <i class="fas fa-arrow-left text-xs"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- شريط التمرير الأفقي للكروت (Horizontal Smooth Carousel) -->
+      <div id="recommendations-container" class="flex gap-5 sm:gap-6 overflow-x-auto pb-4 pt-2 no-scrollbar scroll-smooth snap-x snap-mandatory">
+        <!-- تتولد الكروت ديناميكياً بالجافاسكريبت حسب السعر -->
+      </div>
+    </div>
   </main>
 
   

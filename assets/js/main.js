@@ -148,7 +148,7 @@ document.addEventListener('DOMContentLoaded', async () => {
           <div class="pt-3 border-t border-neutral-100 flex items-center justify-between">
             <div>
               <div class="flex items-center gap-1.5">
-                <span class="text-[11px] text-neutral-400 block">السعر يبدأ من :</span>
+                <span class="text-[12px] text-neutral-400 block">السعر يبدأ من :</span>
                 ${card.originalPrice && card.originalPrice > card.price ? `<span class="text-[10px] text-rose-500 line-through font-mono font-bold">${card.originalPrice.toLocaleString('en-US')}</span>` : ''}
               </div>
               <span class="text-base sm:text-lg font-black text-neutral-900 font-sans">${(card.priceFormatted || `${card.price.toLocaleString('en-US')} ريال`).replace(' ريال', '')} <span class="text-xs font-bold text-amber-600 font-cairo">ريال</span></span>
@@ -823,6 +823,100 @@ document.addEventListener('DOMContentLoaded', async () => {
         `).join('');
       } else {
         warrantiesSection.classList.add('hidden');
+      }
+    }
+
+    // ================= 3.5. توليد كروت الترشيحات الذكية الأفقية حسب السعر المقارب =================
+    const recSection = document.getElementById('recommendations-section');
+    const recContainer = document.getElementById('recommendations-container');
+    const recScrollLeft = document.getElementById('rec-scroll-left');
+    const recScrollRight = document.getElementById('rec-scroll-right');
+
+    if (recContainer && propertiesData.length > 0) {
+      const currentPrice = Number(currentProp.price) || 600000;
+      const currentId = String(currentProp.id || currentProp.adNumber || '');
+
+      // استبعاد العقار الحالي وترتيب بقية العقارات حسب قرب السعر
+      const otherProps = propertiesData.filter(p => {
+        const otherId = String(p.id || p.adNumber || '');
+        return otherId !== currentId;
+      });
+
+      // خوارزمية قياس الفارق السعري
+      otherProps.sort((a, b) => {
+        const priceA = Number(a.price) || 0;
+        const priceB = Number(b.price) || 0;
+        const diffA = Math.abs(priceA - currentPrice);
+        const diffB = Math.abs(priceB - currentPrice);
+        return diffA - diffB;
+      });
+
+      // اختيار أفضل 6 ترشيحات مقترحة
+      const recommendedProps = otherProps.slice(0, 6);
+
+      if (recommendedProps.length > 0) {
+        recContainer.innerHTML = recommendedProps.map(item => {
+          const s = item.specs || {};
+          const area = s.totalArea || s.area || '—';
+          const beds = s.bedrooms || s.rooms || '—';
+          const baths = s.bathrooms || '—';
+          const itemImg = item.mainImage || (Array.isArray(item.images) && item.images[0]) || '../assets/images/about-luxury-villa.webp';
+          const isProject = item.type === 'project' || (Array.isArray(item.models) && item.models.length > 0);
+          const linkUrl = isProject ? `../project/?id=${item.adNumber || item.id}` : `../property/?id=${item.adNumber || item.id}`;
+          const badgeTxt = item.categoryName || (item.category === 'roofs' ? 'روف فاخر' : 'شقة تمليك');
+          const formattedPrice = (item.priceFormatted || `${Number(item.price).toLocaleString('en-US')} ريال`).replace(' ريال', '');
+
+          return `
+            <div class="flex-shrink-0 w-[280px] sm:w-[320px] snap-start group bg-white rounded-3xl border border-neutral-200/80 overflow-hidden shadow-xs hover:shadow-xl transition-all duration-300 flex flex-col text-right">
+              <div class="relative w-full aspect-[4/3] overflow-hidden bg-neutral-900">
+                <img src="../${itemImg.replace(/^\.\.\//, '')}" alt="${item.title}" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy">
+                <div class="absolute top-3 right-3 flex items-center gap-1.5">
+                  <span class="bg-neutral-900/85 backdrop-blur-md text-white text-[10px] font-bold px-2.5 py-0.5 rounded-full">${badgeTxt}</span>
+                </div>
+                ${item.district ? `
+                <div class="absolute bottom-2.5 right-2.5 bg-black/60 backdrop-blur-md text-white text-[11px] px-2.5 py-1 rounded-xl flex items-center gap-1">
+                  <i class="fas fa-map-marker-alt text-amber-400 text-[9px]"></i>
+                  <span>${item.district}</span>
+                </div>` : ''}
+              </div>
+              <div class="p-4 flex-1 flex flex-col justify-between space-y-3">
+                <div>
+                  <span class="text-[10px] text-neutral-400 block mb-1">كود #${item.adNumber || item.id}</span>
+                  <h4 class="text-sm font-bold text-neutral-900 group-hover:text-amber-600 transition-colors line-clamp-1" title="${item.title}">
+                    ${item.title}
+                  </h4>
+                </div>
+                <div class="grid grid-cols-3 gap-1.5 py-2 px-1.5 bg-neutral-50 rounded-xl text-center border border-neutral-100 text-[11px]">
+                  <div><span class="text-[9px] text-neutral-400 block">المساحة</span><span class="font-bold text-neutral-900 font-sans">${area}</span></div>
+                  <div><span class="text-[9px] text-neutral-400 block">الغرف</span><span class="font-bold text-neutral-900">${beds}</span></div>
+                  <div><span class="text-[9px] text-neutral-400 block">الحمامات</span><span class="font-bold text-neutral-900">${baths}</span></div>
+                </div>
+                <div class="pt-2 border-t border-neutral-100 flex items-center justify-between">
+                  <div>
+                    <span class="text-[10px] text-neutral-400 block">السعر</span>
+                    <span class="text-sm sm:text-base font-black text-neutral-900 font-sans">${formattedPrice} <span class="text-[10px] font-bold text-amber-600 font-cairo">ريال</span></span>
+                  </div>
+                  <a href="${linkUrl}" class="inline-flex items-center gap-1 px-3 py-1.5 bg-neutral-100 group-hover:bg-amber-600 group-hover:text-white text-neutral-900 rounded-xl text-xs font-bold transition-all">
+                    <span>${isProject ? 'معاينة' : 'التفاصيل'}</span>
+                    <i class="fas fa-arrow-left text-[9px]"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          `;
+        }).join('');
+
+        // أزرار التحكم بالتمرير الأفقي
+        if (recScrollRight) {
+          recScrollRight.addEventListener('click', () => {
+            recContainer.scrollBy({ left: 320, behavior: 'smooth' });
+          });
+        }
+        if (recScrollLeft) {
+          recScrollLeft.addEventListener('click', () => {
+            recContainer.scrollBy({ left: -320, behavior: 'smooth' });
+          });
+        }
       }
     }
 
