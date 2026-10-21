@@ -14,7 +14,7 @@
       "status": "متاح للحجز",
       "licenseNumber": "7201029594",
       "street": "شارع هادئ متميز بحي مشرفة",
-      "mainImage": "assets/images/about-luxury-villa.webp"
+      "mainImage": "assets/images/mushrifah-251/mushrifah-251.webp"
     },
     {
       "id": "proj-hamra-269",
@@ -30,7 +30,7 @@
       "status": "متاح للحجز",
       "licenseNumber": "7200234568",
       "street": "موقع استراتيجي هادئ بحي الحمراء",
-      "mainImage": "assets/images/about-luxury-villa.webp"
+      "mainImage": "assets/images/al-hamra-269/al-hamra-269.png"
     },
     {
       "id": "proj-rawdah-259",
@@ -46,7 +46,7 @@
       "status": "متاح للحجز",
       "licenseNumber": "7201029594",
       "street": "شارع رئيسي حيوي بحي الروضة",
-      "mainImage": "assets/images/about-luxury-villa.webp"
+      "mainImage": "assets/images/al-rawdah-259/al-rawdah-259.png"
     },
     {
       "id": "proj-sharafiyah-257",
@@ -62,7 +62,7 @@
       "status": "متاح للحجز",
       "licenseNumber": "7201029594",
       "street": "شارع رئيسي حيوي بحي الشرفية",
-      "mainImage": "assets/images/about-luxury-villa.webp"
+      "mainImage": "assets/images/al-sharafiyah-257/al-sharafiyah-257.webp"
     },
     {
       "id": "proj-sharafiyah-droaza",
@@ -78,7 +78,7 @@
       "status": "متاح للحجز",
       "licenseNumber": "7201029594",
       "street": "موقع استراتيجي بحي الشرفية",
-      "mainImage": "assets/images/about-luxury-villa.webp"
+      "mainImage": "assets/images/al-sharafiyah-droaza/al-sharafiyah-droaza.webp"
     },
     {
       "id": "proj-sharafiyah-droaza-rove",
@@ -94,7 +94,7 @@
       "status": "متاح للحجز",
       "licenseNumber": "7201029594",
       "street": "موقع استراتيجي بحي الشرفية",
-      "mainImage": "assets/images/about-luxury-villa.webp"
+      "mainImage": "assets/images/al-sharafiyah-droaza-rove/al-sharafiyah-droaza-rove.png"
     }
   ],
   "projectUnits": [
