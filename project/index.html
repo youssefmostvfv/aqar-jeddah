@@ -203,15 +203,13 @@
   <!-- حاوية المحتوى الرئيسية للمشروع -->
   <main id="project-main-content" class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4 sm:py-8 space-y-6">
 
-    <!-- شريط المسار (Breadcrumbs) والرجوع -->
+    <!-- شريط المسار والرجوع -->
     <div class="flex items-center justify-between text-xs text-neutral-400 pb-2 border-b border-neutral-200/60">
       <div class="flex items-center gap-2">
         <a href="../" class="hover:text-amber-600 transition flex items-center gap-1">
           <i class="fas fa-home text-[10px]"></i>
           <span>الرئيسية</span>
         </a>
-        <span>/</span>
-        <a href="../#districts-properties-section" class="hover:text-amber-600 transition">المشاريع السكنية</a>
         <span>/</span>
         <span id="proj-breadcrumb-district" class="text-neutral-700 font-bold">حي الزهراء</span>
       </div>
@@ -221,335 +219,29 @@
       </a>
     </div>
 
-    <!-- شبكة العرض الكلية للمشروع: في الشاشات الكبيرة السايد بار يمين والمحتوى يسار، وفي الموبايل المحتوى أولاً والسايد بار في الأسفل -->
-    <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 items-start">
-      
-      <!-- 1. عمود السايد بار المثبت (في الموبايل يظهر في الأسفل order-2، وفي الديسكتوب يمين الشاشة order-1) -->
-      <div class="lg:col-span-4 sticky top-24 space-y-5 order-2 lg:order-1">
-        <div id="project-booking-card-section" class="bg-white p-5 sm:p-6 rounded-3xl border border-neutral-200/80 shadow-lg text-right space-y-5">
-          
-          <div class="flex items-center justify-between pb-3 border-b border-neutral-100">
-            <span class="text-xs font-bold text-neutral-400">سعر النموذج المحدد</span>
-            <span id="proj-card-purpose-badge" class="bg-amber-100 text-amber-800 text-[11px] font-bold px-3 py-0.5 rounded-full">
-              متاح
-            </span>
-          </div>
-
-          <div>
-            <div class="text-2xl sm:text-3xl font-black text-amber-600 tracking-tight font-sans">
-              <span id="proj-card-price-val">920,000</span> <span class="text-xs sm:text-sm font-bold text-neutral-800 font-cairo">ريال سعودي</span>
-            </div>
-            <span id="proj-card-price-sub" class="text-[11px] text-neutral-400 mt-1 block">شامل كافة الضمانات والمواقف والتنظيم النظامي</span>
-          </div>
-
-          <!-- بطاقة المعلن / المسوق العقاري المعتمد -->
-          <div class="flex items-center gap-3 p-3 bg-neutral-50 rounded-2xl border border-neutral-100">
-            <div class="w-13 h-11 rounded-xl bg-white border border-neutral-200/90 p-1 flex items-center justify-center shadow-xs shrink-0 overflow-hidden">
-              <img id="proj-card-advertiser-logo" src="../assets/images/rsoukh.webp" alt="شركة رسوخ العقارية" class="w-full h-full object-contain">
-            </div>
-            <div class="flex-1 text-right">
-              <div class="flex items-center gap-1.5">
-                <span id="proj-card-advertiser-name" class="font-bold text-xs sm:text-sm text-neutral-900">شركة رسوخ العقارية</span>
-                <i id="proj-card-advertiser-check" class="fas fa-check-circle text-blue-500 text-[11px]" title="معلن موثق"></i>
-              </div>
-              <span id="proj-card-advertiser-license" class="text-[10px] text-neutral-400 block mt-0.5">وسيط عقاري معتمد — رخصة فال #1200004360</span>
-            </div>
-          </div>
-
-          <!-- أزرار التواصل المباشر -->
-          <div class="space-y-2.5 pt-1">
-            <a id="proj-card-whatsapp-btn" href="https://wa.me/966566399523" target="_blank" rel="noopener noreferrer" 
-               class="flex items-center justify-center gap-2 w-full py-3 px-4 bg-emerald-500 hover:bg-emerald-600 text-white font-bold rounded-2xl shadow-sm hover:shadow-md transition-all text-xs sm:text-sm">
-              <i class="fab fa-whatsapp text-base"></i>
-              <span>تواصل عبر الواتساب فوراً</span>
-            </a>
-            <a id="proj-card-phone-btn" href="tel:+966566399523" 
-               class="flex items-center justify-center gap-2 w-full py-3 px-4 bg-neutral-900 hover:bg-neutral-800 text-white font-bold rounded-2xl shadow-sm hover:shadow-md transition-all text-xs sm:text-sm">
-              <i class="fas fa-phone-alt text-xs"></i>
-              <span id="proj-card-phone-text">اتصال هاتفي (0566399523)</span>
-            </a>
-          </div>
-
-          <!-- فورم حجز موعد معاينة ميدانية -->
-          <div class="pt-3 border-t border-neutral-100 space-y-3">
-            <div>
-              <h3 class="text-xs sm:text-sm font-bold text-neutral-900 flex items-center gap-1.5">
-                <i class="fas fa-calendar-check text-amber-600 text-xs"></i>
-                حجز موعد معاينة ميدانية
-              </h3>
-              <span class="text-[10px] text-neutral-400 mt-0.5 block">املأ البيانات وسنتواصل معك لتنسيق المعاينة</span>
-            </div>
-
-            <form id="proj-booking-form" class="space-y-2.5">
-              <div>
-                <input id="booking-name" type="text" required placeholder="الاسم الكريم" 
-                       class="w-full px-3.5 py-2.5 rounded-xl bg-neutral-50 border border-neutral-200 text-neutral-900 text-xs focus:outline-none focus:ring-2 focus:ring-amber-500 focus:bg-white transition">
-              </div>
-              <div>
-                <input id="booking-phone" type="tel" required placeholder="رقم الجوال (05xxxxxxxx)" dir="ltr" 
-                       class="w-full px-3.5 py-2.5 rounded-xl bg-neutral-50 border border-neutral-200 text-neutral-900 text-xs text-right focus:outline-none focus:ring-2 focus:ring-amber-500 focus:bg-white transition">
-              </div>
-              
-              <button type="submit" id="booking-submit-btn" 
-                      class="w-full py-2.5 px-3 bg-neutral-100 hover:bg-amber-600 hover:text-white text-neutral-900 font-bold rounded-xl border border-neutral-200 hover:border-amber-600 transition-all text-xs flex items-center justify-center gap-1.5 cursor-pointer shadow-xs active:scale-[0.99]">
-                <i class="fas fa-paper-plane text-[10px]"></i>
-                <span>إرسال طلب المعاينة</span>
-              </button>
-              <div id="booking-success-msg" class="hidden p-2.5 rounded-xl bg-emerald-50 border border-emerald-200 text-emerald-800 text-[11px] font-bold text-center">
-                تم إرسال طلبك بنجاح! سيتم التواصل معك قريباً.
-              </div>
-            </form>
-          </div>
-
-        </div>
+    <!-- رأس المشروع -->
+    <section class="text-right space-y-2">
+      <div class="flex flex-wrap items-center gap-3 text-xs">
+        <span id="proj-status-badge" class="inline-flex items-center gap-1.5 text-emerald-700 font-bold"></span>
+        <span id="proj-license-badge" class="inline-flex items-center gap-1 text-neutral-500"></span>
+        <span class="text-neutral-400">كود: #<span id="proj-ad-number-badge" class="font-mono font-bold text-neutral-800"></span></span>
       </div>
+      <h1 id="proj-title" class="text-2xl sm:text-3xl font-black text-neutral-900 leading-tight"></h1>
+      <p id="proj-location" class="text-xs sm:text-sm text-neutral-500 flex items-center gap-1.5">
+        <i class="fas fa-map-marker-alt text-amber-600"></i>
+        <span id="proj-location-text"></span>
+      </p>
+      <p id="proj-desc" class="text-xs sm:text-sm text-neutral-600 leading-relaxed max-w-3xl"></p>
+    </section>
 
-      <!-- 2. العمود الرئيسي لكافة عناصر ومحتوى المشروع (في الموبايل يظهر أولاً order-1، وفي الديسكتوب يسار السايد بار order-2) -->
-      <div class="lg:col-span-8 space-y-6 sm:space-y-8 order-1 lg:order-2">
-        
-        <!-- رأس المشروع (Project Header Banner) -->
-        <div class="bg-white p-4 sm:p-7 rounded-3xl border border-neutral-200/80 shadow-sm text-right space-y-3">
-          <!-- شريط البيانات والاعتمادات (صفين: كل صف عنصرين جنب بعض) -->
-          <div class="space-y-2 pb-3 border-b border-neutral-100 text-xs">
-            <!-- الصف الأول: نوع المشروع + الحالة -->
-            <div class="flex items-center justify-between">
-              <span class="inline-flex items-center gap-1.5 text-amber-700 font-bold">
-                <i class="fas fa-building text-amber-600/80 text-[11px]"></i>
-                <span>مشروع سكني متكامل</span>
-              </span>
-              <span id="proj-status-badge" class="inline-flex items-center gap-1.5 text-emerald-700 font-bold">
-                <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
-                <span>متاح</span>
-              </span>
-            </div>
-
-            <!-- الصف الثاني: ترخيص فال + كود الإعلان والنسخ -->
-            <div class="flex items-center justify-between text-neutral-500 pt-0.5">
-              <span id="proj-license-badge" class="inline-flex items-center gap-1 text-[11px] sm:text-xs">
-                <i class="fas fa-certificate text-neutral-400 text-[10px]"></i>
-                <span class="font-sans">ترخيص فال: 1200088712</span>
-              </span>
-              <div class="flex items-center gap-1.5 text-neutral-400">
-                <span class="text-[11px]">كود الإعلان:</span>
-                <span id="proj-ad-number-badge" class="font-mono font-bold text-neutral-800 tracking-wider">
-                  AQ-15001
-                </span>
-                <button id="copy-proj-code-btn" type="button" class="p-1 text-neutral-400 hover:text-amber-600 transition" title="نسخ كود الإعلان">
-                  <i id="copy-proj-icon" class="far fa-copy text-xs"></i>
-                </button>
-              </div>
-            </div>
-          </div>
-
-          <div class="pt-1">
-            <h1 id="proj-title" class="text-2xl sm:text-3xl font-black text-neutral-900 leading-tight">
-              مشروع الزهراء — رسوخ 247
-            </h1>
-            <p id="proj-location" class="text-xs sm:text-sm text-neutral-500 mt-2 flex items-center gap-1.5">
-              <i class="fas fa-map-marker-alt text-amber-500"></i>
-              <span>جدة — حي الزهراء، شارع البترجي</span>
-            </p>
-          </div>
-        </div>
-        
-        <!-- شريط تبويبات النماذج الفاخر -->
-        <div class="bg-white p-4 sm:p-5 rounded-3xl border border-amber-500/30 shadow-md text-right relative overflow-hidden">
-          <div class="absolute top-0 right-0 left-0 h-1.5 bg-gradient-to-r from-amber-500 via-amber-400 to-amber-600"></div>
-          
-          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-3.5 pb-2.5 border-b border-neutral-100">
-            <div>
-              <div class="flex items-center gap-2">
-                <span class="w-2.5 h-2.5 rounded-full bg-amber-500 animate-ping"></span>
-                <h2 class="text-sm sm:text-base font-black text-neutral-900">نماذج ووحدات المشروع:</h2>
-              </div>
-              <span class="text-[11px] text-neutral-400 mt-0.5 block">انقر على أي نموذج لتحديث المخطط والمواصفات والسعر:</span>
-            </div>
-            <div class="flex items-center gap-1.5 self-start sm:self-auto">
-              <span class="text-[11px] text-neutral-400">المعروض:</span>
-              <span id="proj-active-badge" class="px-2.5 py-0.5 rounded-full bg-amber-600 text-white font-bold text-xs shadow-xs">
-                شقة أمامية نموذج A
-              </span>
-            </div>
-          </div>
-
-          <!-- شبكة أزرار النماذج المختصرة (3 في الصف بالموبايل والديسكتوب) -->
-          <div id="proj-models-grid" class="grid grid-cols-3 gap-2 sm:gap-3">
-            <!-- تتولد الأزرار بالجافاسكريبت -->
-          </div>
-        </div>
-        
-        <!-- سلايدر ومخطط الوحدة المحددة -->
-        <div class="bg-white p-4 sm:p-5 rounded-3xl border border-neutral-200/80 shadow-sm">
-          <div class="flex flex-col md:flex-row gap-3.5 items-stretch">
-            
-            <!-- عمود المصغرات الجانبي متناسق مع ارتفاع الصورة -->
-            <div id="proj-thumbnails-wrapper" class="order-2 md:order-1 flex-shrink-0 w-full md:w-24 lg:w-28 max-h-24 md:max-h-[600px] overflow-x-auto md:overflow-y-auto no-scrollbar py-1">
-              <div id="proj-thumbnails-container" class="flex flex-row md:flex-col gap-2">
-                <!-- مصغرات الصور -->
-              </div>
-            </div>
-
-            <!-- إطار الصورة / المخطط الرئيسي ببوردر شفاف بالكامل -->
-            <div id="proj-media-container" class="order-1 md:order-2 flex-1 relative w-full md:max-w-[430px] mx-auto aspect-[1/1.414] rounded-2xl overflow-hidden group bg-transparent border border-transparent flex items-center justify-center select-none">
-              <!-- الصورة الرئيسية الأصلية تملأ الإطار بالكامل دون أي قص أو شريط أسود -->
-              <img id="proj-main-image" src="../assets/images/about-luxury-villa.webp" alt="مخطط وصورة النموذج" 
-                   class="w-full h-full object-contain block transition-all duration-300">
-              <video id="proj-main-video" playsinline preload="metadata" class="w-full h-full object-contain hidden bg-black cursor-pointer"></video>
-              
-              <!-- أزرار التنقل بين الوسائط (السابق / التالي) -->
-              <button id="proj-prev-media-btn" type="button" class="absolute right-3 top-1/2 -translate-y-1/2 w-9 h-9 rounded-full bg-black/60 hover:bg-amber-600 text-white flex items-center justify-center transition-all opacity-80 hover:opacity-100 z-20 backdrop-blur-md shadow-lg" title="السابق">
-                <i class="fas fa-chevron-right text-xs"></i>
-              </button>
-              <button id="proj-next-media-btn" type="button" class="absolute left-3 top-1/2 -translate-y-1/2 w-9 h-9 rounded-full bg-black/60 hover:bg-amber-600 text-white flex items-center justify-center transition-all opacity-80 hover:opacity-100 z-20 backdrop-blur-md shadow-lg" title="التالي">
-                <i class="fas fa-chevron-left text-xs"></i>
-              </button>
-
-              <!-- شريط التحكم بالفيديو البسيط والأنيق (يظهر فقط عند تشغيل الفيديو) -->
-              <div id="proj-video-controls" class="absolute bottom-4 left-1/2 -translate-x-1/2 hidden z-30 bg-black/85 backdrop-blur-xl border border-white/20 rounded-full px-4 py-2 flex items-center gap-3.5 shadow-2xl transition-all duration-300">
-                <!-- تقديم 5 ثوانٍ -->
-                <button id="video-forward-btn" type="button" class="w-8 h-8 rounded-full hover:bg-white/15 text-white flex items-center justify-center text-xs transition" title="تقديم 5 ثوانٍ">
-                  <i class="fas fa-redo text-xs"></i>
-                  <span class="text-[9px] font-bold font-sans mr-0.5">5+</span>
-                </button>
-
-                <!-- زر التشغيل / الإيقاف المؤقت الرئيسي -->
-                <button id="video-play-toggle-btn" type="button" class="w-9 h-9 rounded-full bg-amber-500 hover:bg-amber-600 text-white flex items-center justify-center text-sm shadow-md transition transform active:scale-95" title="تشغيل / إيقاف">
-                  <i id="video-play-icon" class="fas fa-play text-xs mr-0.5"></i>
-                </button>
-
-                <!-- تأخير 5 ثوانٍ -->
-                <button id="video-rewind-btn" type="button" class="w-8 h-8 rounded-full hover:bg-white/15 text-white flex items-center justify-center text-xs transition" title="تأخير 5 ثوانٍ">
-                  <span class="text-[9px] font-bold font-sans ml-0.5">5-</span>
-                  <i class="fas fa-undo text-xs"></i>
-                </button>
-
-                <span class="w-px h-4 bg-white/20"></span>
-
-                <!-- كتم / تشغيل الصوت -->
-                <button id="video-mute-btn" type="button" class="w-8 h-8 rounded-full hover:bg-white/15 text-white flex items-center justify-center text-xs transition" title="كتم الصوت">
-                  <i id="video-mute-icon" class="fas fa-volume-up text-xs"></i>
-                </button>
-
-                <!-- ملء الشاشة -->
-                <button id="video-fullscreen-btn" type="button" class="w-8 h-8 rounded-full hover:bg-white/15 text-white flex items-center justify-center text-xs transition" title="تكبير الشاشة">
-                  <i class="fas fa-expand text-xs"></i>
-                </button>
-              </div>
-
-              <!-- عداد الصور / الوسائط -->
-              <div class="absolute bottom-4 left-4 bg-black/70 backdrop-blur-md text-white text-xs font-mono font-bold px-3 py-1 rounded-full z-20">
-                <span id="proj-gallery-index">1</span> / <span id="proj-gallery-total">1</span>
-              </div>
-            </div>
-
-          </div>
-        </div>
-
-        <!-- شبكة المواصفات الفنية للنموذج المختار حصرياً -->
-        <div class="bg-white p-4 sm:p-7 rounded-3xl border border-neutral-200/80 shadow-sm text-center sm:text-right space-y-4">
-          <div class="pb-3.5 border-b border-neutral-100">
-            <h2 class="text-lg sm:text-xl font-black text-neutral-900 flex items-center justify-center sm:justify-start gap-2.5">
-              <i class="fas fa-ruler-combined text-amber-600 text-base sm:text-lg"></i>
-              <span>المواصفات الفنية للنموذج</span>
-            </h2>
-            <span class="text-xs sm:text-sm text-neutral-500 font-medium block mt-1.5">تفاصيل ومساحات الوحدة المختارة بالأعلى</span>
-          </div>
-
-          <div id="proj-specs-grid" class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-2.5 sm:gap-3 text-xs sm:text-sm text-right">
-            <!-- تتولد المواصفات الخاصة بالنموذج ديناميكياً -->
-          </div>
-        </div>
-
-        <!-- الخدمات والتجهيزات العامة المشتركة للمبنى والمشروع ككل -->
-        <div class="bg-white p-4 sm:p-7 rounded-3xl border border-neutral-200/80 shadow-sm text-center sm:text-right space-y-4">
-          <div class="pb-3.5 border-b border-neutral-100">
-            <h2 class="text-lg sm:text-xl font-black text-neutral-900 flex items-center justify-center sm:justify-start gap-2.5">
-              <i class="fas fa-star text-amber-600 text-base sm:text-lg"></i>
-              <span>المميزات والخدمات العامة للمشروع</span>
-            </h2>
-            <span class="text-xs sm:text-sm text-neutral-500 font-medium block mt-1.5">خدمات ومرافق مشتركة مشمولة لكافة ملاك وحدات المشروع</span>
-          </div>
-
-          <div id="proj-features-grid" class="grid grid-cols-2 sm:grid-cols-3 gap-2.5 sm:gap-3 text-xs sm:text-sm font-medium text-right">
-            <!-- تتولد المميزات المشتركة -->
-          </div>
-        </div>
-
-        <!-- سكشن الضمانات المعتمدة الشاملة للمشروع -->
-        <div class="bg-white p-4 sm:p-7 rounded-3xl border border-neutral-200/80 shadow-sm text-center sm:text-right space-y-4">
-          <div class="pb-3.5 border-b border-neutral-100">
-            <h2 class="text-lg sm:text-xl font-black text-neutral-900 flex items-center justify-center sm:justify-start gap-2.5">
-              <i class="fas fa-shield-alt text-amber-600 text-base sm:text-lg"></i>
-              <span>ضمانات المشروع المعتمدة</span>
-            </h2>
-            <span class="text-xs sm:text-sm text-neutral-500 font-medium block mt-1.5">ضمانات إنشائية وتنفيذية رسمية متوافقة مع كود البناء السعودي</span>
-          </div>
-
-          <div id="proj-warranties-grid" class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-right">
-            <!-- تتولد الضمانات -->
-          </div>
-        </div>
-
-        <!-- الوصف الكامل للمشروع -->
-        <div class="bg-white p-5 sm:p-7 rounded-3xl border border-neutral-200/80 shadow-sm text-right space-y-3">
-          <h2 class="text-base sm:text-lg font-bold text-neutral-900 flex items-center gap-2">
-            <i class="fas fa-align-right text-amber-600 text-base"></i>
-            عن المشروع والتفاصيل المعمارية
-          </h2>
-          <p id="proj-desc-p1" class="text-xs sm:text-sm text-neutral-600 leading-relaxed"></p>
-          <p id="proj-desc-p2" class="text-xs sm:text-sm text-neutral-600 leading-relaxed"></p>
-        </div>
-
-        <!-- خريطة موقع المشروع -->
-        <div class="bg-white p-5 sm:p-7 rounded-3xl border border-neutral-200/80 shadow-sm text-right space-y-3">
-          <div class="flex items-center justify-between pb-2 border-b border-neutral-100">
-            <h2 class="text-base sm:text-lg font-bold text-neutral-900 flex items-center gap-2">
-              <i class="fas fa-map-marked-alt text-amber-600 text-base"></i>
-              موقع المشروع على الخريطة
-            </h2>
-            <span id="proj-map-district" class="text-xs text-neutral-500 font-medium">حي الزهراء — جدة</span>
-          </div>
-          <div class="relative w-full h-56 sm:h-72 rounded-2xl overflow-hidden border border-neutral-200 shadow-inner">
-            <iframe id="proj-map-iframe" src="" class="w-full h-full border-0" allowfullscreen="" loading="lazy"></iframe>
-          </div>
-        </div>
-
+    <!-- كاردات الوحدات التابعة للمشروع -->
+    <section>
+      <div class="flex items-end justify-between mb-4 text-right">
+        <h2 class="text-lg sm:text-xl font-black text-neutral-900">الوحدات المتاحة في المشروع</h2>
+        <span id="proj-units-count" class="text-xs text-neutral-400"></span>
       </div>
-
-    </div>
-
-    <!-- ==================== سكشن ترشيحات المشاريع والوحدات المقترحة حسب السعر (Horizontal Scroll) ==================== -->
-    <div id="recommendations-section" class="w-full mt-14 pt-10 border-t border-neutral-200/80">
-      <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-6 text-right">
-        <div>
-          <div class="flex items-center gap-2 mb-1.5">
-            <span class="w-2.5 h-2.5 rounded-full bg-amber-500 animate-pulse"></span>
-            <span class="text-xs font-bold text-amber-600">ترشيحات مشاريع بديلة</span>
-          </div>
-          <h3 class="text-xl sm:text-2xl font-black text-neutral-900">
-            مشاريع وعقارات أخرى تناسب ميزانيتك
-          </h3>
-          <span class="text-xs text-neutral-400 mt-1 block">
-            خيارات تملك واستثمار بنطاق سعري مقارب لهذا المشروع بأرقى أحياء جدة
-          </span>
-        </div>
-
-        <!-- أزرار التمرير الأفقي يمين ويسار -->
-        <div class="flex items-center gap-2 self-start sm:self-auto">
-          <button id="rec-scroll-right" type="button" aria-label="التالي" class="w-10 h-10 rounded-full bg-white border border-neutral-200 text-neutral-800 hover:bg-neutral-900 hover:text-white hover:border-neutral-900 transition flex items-center justify-center shadow-sm">
-            <i class="fas fa-arrow-right text-xs"></i>
-          </button>
-          <button id="rec-scroll-left" type="button" aria-label="السابق" class="w-10 h-10 rounded-full bg-white border border-neutral-200 text-neutral-800 hover:bg-neutral-900 hover:text-white hover:border-neutral-900 transition flex items-center justify-center shadow-sm">
-            <i class="fas fa-arrow-left text-xs"></i>
-          </button>
-        </div>
-      </div>
-
-      <!-- شريط التمرير الأفقي للكروت (Horizontal Smooth Carousel) -->
-      <div id="recommendations-container" class="flex gap-5 sm:gap-6 overflow-x-auto pb-4 pt-2 no-scrollbar scroll-smooth snap-x snap-mandatory">
-        <!-- تتولد الكروت ديناميكياً بالجافاسكريبت حسب السعر -->
-      </div>
-    </div>
+      <div id="proj-units-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6"></div>
+    </section>
 
   </main>
 
@@ -615,6 +307,6 @@
   </footer>
 
   <!-- ملف جافاسكريبت المخصص لصفحة المشاريع -->
-  <script src="../assets/js/project.js?v=1.0"></script>
+  <script src="../assets/js/project.js?v=2.0"></script>
 </body>
 </html>

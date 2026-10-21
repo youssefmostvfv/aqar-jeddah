@@ -1,0 +1,2524 @@
+{
+  "homeProjects": [
+    {
+      "id": "proj-mushrifah-251",
+      "districtKey": "mushrifah",
+      "district": "حي مشرفة",
+      "title": "مشروع رسوخ 251 — حي مشرفة",
+      "badge": "مشروع سكني متميز",
+      "tagline": "شقق سكنية وروفات فاخرة بتشطيبات VIP وضمانات ممتدة في قلب حي مشرفة بجدة",
+      "startingPrice": 490000,
+      "startingPriceFormatted": "490,000 ريال",
+      "unitsCount": "4 نماذج سكنية",
+      "projectUrl": "project/?id=proj-mushrifah-251",
+      "status": "متاح للحجز",
+      "licenseNumber": "7201029594",
+      "street": "شارع هادئ متميز بحي مشرفة",
+      "mainImage": "assets/images/about-luxury-villa.webp"
+    },
+    {
+      "id": "proj-hamra-269",
+      "districtKey": "hamraa",
+      "district": "حي الحمراء",
+      "title": "مشروع رسوخ 269 — حي الحمراء",
+      "badge": "مشروع سكني فاخر",
+      "tagline": "عمارة سكنية مستقلة توفر أعلى درجات الخصوصية والهدوء بالقرب من البحر وكورنيش جدة",
+      "startingPrice": 585000,
+      "startingPriceFormatted": "585,000 ريال",
+      "unitsCount": "6 نماذج فاخرة",
+      "projectUrl": "project/?id=proj-hamra-269",
+      "status": "متاح للحجز",
+      "licenseNumber": "7200234568",
+      "street": "موقع استراتيجي هادئ بحي الحمراء",
+      "mainImage": "assets/images/about-luxury-villa.webp"
+    },
+    {
+      "id": "proj-rawdah-259",
+      "districtKey": "rawdah",
+      "district": "حي الروضة",
+      "title": "مشروع رسوخ 259 — حي الروضة",
+      "badge": "مشروع سكني راقي",
+      "tagline": "موقع استراتيجي راقٍ في قلب حي الروضة بتشطيبات فندقية وضمانات متكاملة",
+      "startingPrice": 890000,
+      "startingPriceFormatted": "890,000 ريال",
+      "unitsCount": "ملحق روف فاخر",
+      "projectUrl": "project/?id=proj-rawdah-259",
+      "status": "متاح للحجز",
+      "licenseNumber": "7201029594",
+      "street": "شارع رئيسي حيوي بحي الروضة",
+      "mainImage": "assets/images/about-luxury-villa.webp"
+    },
+    {
+      "id": "proj-sharafiyah-257",
+      "districtKey": "sharafiyah",
+      "district": "حي الشرفية",
+      "title": "مشروع رسوخ 257 — حي الشرفية",
+      "badge": "مشروع شقق فاخرة",
+      "tagline": "شقق سكنية عصرية بتشطيبات حديثة وموقع حيوي قريب من محاور جدة الرئيسية",
+      "startingPrice": 550000,
+      "startingPriceFormatted": "550,000 ريال",
+      "unitsCount": "شقق سكنية واسعة",
+      "projectUrl": "project/?id=proj-sharafiyah-257",
+      "status": "متاح للحجز",
+      "licenseNumber": "7201029594",
+      "street": "شارع رئيسي حيوي بحي الشرفية",
+      "mainImage": "assets/images/about-luxury-villa.webp"
+    },
+    {
+      "id": "proj-sharafiyah-droaza",
+      "districtKey": "sharafiyah",
+      "district": "حي الشرفية",
+      "title": "مشروع شقق دروازة — حي الشرفية",
+      "badge": "مجمع شقق تمليك",
+      "tagline": "نماذج شقق فندقية راقية بمرافق كاملة تشمل نادياً رياضياً ومنطقة ألعاب ولاندسكيب",
+      "startingPrice": 410000,
+      "startingPriceFormatted": "410,000 ريال",
+      "unitsCount": "8 نماذج شقق متنوعة",
+      "projectUrl": "project/?id=proj-sharafiyah-droaza",
+      "status": "متاح للحجز",
+      "licenseNumber": "7201029594",
+      "street": "موقع استراتيجي بحي الشرفية",
+      "mainImage": "assets/images/about-luxury-villa.webp"
+    },
+    {
+      "id": "proj-sharafiyah-droaza-rove",
+      "districtKey": "sharafiyah",
+      "district": "حي الشرفية",
+      "title": "مشروع روفات دروازة — حي الشرفية",
+      "badge": "مجموعة روفات بأسطح خاصة",
+      "tagline": "روفات فخمة بمساحات واسعة وأسطح خاصة وتراسات مفتوحة ومرافق ترفيهية متكاملة",
+      "startingPrice": 750000,
+      "startingPriceFormatted": "750,000 ريال",
+      "unitsCount": "6 نماذج روفات فاخرة",
+      "projectUrl": "project/?id=proj-sharafiyah-droaza-rove",
+      "status": "متاح للحجز",
+      "licenseNumber": "7201029594",
+      "street": "موقع استراتيجي بحي الشرفية",
+      "mainImage": "assets/images/about-luxury-villa.webp"
+    }
+  ],
+  "projectUnits": [
+    {
+      "id": "hamra-269-m1",
+      "projectId": "proj-hamra-269",
+      "title": "شقة للبيع في حي الحمراء — 103 م²",
+      "badge": "إفراغ فوري",
+      "purpose": "للبيع",
+      "area": "103 م²",
+      "rooms": "2 غرفة",
+      "baths": "2 دورة مياه",
+      "balconies": "—",
+      "price": 680000,
+      "priceFormatted": "680,000 ريال",
+      "mainImage": "assets/images/al-hamra-269/al-hamra-1.webp",
+      "propertyUrl": "property/?id=hamra-269-m1"
+    },
+    {
+      "id": "hamra-269-m2",
+      "projectId": "proj-hamra-269",
+      "title": "شقة للبيع في حي الحمراء — 91 م²",
+      "badge": "إفراغ فوري",
+      "purpose": "للبيع",
+      "area": "91 م²",
+      "rooms": "2 غرفة",
+      "baths": "2 دورة مياه",
+      "balconies": "—",
+      "price": 585000,
+      "priceFormatted": "585,000 ريال",
+      "mainImage": "assets/images/al-hamra-269/al-hamra-2.webp",
+      "propertyUrl": "property/?id=hamra-269-m2"
+    },
+    {
+      "id": "hamra-269-m3",
+      "projectId": "proj-hamra-269",
+      "title": "شقة للبيع في حي الحمراء — 165 م²",
+      "badge": "إفراغ فوري",
+      "purpose": "للبيع",
+      "area": "165 م²",
+      "rooms": "4 غرفة",
+      "baths": "4 دورة مياه",
+      "balconies": "—",
+      "price": 990000,
+      "priceFormatted": "990,000 ريال",
+      "mainImage": "assets/images/al-hamra-269/al-hamra-3.webp",
+      "propertyUrl": "property/?id=hamra-269-m3"
+    },
+    {
+      "id": "hamra-269-m4",
+      "projectId": "proj-hamra-269",
+      "title": "شقة للبيع في حي الحمراء — 119 م²",
+      "badge": "إفراغ فوري",
+      "purpose": "للبيع",
+      "area": "119 م²",
+      "rooms": "3 غرفة",
+      "baths": "3 دورة مياه",
+      "balconies": "—",
+      "price": 800000,
+      "priceFormatted": "800,000 ريال",
+      "mainImage": "assets/images/al-hamra-269/al-hamra-4.webp",
+      "propertyUrl": "property/?id=hamra-269-m4"
+    },
+    {
+      "id": "hamra-269-m5",
+      "projectId": "proj-hamra-269",
+      "title": "شقة للبيع في حي الحمراء — 89 م²",
+      "badge": "إفراغ فوري",
+      "purpose": "للبيع",
+      "area": "89 م²",
+      "rooms": "2 غرفة",
+      "baths": "2 دورة مياه",
+      "balconies": "—",
+      "price": 585000,
+      "priceFormatted": "585,000 ريال",
+      "mainImage": "assets/images/al-hamra-269/al-hamra-5.webp",
+      "propertyUrl": "property/?id=hamra-269-m5"
+    },
+    {
+      "id": "hamra-269-roof",
+      "projectId": "proj-hamra-269",
+      "title": "روف للبيع في حي الحمراء — 275 م² مع مصعد خاص",
+      "badge": "مصعد خاص",
+      "purpose": "للبيع",
+      "area": "275 م²",
+      "rooms": "4 غرف",
+      "baths": "4 دورة مياه",
+      "balconies": "—",
+      "price": 1330000,
+      "priceFormatted": "1,330,000 ريال",
+      "mainImage": "assets/images/al-hamra-269/al-hamra-without-logo.webp",
+      "propertyUrl": "property/?id=hamra-269-roof"
+    },
+    {
+      "id": "rawdah-259-m1",
+      "projectId": "proj-rawdah-259",
+      "title": "روف للبيع في حي الروضة — 169 م² مع سطح خاص",
+      "badge": "إفراغ فوري",
+      "purpose": "للبيع",
+      "area": "169 م²",
+      "rooms": "3 غرف",
+      "baths": "3 دورة مياه",
+      "balconies": "—",
+      "price": 890000,
+      "priceFormatted": "890,000 ريال",
+      "mainImage": "assets/images/al-rawdah-259/al-rawdah-1.webp",
+      "propertyUrl": "property/?id=rawdah-259-m1"
+    },
+    {
+      "id": "sharafiyah-257-m1",
+      "projectId": "proj-sharafiyah-257",
+      "title": "شقة للبيع في حي الشرفية — 140 م² (2 بلكونة)",
+      "badge": "2 بلكونة",
+      "purpose": "للبيع",
+      "area": "140 م²",
+      "rooms": "3 غرف",
+      "baths": "3 دورة مياه",
+      "balconies": "2 بلكونه",
+      "price": 560000,
+      "priceFormatted": "560,000 ريال",
+      "mainImage": "assets/images/al-sharafiyah-257/al-sharafiyah-1.webp",
+      "propertyUrl": "property/?id=sharafiyah-257-m1"
+    },
+    {
+      "id": "sharafiyah-257-m2",
+      "projectId": "proj-sharafiyah-257",
+      "title": "شقة للبيع في حي الشرفية — 112 م² (2 بلكونة)",
+      "badge": "2 بلكونة",
+      "purpose": "للبيع",
+      "area": "112 م²",
+      "rooms": "3 غرف",
+      "baths": "3 دورة مياه",
+      "balconies": "2 بلكونه",
+      "price": 550000,
+      "priceFormatted": "550,000 ريال",
+      "mainImage": "assets/images/al-sharafiyah-257/al-sharafiyah-2.webp",
+      "propertyUrl": "property/?id=sharafiyah-257-m2"
+    },
+    {
+      "id": "mushrifah-251-m1",
+      "projectId": "proj-mushrifah-251",
+      "title": "شقة للبيع في حي مشرفة — 126 م²",
+      "badge": "1 بلكونة",
+      "purpose": "للبيع",
+      "area": "126 م²",
+      "rooms": "4 غرف",
+      "baths": "3 دورة مياه",
+      "balconies": "1 بلكونه",
+      "price": 490000,
+      "priceFormatted": "490,000 ريال",
+      "mainImage": "assets/images/mushrifah-251/mushrifah-1.webp",
+      "propertyUrl": "property/?id=mushrifah-251-m1"
+    },
+    {
+      "id": "mushrifah-251-m2",
+      "projectId": "proj-mushrifah-251",
+      "title": "روف للبيع في حي مشرفة — 143 م² (سطح + 2 بلكونة)",
+      "badge": "سطح خاص",
+      "purpose": "للبيع",
+      "area": "143 م²",
+      "rooms": "2 غرف",
+      "baths": "3 دورة مياه",
+      "balconies": "2 بلكونه",
+      "price": 650000,
+      "priceFormatted": "650,000 ريال",
+      "mainImage": "assets/images/mushrifah-251/mushrifah-2.webp",
+      "propertyUrl": "property/?id=mushrifah-251-m2"
+    },
+    {
+      "id": "mushrifah-251-m3",
+      "projectId": "proj-mushrifah-251",
+      "title": "روف للبيع في حي مشرفة — 164 م² (سطح + غرفة عاملة)",
+      "badge": "غرفة عاملة",
+      "purpose": "للبيع",
+      "area": "164 م²",
+      "rooms": "3 غرف",
+      "baths": "3 دورة مياه",
+      "balconies": "2 بلكونه",
+      "price": 680000,
+      "priceFormatted": "680,000 ريال",
+      "mainImage": "assets/images/mushrifah-251/mushrifah-3.webp",
+      "propertyUrl": "property/?id=mushrifah-251-m3"
+    },
+    {
+      "id": "mushrifah-251-m4",
+      "projectId": "proj-mushrifah-251",
+      "title": "روف للبيع في حي مشرفة — 188 م² (سطح + سائق وعاملة)",
+      "badge": "غرفة سائق وعاملة",
+      "purpose": "للبيع",
+      "area": "188 م²",
+      "rooms": "4 غرف",
+      "baths": "3 دورة مياه",
+      "balconies": "1 بلكونه",
+      "price": 730000,
+      "priceFormatted": "730,000 ريال",
+      "mainImage": "assets/images/mushrifah-251/mushrifah-4.webp",
+      "propertyUrl": "property/?id=mushrifah-251-m4"
+    },
+    {
+      "id": "droaza-u1",
+      "projectId": "proj-sharafiyah-droaza",
+      "title": "شقة للبيع في رسوخ دروازة — 124 م²",
+      "badge": "غرفة عاملة",
+      "purpose": "للبيع",
+      "area": "124 م²",
+      "rooms": "3 غرف",
+      "baths": "4 دورة مياه",
+      "balconies": "—",
+      "price": 560000,
+      "priceFormatted": "560,000 ريال",
+      "mainImage": "assets/images/al-sharafiyah-droaza/al-sharafiyah-droaza-1.webp",
+      "propertyUrl": "property/?id=droaza-u1"
+    },
+    {
+      "id": "droaza-u2",
+      "projectId": "proj-sharafiyah-droaza",
+      "title": "شقة للبيع في رسوخ دروازة — 92 م²",
+      "badge": "إفراغ فوري",
+      "purpose": "للبيع",
+      "area": "92 م²",
+      "rooms": "2 غرف",
+      "baths": "2 دورة مياه",
+      "balconies": "—",
+      "price": 410000,
+      "priceFormatted": "410,000 ريال",
+      "mainImage": "assets/images/al-sharafiyah-droaza/al-sharafiyah-droaza-2.webp",
+      "propertyUrl": "property/?id=droaza-u2"
+    },
+    {
+      "id": "droaza-u3",
+      "projectId": "proj-sharafiyah-droaza",
+      "title": "شقة للبيع في رسوخ دروازة — 90 م²",
+      "badge": "إفراغ فوري",
+      "purpose": "للبيع",
+      "area": "90 م²",
+      "rooms": "2 غرف",
+      "baths": "2 دورة مياه",
+      "balconies": "—",
+      "price": 410000,
+      "priceFormatted": "410,000 ريال",
+      "mainImage": "assets/images/al-sharafiyah-droaza/al-sharafiyah-droaza-3.webp",
+      "propertyUrl": "property/?id=droaza-u3"
+    },
+    {
+      "id": "droaza-u4",
+      "projectId": "proj-sharafiyah-droaza",
+      "title": "شقة للبيع في رسوخ دروازة — 125 م² (بلكونة + عاملة)",
+      "badge": "بلكونة + عاملة",
+      "purpose": "للبيع",
+      "area": "125 م²",
+      "rooms": "3 غرف",
+      "baths": "4 دورة مياه",
+      "balconies": "بلكونة",
+      "price": 560000,
+      "priceFormatted": "560,000 ريال",
+      "mainImage": "assets/images/al-sharafiyah-droaza/al-sharafiyah-droaza-4.webp",
+      "propertyUrl": "property/?id=droaza-u4"
+    },
+    {
+      "id": "droaza-u5",
+      "projectId": "proj-sharafiyah-droaza",
+      "title": "شقة للبيع في رسوخ دروازة — 126 م²",
+      "badge": "بلكونة",
+      "purpose": "للبيع",
+      "area": "126 م²",
+      "rooms": "3 غرف",
+      "baths": "3 دورة مياه",
+      "balconies": "بلكونة",
+      "price": 570000,
+      "priceFormatted": "570,000 ريال",
+      "mainImage": "assets/images/al-sharafiyah-droaza/al-sharafiyah-droaza-5.webp",
+      "propertyUrl": "property/?id=droaza-u5"
+    },
+    {
+      "id": "droaza-u6",
+      "projectId": "proj-sharafiyah-droaza",
+      "title": "شقة للبيع في رسوخ دروازة — 199 م² (غرفة طعام)",
+      "badge": "غرفة طعام",
+      "purpose": "للبيع",
+      "area": "199 م²",
+      "rooms": "4 غرف",
+      "baths": "3 دورة مياه",
+      "balconies": "بلكونة",
+      "price": 710000,
+      "priceFormatted": "710,000 ريال",
+      "mainImage": "assets/images/al-sharafiyah-droaza/al-sharafiyah-droaza-6.webp",
+      "propertyUrl": "property/?id=droaza-u6"
+    },
+    {
+      "id": "droaza-u7",
+      "projectId": "proj-sharafiyah-droaza",
+      "title": "شقة للبيع في رسوخ دروازة — 125 م²",
+      "badge": "بلكونة",
+      "purpose": "للبيع",
+      "area": "125 م²",
+      "rooms": "3 غرف",
+      "baths": "3 دورة مياه",
+      "balconies": "بلكونة",
+      "price": 570000,
+      "priceFormatted": "570,000 ريال",
+      "mainImage": "assets/images/al-sharafiyah-droaza/al-sharafiyah-droaza-7.webp",
+      "propertyUrl": "property/?id=droaza-u7"
+    },
+    {
+      "id": "droaza-u8",
+      "projectId": "proj-sharafiyah-droaza",
+      "title": "شقة للبيع في رسوخ دروازة — 116 م²",
+      "badge": "بلكونة",
+      "purpose": "للبيع",
+      "area": "116 م²",
+      "rooms": "3 غرف",
+      "baths": "3 دورة مياه",
+      "balconies": "بلكونة",
+      "price": 560000,
+      "priceFormatted": "560,000 ريال",
+      "mainImage": "assets/images/al-sharafiyah-droaza/al-sharafiyah-droaza-8.webp",
+      "propertyUrl": "property/?id=droaza-u8"
+    },
+    {
+      "id": "droaza-rove-u1",
+      "projectId": "proj-sharafiyah-droaza-rove",
+      "title": "روف للبيع في رسوخ دروازة — 218 م² (سطح + سائق وعاملة)",
+      "badge": "سطح + سائق وعاملة",
+      "purpose": "للبيع",
+      "area": "218 م²",
+      "rooms": "3 غرف",
+      "baths": "4 دورة مياه",
+      "balconies": "—",
+      "price": 800000,
+      "priceFormatted": "800,000 ريال",
+      "mainImage": "assets/images/al-sharafiyah-droaza-rove/al-sharafiyah-droaza-rove-1.webp",
+      "propertyUrl": "property/?id=droaza-rove-u1"
+    },
+    {
+      "id": "droaza-rove-u2",
+      "projectId": "proj-sharafiyah-droaza-rove",
+      "title": "روف للبيع في رسوخ دروازة — 219 م² (سطح + سائق وعاملة)",
+      "badge": "سطح + سائق وعاملة",
+      "purpose": "للبيع",
+      "area": "219 م²",
+      "rooms": "3 غرف",
+      "baths": "4 دورة مياه",
+      "balconies": "—",
+      "price": 800000,
+      "priceFormatted": "800,000 ريال",
+      "mainImage": "assets/images/al-sharafiyah-droaza-rove/al-sharafiyah-droaza-rove-2.webp",
+      "propertyUrl": "property/?id=droaza-rove-u2"
+    },
+    {
+      "id": "droaza-rove-u3",
+      "projectId": "proj-sharafiyah-droaza-rove",
+      "title": "روف للبيع في رسوخ دروازة — 198 م² (سطح + 2 بلكونة)",
+      "badge": "سطح + 2 بلكونة",
+      "purpose": "للبيع",
+      "area": "198 م²",
+      "rooms": "3 غرف",
+      "baths": "3 دورة مياه",
+      "balconies": "2 بلكونة",
+      "price": 750000,
+      "priceFormatted": "750,000 ريال",
+      "mainImage": "assets/images/al-sharafiyah-droaza-rove/al-sharafiyah-droaza-rove-3.webp",
+      "propertyUrl": "property/?id=droaza-rove-u3"
+    },
+    {
+      "id": "droaza-rove-u4",
+      "projectId": "proj-sharafiyah-droaza-rove",
+      "title": "روف للبيع في رسوخ دروازة — 257 م² (سطح واسع + طعام وسائق)",
+      "badge": "سطح واسع 257 م²",
+      "purpose": "للبيع",
+      "area": "257 م²",
+      "rooms": "4 غرف",
+      "baths": "4 دورة مياه",
+      "balconies": "—",
+      "price": 1000000,
+      "priceFormatted": "1,000,000 ريال",
+      "mainImage": "assets/images/al-sharafiyah-droaza-rove/al-sharafiyah-droaza-rove-4.webp",
+      "propertyUrl": "property/?id=droaza-rove-u4"
+    },
+    {
+      "id": "droaza-rove-u5",
+      "projectId": "proj-sharafiyah-droaza-rove",
+      "title": "روف للبيع في رسوخ دروازة — 232 م² (سطح + بلكونة)",
+      "badge": "سطح + بلكونة",
+      "purpose": "للبيع",
+      "area": "232 م²",
+      "rooms": "3 غرف",
+      "baths": "4 دورة مياه",
+      "balconies": "بلكونة",
+      "price": 850000,
+      "priceFormatted": "850,000 ريال",
+      "mainImage": "assets/images/al-sharafiyah-droaza-rove/al-sharafiyah-droaza-rove-5.webp",
+      "propertyUrl": "property/?id=droaza-rove-u5"
+    },
+    {
+      "id": "droaza-rove-u6",
+      "projectId": "proj-sharafiyah-droaza-rove",
+      "title": "روف للبيع في رسوخ دروازة — 250 م² (سطح + 4 غرف)",
+      "badge": "سطح + 4 غرف",
+      "purpose": "للبيع",
+      "area": "250 م²",
+      "rooms": "4 غرف",
+      "baths": "4 دورة مياه",
+      "balconies": "—",
+      "price": 1000000,
+      "priceFormatted": "1,000,000 ريال",
+      "mainImage": "assets/images/al-sharafiyah-droaza-rove/al-sharafiyah-droaza-rove-6.webp",
+      "propertyUrl": "property/?id=droaza-rove-u6"
+    }
+  ],
+  "unitDetails": [
+    {
+      "id": "hamra-269-m1",
+      "adNumber": "hamra-269-m1",
+      "title": "شقة للبيع في حي الحمراء — 103 م²",
+      "badge": "إفراغ فوري",
+      "categoryName": "شقة تمليك",
+      "purpose": "للبيع",
+      "price": 680000,
+      "priceFormatted": "680,000 ريال",
+      "city": "جدة",
+      "district": "حي الحمراء",
+      "street": "حي الحمراء",
+      "status": "متاح للحجز",
+      "description": "مشروع سكني فاخر في حي الحمراء الراقي بجدة بالقرب من كورنيش الحمراء ونافورة الملك فهد، يوفر خصوصية تامة وتشطيبات عالية الجودة مع إفراغ فوري وضمانات إنشائية معتمدة.",
+      "mainImage": "assets/images/al-hamra-269/al-hamra-1.webp",
+      "images": [
+        "assets/images/al-hamra-269/al-hamra-1.webp"
+      ],
+      "specs": {
+        "totalArea": "103 م²",
+        "bedrooms": "2 غرفة",
+        "livingRooms": "صالة معيشة",
+        "kitchens": "مطبخ",
+        "bathrooms": "2 دورة مياه",
+        "statusNote": "إفراغ فوري"
+      },
+      "features": [],
+      "warranties": [
+        {
+          "title": "الهيكل الإنشائي",
+          "duration": "15 سنة",
+          "icon": "fas fa-shield-alt"
+        },
+        {
+          "title": "الأفياش والمفاتيح",
+          "duration": "25 سنة",
+          "icon": "fas fa-plug"
+        },
+        {
+          "title": "ماكينة المصعد",
+          "duration": "20 سنة",
+          "icon": "fas fa-arrow-circle-up"
+        },
+        {
+          "title": "السباكة والكهرباء",
+          "duration": "سنتان",
+          "icon": "fas fa-tools"
+        },
+        {
+          "title": "العزل المائي والحراري",
+          "duration": "10 سنوات",
+          "icon": "fas fa-water"
+        }
+      ],
+      "location": {
+        "mapEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d118744.15570077978!2d39.09117079726562!3d21.579450800000007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c3d01f81155555%3A0x6b4efb387431c4f5!2sAl%20Hamra%2C%20Jeddah!5e0!3m2!1sar!2ssa!4v1710000000000!5m2!1sar!2ssa"
+      },
+      "advertiser": {
+        "name": "شركة رسوخ العقارية",
+        "license": "وسيط عقاري معتمد — رخصة فال #1200004360",
+        "phone": "+966566399523",
+        "whatsapp": "966566399523",
+        "isVerified": true,
+        "logo": "assets/images/rsoukh.webp"
+      }
+    },
+    {
+      "id": "hamra-269-m2",
+      "adNumber": "hamra-269-m2",
+      "title": "شقة للبيع في حي الحمراء — 91 م²",
+      "badge": "إفراغ فوري",
+      "categoryName": "شقة تمليك",
+      "purpose": "للبيع",
+      "price": 585000,
+      "priceFormatted": "585,000 ريال",
+      "city": "جدة",
+      "district": "حي الحمراء",
+      "street": "حي الحمراء",
+      "status": "متاح للحجز",
+      "description": "مشروع سكني فاخر في حي الحمراء الراقي بجدة بالقرب من كورنيش الحمراء ونافورة الملك فهد، يوفر خصوصية تامة وتشطيبات عالية الجودة مع إفراغ فوري وضمانات إنشائية معتمدة.",
+      "mainImage": "assets/images/al-hamra-269/al-hamra-2.webp",
+      "images": [
+        "assets/images/al-hamra-269/al-hamra-2.webp"
+      ],
+      "specs": {
+        "totalArea": "91 م²",
+        "bedrooms": "2 غرفة",
+        "livingRooms": "صالة معيشة",
+        "kitchens": "مطبخ",
+        "bathrooms": "2 دورة مياه",
+        "statusNote": "إفراغ فوري"
+      },
+      "features": [],
+      "warranties": [
+        {
+          "title": "الهيكل الإنشائي",
+          "duration": "15 سنة",
+          "icon": "fas fa-shield-alt"
+        },
+        {
+          "title": "الأفياش والمفاتيح",
+          "duration": "25 سنة",
+          "icon": "fas fa-plug"
+        },
+        {
+          "title": "ماكينة المصعد",
+          "duration": "20 سنة",
+          "icon": "fas fa-arrow-circle-up"
+        },
+        {
+          "title": "السباكة والكهرباء",
+          "duration": "سنتان",
+          "icon": "fas fa-tools"
+        },
+        {
+          "title": "العزل المائي والحراري",
+          "duration": "10 سنوات",
+          "icon": "fas fa-water"
+        }
+      ],
+      "location": {
+        "mapEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d118744.15570077978!2d39.09117079726562!3d21.579450800000007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c3d01f81155555%3A0x6b4efb387431c4f5!2sAl%20Hamra%2C%20Jeddah!5e0!3m2!1sar!2ssa!4v1710000000000!5m2!1sar!2ssa"
+      },
+      "advertiser": {
+        "name": "شركة رسوخ العقارية",
+        "license": "وسيط عقاري معتمد — رخصة فال #1200004360",
+        "phone": "+966566399523",
+        "whatsapp": "966566399523",
+        "isVerified": true,
+        "logo": "assets/images/rsoukh.webp"
+      }
+    },
+    {
+      "id": "hamra-269-m3",
+      "adNumber": "hamra-269-m3",
+      "title": "شقة للبيع في حي الحمراء — 165 م²",
+      "badge": "إفراغ فوري",
+      "categoryName": "شقة تمليك",
+      "purpose": "للبيع",
+      "price": 990000,
+      "priceFormatted": "990,000 ريال",
+      "city": "جدة",
+      "district": "حي الحمراء",
+      "street": "حي الحمراء",
+      "status": "متاح للحجز",
+      "description": "مشروع سكني فاخر في حي الحمراء الراقي بجدة بالقرب من كورنيش الحمراء ونافورة الملك فهد، يوفر خصوصية تامة وتشطيبات عالية الجودة مع إفراغ فوري وضمانات إنشائية معتمدة.",
+      "mainImage": "assets/images/al-hamra-269/al-hamra-3.webp",
+      "images": [
+        "assets/images/al-hamra-269/al-hamra-3.webp"
+      ],
+      "specs": {
+        "totalArea": "165 م²",
+        "bedrooms": "4 غرفة",
+        "livingRooms": "صالة معيشة",
+        "storage": "مخزن",
+        "kitchens": "مطبخ",
+        "bathrooms": "4 دورة مياه",
+        "statusNote": "إفراغ فوري"
+      },
+      "features": [],
+      "warranties": [
+        {
+          "title": "الهيكل الإنشائي",
+          "duration": "15 سنة",
+          "icon": "fas fa-shield-alt"
+        },
+        {
+          "title": "الأفياش والمفاتيح",
+          "duration": "25 سنة",
+          "icon": "fas fa-plug"
+        },
+        {
+          "title": "ماكينة المصعد",
+          "duration": "20 سنة",
+          "icon": "fas fa-arrow-circle-up"
+        },
+        {
+          "title": "السباكة والكهرباء",
+          "duration": "سنتان",
+          "icon": "fas fa-tools"
+        },
+        {
+          "title": "العزل المائي والحراري",
+          "duration": "10 سنوات",
+          "icon": "fas fa-water"
+        }
+      ],
+      "location": {
+        "mapEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d118744.15570077978!2d39.09117079726562!3d21.579450800000007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c3d01f81155555%3A0x6b4efb387431c4f5!2sAl%20Hamra%2C%20Jeddah!5e0!3m2!1sar!2ssa!4v1710000000000!5m2!1sar!2ssa"
+      },
+      "advertiser": {
+        "name": "شركة رسوخ العقارية",
+        "license": "وسيط عقاري معتمد — رخصة فال #1200004360",
+        "phone": "+966566399523",
+        "whatsapp": "966566399523",
+        "isVerified": true,
+        "logo": "assets/images/rsoukh.webp"
+      }
+    },
+    {
+      "id": "hamra-269-m4",
+      "adNumber": "hamra-269-m4",
+      "title": "شقة للبيع في حي الحمراء — 119 م²",
+      "badge": "إفراغ فوري",
+      "categoryName": "شقة تمليك",
+      "purpose": "للبيع",
+      "price": 800000,
+      "priceFormatted": "800,000 ريال",
+      "city": "جدة",
+      "district": "حي الحمراء",
+      "street": "حي الحمراء",
+      "status": "متاح للحجز",
+      "description": "مشروع سكني فاخر في حي الحمراء الراقي بجدة بالقرب من كورنيش الحمراء ونافورة الملك فهد، يوفر خصوصية تامة وتشطيبات عالية الجودة مع إفراغ فوري وضمانات إنشائية معتمدة.",
+      "mainImage": "assets/images/al-hamra-269/al-hamra-4.webp",
+      "images": [
+        "assets/images/al-hamra-269/al-hamra-4.webp"
+      ],
+      "specs": {
+        "totalArea": "119 م²",
+        "bedrooms": "3 غرفة",
+        "livingRooms": "صالة معيشة",
+        "kitchens": "مطبخ",
+        "bathrooms": "3 دورة مياه",
+        "statusNote": "إفراغ فوري"
+      },
+      "features": [],
+      "warranties": [
+        {
+          "title": "الهيكل الإنشائي",
+          "duration": "15 سنة",
+          "icon": "fas fa-shield-alt"
+        },
+        {
+          "title": "الأفياش والمفاتيح",
+          "duration": "25 سنة",
+          "icon": "fas fa-plug"
+        },
+        {
+          "title": "ماكينة المصعد",
+          "duration": "20 سنة",
+          "icon": "fas fa-arrow-circle-up"
+        },
+        {
+          "title": "السباكة والكهرباء",
+          "duration": "سنتان",
+          "icon": "fas fa-tools"
+        },
+        {
+          "title": "العزل المائي والحراري",
+          "duration": "10 سنوات",
+          "icon": "fas fa-water"
+        }
+      ],
+      "location": {
+        "mapEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d118744.15570077978!2d39.09117079726562!3d21.579450800000007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c3d01f81155555%3A0x6b4efb387431c4f5!2sAl%20Hamra%2C%20Jeddah!5e0!3m2!1sar!2ssa!4v1710000000000!5m2!1sar!2ssa"
+      },
+      "advertiser": {
+        "name": "شركة رسوخ العقارية",
+        "license": "وسيط عقاري معتمد — رخصة فال #1200004360",
+        "phone": "+966566399523",
+        "whatsapp": "966566399523",
+        "isVerified": true,
+        "logo": "assets/images/rsoukh.webp"
+      }
+    },
+    {
+      "id": "hamra-269-m5",
+      "adNumber": "hamra-269-m5",
+      "title": "شقة للبيع في حي الحمراء — 89 م²",
+      "badge": "إفراغ فوري",
+      "categoryName": "شقة تمليك",
+      "purpose": "للبيع",
+      "price": 585000,
+      "priceFormatted": "585,000 ريال",
+      "city": "جدة",
+      "district": "حي الحمراء",
+      "street": "حي الحمراء",
+      "status": "متاح للحجز",
+      "description": "مشروع سكني فاخر في حي الحمراء الراقي بجدة بالقرب من كورنيش الحمراء ونافورة الملك فهد، يوفر خصوصية تامة وتشطيبات عالية الجودة مع إفراغ فوري وضمانات إنشائية معتمدة.",
+      "mainImage": "assets/images/al-hamra-269/al-hamra-5.webp",
+      "images": [
+        "assets/images/al-hamra-269/al-hamra-5.webp"
+      ],
+      "specs": {
+        "totalArea": "89 م²",
+        "bedrooms": "2 غرفة",
+        "livingRooms": "صالة معيشة",
+        "kitchens": "مطبخ",
+        "bathrooms": "2 دورة مياه",
+        "statusNote": "إفراغ فوري"
+      },
+      "features": [],
+      "warranties": [
+        {
+          "title": "الهيكل الإنشائي",
+          "duration": "15 سنة",
+          "icon": "fas fa-shield-alt"
+        },
+        {
+          "title": "الأفياش والمفاتيح",
+          "duration": "25 سنة",
+          "icon": "fas fa-plug"
+        },
+        {
+          "title": "ماكينة المصعد",
+          "duration": "20 سنة",
+          "icon": "fas fa-arrow-circle-up"
+        },
+        {
+          "title": "السباكة والكهرباء",
+          "duration": "سنتان",
+          "icon": "fas fa-tools"
+        },
+        {
+          "title": "العزل المائي والحراري",
+          "duration": "10 سنوات",
+          "icon": "fas fa-water"
+        }
+      ],
+      "location": {
+        "mapEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d118744.15570077978!2d39.09117079726562!3d21.579450800000007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c3d01f81155555%3A0x6b4efb387431c4f5!2sAl%20Hamra%2C%20Jeddah!5e0!3m2!1sar!2ssa!4v1710000000000!5m2!1sar!2ssa"
+      },
+      "advertiser": {
+        "name": "شركة رسوخ العقارية",
+        "license": "وسيط عقاري معتمد — رخصة فال #1200004360",
+        "phone": "+966566399523",
+        "whatsapp": "966566399523",
+        "isVerified": true,
+        "logo": "assets/images/rsoukh.webp"
+      }
+    },
+    {
+      "id": "hamra-269-roof",
+      "adNumber": "hamra-269-roof",
+      "title": "روف للبيع في حي الحمراء — 275 م² مع مصعد خاص",
+      "badge": "مصعد خاص",
+      "categoryName": "ملحق روف",
+      "purpose": "للبيع",
+      "price": 1330000,
+      "priceFormatted": "1,330,000 ريال",
+      "city": "جدة",
+      "district": "حي الحمراء",
+      "street": "حي الحمراء",
+      "status": "متاح للحجز",
+      "description": "مشروع سكني فاخر في حي الحمراء الراقي بجدة بالقرب من كورنيش الحمراء ونافورة الملك فهد، يوفر خصوصية تامة وتشطيبات عالية الجودة مع إفراغ فوري وضمانات إنشائية معتمدة.",
+      "mainImage": "assets/images/al-hamra-269/al-hamra-without-logo.webp",
+      "images": [
+        "assets/images/al-hamra-269/al-hamra-without-logo.webp"
+      ],
+      "specs": {
+        "totalArea": "275 م²",
+        "elevator": "مصعد خاص",
+        "bedrooms": "4 غرف",
+        "bathrooms": "4 دورة مياه",
+        "livingRooms": "صالة معيشة",
+        "diningRooms": "غرفة طعام",
+        "kitchens": "مطبخ",
+        "driverRoom": "غرفة سائق",
+        "roof": "سطح خاص",
+        "statusNote": "إفراغ فوري"
+      },
+      "features": [],
+      "warranties": [
+        {
+          "title": "الهيكل الإنشائي",
+          "duration": "15 سنة",
+          "icon": "fas fa-shield-alt"
+        },
+        {
+          "title": "الأفياش والمفاتيح",
+          "duration": "25 سنة",
+          "icon": "fas fa-plug"
+        },
+        {
+          "title": "ماكينة المصعد",
+          "duration": "20 سنة",
+          "icon": "fas fa-arrow-circle-up"
+        },
+        {
+          "title": "السباكة والكهرباء",
+          "duration": "سنتان",
+          "icon": "fas fa-tools"
+        },
+        {
+          "title": "العزل المائي والحراري",
+          "duration": "10 سنوات",
+          "icon": "fas fa-water"
+        }
+      ],
+      "location": {
+        "mapEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d118744.15570077978!2d39.09117079726562!3d21.579450800000007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c3d01f81155555%3A0x6b4efb387431c4f5!2sAl%20Hamra%2C%20Jeddah!5e0!3m2!1sar!2ssa!4v1710000000000!5m2!1sar!2ssa"
+      },
+      "advertiser": {
+        "name": "شركة رسوخ العقارية",
+        "license": "وسيط عقاري معتمد — رخصة فال #1200004360",
+        "phone": "+966566399523",
+        "whatsapp": "966566399523",
+        "isVerified": true,
+        "logo": "assets/images/rsoukh.webp"
+      }
+    },
+    {
+      "id": "rawdah-259-m1",
+      "adNumber": "rawdah-259-m1",
+      "title": "روف للبيع في حي الروضة — 169 م² مع سطح خاص",
+      "badge": "إفراغ فوري",
+      "categoryName": "ملحق روف",
+      "purpose": "للبيع",
+      "price": 890000,
+      "priceFormatted": "890,000 ريال",
+      "city": "جدة",
+      "district": "حي الروضة",
+      "street": "حي الروضة",
+      "status": "متاح للحجز",
+      "description": "مشروع سكني راقٍ في قلب حي الروضة المتميز بالقرب من أهم المحاور والخدمات، يقدم روفاً سكنياً مستقلاً بمساحة رحبة وسطح خاص وتشطيبات عصرية تلبي تطلعات السكن والاستثمار.",
+      "mainImage": "assets/images/al-rawdah-259/al-rawdah-1.webp",
+      "images": [
+        "assets/images/al-rawdah-259/al-rawdah-1.webp"
+      ],
+      "specs": {
+        "totalArea": "169 م²",
+        "bedrooms": "3 غرف",
+        "roof": "سطح خاص",
+        "kitchens": "مطبخ",
+        "storage": "مخزن",
+        "bathrooms": "3 دورة مياه",
+        "statusNote": "إفراغ فوري"
+      },
+      "features": [],
+      "warranties": [
+        {
+          "title": "الهيكل الإنشائي",
+          "duration": "15 سنة",
+          "icon": "fas fa-shield-alt"
+        },
+        {
+          "title": "الأفياش والمفاتيح",
+          "duration": "25 سنة",
+          "icon": "fas fa-plug"
+        },
+        {
+          "title": "ماكينة المصعد",
+          "duration": "20 سنة",
+          "icon": "fas fa-arrow-circle-up"
+        },
+        {
+          "title": "السباكة والكهرباء",
+          "duration": "سنتان",
+          "icon": "fas fa-tools"
+        },
+        {
+          "title": "العزل المائي والحراري",
+          "duration": "10 سنوات",
+          "icon": "fas fa-water"
+        }
+      ],
+      "location": {
+        "mapEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3710.828888019385!2d39.1481177!3d21.5535311!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c3d1b827eef847%3A0xbcfdd50e41f71df4!2sAr%20Rawdah%2C%20Jeddah!5e0!3m2!1sar!2ssa!4v1710000000000!5m2!1sar!2ssa"
+      },
+      "advertiser": {
+        "name": "شركة رسوخ العقارية",
+        "license": "وسيط عقاري معتمد — رخصة فال #1200004360",
+        "phone": "+966566399523",
+        "whatsapp": "966566399523",
+        "isVerified": true,
+        "logo": "assets/images/rsoukh.webp"
+      }
+    },
+    {
+      "id": "sharafiyah-257-m1",
+      "adNumber": "sharafiyah-257-m1",
+      "title": "شقة للبيع في حي الشرفية — 140 م² (2 بلكونة)",
+      "badge": "2 بلكونة",
+      "categoryName": "شقة تمليك",
+      "purpose": "للبيع",
+      "price": 560000,
+      "priceFormatted": "560,000 ريال",
+      "city": "جدة",
+      "district": "حي الشرفية",
+      "street": "حي الشرفية",
+      "status": "متاح للحجز",
+      "description": "مشروع رسوخ 257 بحي الشرفية الحيوي بجدة، يقع بالقرب من محاور الطرق الرئيسية والخدمات العامة، ويوفر شققاً سكنية بمساحات متعددة وإفراغ فوري وضمانات ممتدة.",
+      "mainImage": "assets/images/al-sharafiyah-257/al-sharafiyah-1.webp",
+      "images": [
+        "assets/images/al-sharafiyah-257/al-sharafiyah-1.webp"
+      ],
+      "specs": {
+        "totalArea": "140 م²",
+        "bedrooms": "3 غرف",
+        "livingRooms": "صالة معيشة",
+        "kitchens": "مطبخ",
+        "balconies": "2 بلكونه",
+        "bathrooms": "3 دورة مياه",
+        "statusNote": "إفراغ فوري"
+      },
+      "features": [],
+      "warranties": [
+        {
+          "title": "الهيكل الإنشائي",
+          "duration": "15 سنة",
+          "icon": "fas fa-shield-alt"
+        },
+        {
+          "title": "الأفياش والمفاتيح",
+          "duration": "25 سنة",
+          "icon": "fas fa-plug"
+        },
+        {
+          "title": "ماكينة المصعد",
+          "duration": "20 سنة",
+          "icon": "fas fa-arrow-circle-up"
+        },
+        {
+          "title": "السباكة والكهرباء",
+          "duration": "سنتان",
+          "icon": "fas fa-tools"
+        },
+        {
+          "title": "العزل المائي والحراري",
+          "duration": "10 سنوات",
+          "icon": "fas fa-water"
+        }
+      ],
+      "location": {
+        "mapEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3712.179326442654!2d39.1912!3d21.5034!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c3cf26e38b3afb%3A0x619ff0f4a259223!2sAsh%20Sharafiyah%2C%20Jeddah!5e0!3m2!1sar!2ssa!4v1710000000000!5m2!1sar!2ssa"
+      },
+      "advertiser": {
+        "name": "شركة رسوخ العقارية",
+        "license": "وسيط عقاري معتمد — رخصة فال #1200004360",
+        "phone": "+966566399523",
+        "whatsapp": "966566399523",
+        "isVerified": true,
+        "logo": "assets/images/rsoukh.webp"
+      }
+    },
+    {
+      "id": "sharafiyah-257-m2",
+      "adNumber": "sharafiyah-257-m2",
+      "title": "شقة للبيع في حي الشرفية — 112 م² (2 بلكونة)",
+      "badge": "2 بلكونة",
+      "categoryName": "شقة تمليك",
+      "purpose": "للبيع",
+      "price": 550000,
+      "priceFormatted": "550,000 ريال",
+      "city": "جدة",
+      "district": "حي الشرفية",
+      "street": "حي الشرفية",
+      "status": "متاح للحجز",
+      "description": "مشروع رسوخ 257 بحي الشرفية الحيوي بجدة، يقع بالقرب من محاور الطرق الرئيسية والخدمات العامة، ويوفر شققاً سكنية بمساحات متعددة وإفراغ فوري وضمانات ممتدة.",
+      "mainImage": "assets/images/al-sharafiyah-257/al-sharafiyah-2.webp",
+      "images": [
+        "assets/images/al-sharafiyah-257/al-sharafiyah-2.webp"
+      ],
+      "specs": {
+        "totalArea": "112 م²",
+        "bedrooms": "3 غرف",
+        "livingRooms": "صالة معيشة",
+        "kitchens": "مطبخ",
+        "balconies": "2 بلكونه",
+        "bathrooms": "3 دورة مياه",
+        "statusNote": "إفراغ فوري"
+      },
+      "features": [],
+      "warranties": [
+        {
+          "title": "الهيكل الإنشائي",
+          "duration": "15 سنة",
+          "icon": "fas fa-shield-alt"
+        },
+        {
+          "title": "الأفياش والمفاتيح",
+          "duration": "25 سنة",
+          "icon": "fas fa-plug"
+        },
+        {
+          "title": "ماكينة المصعد",
+          "duration": "20 سنة",
+          "icon": "fas fa-arrow-circle-up"
+        },
+        {
+          "title": "السباكة والكهرباء",
+          "duration": "سنتان",
+          "icon": "fas fa-tools"
+        },
+        {
+          "title": "العزل المائي والحراري",
+          "duration": "10 سنوات",
+          "icon": "fas fa-water"
+        }
+      ],
+      "location": {
+        "mapEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3712.179326442654!2d39.1912!3d21.5034!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c3cf26e38b3afb%3A0x619ff0f4a259223!2sAsh%20Sharafiyah%2C%20Jeddah!5e0!3m2!1sar!2ssa!4v1710000000000!5m2!1sar!2ssa"
+      },
+      "advertiser": {
+        "name": "شركة رسوخ العقارية",
+        "license": "وسيط عقاري معتمد — رخصة فال #1200004360",
+        "phone": "+966566399523",
+        "whatsapp": "966566399523",
+        "isVerified": true,
+        "logo": "assets/images/rsoukh.webp"
+      }
+    },
+    {
+      "id": "mushrifah-251-m1",
+      "adNumber": "mushrifah-251-m1",
+      "title": "شقة للبيع في حي مشرفة — 126 م²",
+      "badge": "1 بلكونة",
+      "categoryName": "شقة تمليك",
+      "purpose": "للبيع",
+      "price": 490000,
+      "priceFormatted": "490,000 ريال",
+      "city": "جدة",
+      "district": "حي مشرفة",
+      "street": "حي مشرفة",
+      "status": "متاح للحجز",
+      "description": "مشروع سكني فاخر في حي الحمراء الراقي بجدة بالقرب من كورنيش الحمراء ونافورة الملك فهد، يوفر خصوصية تامة وتشطيبات عالية الجودة مع إفراغ فوري وضمانات إنشائية معتمدة.",
+      "mainImage": "assets/images/mushrifah-251/mushrifah-1.webp",
+      "images": [
+        "assets/images/mushrifah-251/mushrifah-1.webp"
+      ],
+      "specs": {
+        "totalArea": "126 م²",
+        "bedrooms": "4 غرف",
+        "livingRooms": "صالة معيشة",
+        "kitchens": "مطبخ",
+        "balconies": "1 بلكونه",
+        "bathrooms": "3 دورة مياه",
+        "statusNote": "إفراغ فوري"
+      },
+      "features": [],
+      "warranties": [
+        {
+          "title": "الهيكل الإنشائي",
+          "duration": "15 سنة",
+          "icon": "fas fa-shield-alt"
+        },
+        {
+          "title": "الأفياش والمفاتيح",
+          "duration": "25 سنة",
+          "icon": "fas fa-plug"
+        },
+        {
+          "title": "ماكينة المصعد",
+          "duration": "20 سنة",
+          "icon": "fas fa-arrow-circle-up"
+        },
+        {
+          "title": "السباكة والكهرباء",
+          "duration": "سنتان",
+          "icon": "fas fa-tools"
+        },
+        {
+          "title": "العزل المائي والحراري",
+          "duration": "10 سنوات",
+          "icon": "fas fa-water"
+        }
+      ],
+      "location": {
+        "mapEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3711.696142718816!2d39.18567!3d21.52354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c3d002f2a74c11%3A0xe9f79024c0840ee!2sMushrifah%2C%20Jeddah!5e0!3m2!1sar!2ssa!4v1710000000000!5m2!1sar!2ssa"
+      },
+      "advertiser": {
+        "name": "شركة رسوخ العقارية",
+        "license": "وسيط عقاري معتمد — رخصة فال #1200004360",
+        "phone": "+966566399523",
+        "whatsapp": "966566399523",
+        "isVerified": true,
+        "logo": "assets/images/rsoukh.webp"
+      }
+    },
+    {
+      "id": "mushrifah-251-m2",
+      "adNumber": "mushrifah-251-m2",
+      "title": "روف للبيع في حي مشرفة — 143 م² (سطح + 2 بلكونة)",
+      "badge": "سطح خاص",
+      "categoryName": "ملحق روف",
+      "purpose": "للبيع",
+      "price": 650000,
+      "priceFormatted": "650,000 ريال",
+      "city": "جدة",
+      "district": "حي مشرفة",
+      "street": "حي مشرفة",
+      "status": "متاح للحجز",
+      "description": "مشروع سكني فاخر في حي الحمراء الراقي بجدة بالقرب من كورنيش الحمراء ونافورة الملك فهد، يوفر خصوصية تامة وتشطيبات عالية الجودة مع إفراغ فوري وضمانات إنشائية معتمدة.",
+      "mainImage": "assets/images/mushrifah-251/mushrifah-2.webp",
+      "images": [
+        "assets/images/mushrifah-251/mushrifah-2.webp"
+      ],
+      "specs": {
+        "totalArea": "143 م²",
+        "bedrooms": "2 غرف",
+        "livingRooms": "صالة معيشة",
+        "kitchens": "مطبخ",
+        "roof": "سطح خاص",
+        "balconies": "2 بلكونه",
+        "bathrooms": "3 دورة مياه",
+        "statusNote": "إفراغ فوري"
+      },
+      "features": [],
+      "warranties": [
+        {
+          "title": "الهيكل الإنشائي",
+          "duration": "15 سنة",
+          "icon": "fas fa-shield-alt"
+        },
+        {
+          "title": "الأفياش والمفاتيح",
+          "duration": "25 سنة",
+          "icon": "fas fa-plug"
+        },
+        {
+          "title": "ماكينة المصعد",
+          "duration": "20 سنة",
+          "icon": "fas fa-arrow-circle-up"
+        },
+        {
+          "title": "السباكة والكهرباء",
+          "duration": "سنتان",
+          "icon": "fas fa-tools"
+        },
+        {
+          "title": "العزل المائي والحراري",
+          "duration": "10 سنوات",
+          "icon": "fas fa-water"
+        }
+      ],
+      "location": {
+        "mapEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3711.696142718816!2d39.18567!3d21.52354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c3d002f2a74c11%3A0xe9f79024c0840ee!2sMushrifah%2C%20Jeddah!5e0!3m2!1sar!2ssa!4v1710000000000!5m2!1sar!2ssa"
+      },
+      "advertiser": {
+        "name": "شركة رسوخ العقارية",
+        "license": "وسيط عقاري معتمد — رخصة فال #1200004360",
+        "phone": "+966566399523",
+        "whatsapp": "966566399523",
+        "isVerified": true,
+        "logo": "assets/images/rsoukh.webp"
+      }
+    },
+    {
+      "id": "mushrifah-251-m3",
+      "adNumber": "mushrifah-251-m3",
+      "title": "روف للبيع في حي مشرفة — 164 م² (سطح + غرفة عاملة)",
+      "badge": "غرفة عاملة",
+      "categoryName": "ملحق روف",
+      "purpose": "للبيع",
+      "price": 680000,
+      "priceFormatted": "680,000 ريال",
+      "city": "جدة",
+      "district": "حي مشرفة",
+      "street": "حي مشرفة",
+      "status": "متاح للحجز",
+      "description": "مشروع سكني فاخر في حي الحمراء الراقي بجدة بالقرب من كورنيش الحمراء ونافورة الملك فهد، يوفر خصوصية تامة وتشطيبات عالية الجودة مع إفراغ فوري وضمانات إنشائية معتمدة.",
+      "mainImage": "assets/images/mushrifah-251/mushrifah-3.webp",
+      "images": [
+        "assets/images/mushrifah-251/mushrifah-3.webp"
+      ],
+      "specs": {
+        "totalArea": "164 م²",
+        "bedrooms": "3 غرف",
+        "livingRooms": "صالة معيشة",
+        "maidRoom": "غرفة عاملة",
+        "kitchens": "مطبخ",
+        "roof": "سطح خاص",
+        "balconies": "2 بلكونه",
+        "bathrooms": "3 دورة مياه",
+        "statusNote": "إفراغ فوري"
+      },
+      "features": [],
+      "warranties": [
+        {
+          "title": "الهيكل الإنشائي",
+          "duration": "15 سنة",
+          "icon": "fas fa-shield-alt"
+        },
+        {
+          "title": "الأفياش والمفاتيح",
+          "duration": "25 سنة",
+          "icon": "fas fa-plug"
+        },
+        {
+          "title": "ماكينة المصعد",
+          "duration": "20 سنة",
+          "icon": "fas fa-arrow-circle-up"
+        },
+        {
+          "title": "السباكة والكهرباء",
+          "duration": "سنتان",
+          "icon": "fas fa-tools"
+        },
+        {
+          "title": "العزل المائي والحراري",
+          "duration": "10 سنوات",
+          "icon": "fas fa-water"
+        }
+      ],
+      "location": {
+        "mapEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3711.696142718816!2d39.18567!3d21.52354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c3d002f2a74c11%3A0xe9f79024c0840ee!2sMushrifah%2C%20Jeddah!5e0!3m2!1sar!2ssa!4v1710000000000!5m2!1sar!2ssa"
+      },
+      "advertiser": {
+        "name": "شركة رسوخ العقارية",
+        "license": "وسيط عقاري معتمد — رخصة فال #1200004360",
+        "phone": "+966566399523",
+        "whatsapp": "966566399523",
+        "isVerified": true,
+        "logo": "assets/images/rsoukh.webp"
+      }
+    },
+    {
+      "id": "mushrifah-251-m4",
+      "adNumber": "mushrifah-251-m4",
+      "title": "روف للبيع في حي مشرفة — 188 م² (سطح + سائق وعاملة)",
+      "badge": "غرفة سائق وعاملة",
+      "categoryName": "ملحق روف",
+      "purpose": "للبيع",
+      "price": 730000,
+      "priceFormatted": "730,000 ريال",
+      "city": "جدة",
+      "district": "حي مشرفة",
+      "street": "حي مشرفة",
+      "status": "متاح للحجز",
+      "description": "مشروع سكني فاخر في حي الحمراء الراقي بجدة بالقرب من كورنيش الحمراء ونافورة الملك فهد، يوفر خصوصية تامة وتشطيبات عالية الجودة مع إفراغ فوري وضمانات إنشائية معتمدة.",
+      "mainImage": "assets/images/mushrifah-251/mushrifah-4.webp",
+      "images": [
+        "assets/images/mushrifah-251/mushrifah-4.webp"
+      ],
+      "specs": {
+        "totalArea": "188 م²",
+        "bedrooms": "4 غرف",
+        "diningRooms": "غرفة طعام",
+        "livingRooms": "صالة معيشة",
+        "kitchens": "مطبخ",
+        "balconies": "1 بلكونه",
+        "maidRoom": "غرفة عاملة",
+        "driverRoom": "غرفة سائق",
+        "roof": "سطح خاص",
+        "bathrooms": "3 دورة مياه",
+        "statusNote": "إفراغ فوري"
+      },
+      "features": [],
+      "warranties": [
+        {
+          "title": "الهيكل الإنشائي",
+          "duration": "15 سنة",
+          "icon": "fas fa-shield-alt"
+        },
+        {
+          "title": "الأفياش والمفاتيح",
+          "duration": "25 سنة",
+          "icon": "fas fa-plug"
+        },
+        {
+          "title": "ماكينة المصعد",
+          "duration": "20 سنة",
+          "icon": "fas fa-arrow-circle-up"
+        },
+        {
+          "title": "السباكة والكهرباء",
+          "duration": "سنتان",
+          "icon": "fas fa-tools"
+        },
+        {
+          "title": "العزل المائي والحراري",
+          "duration": "10 سنوات",
+          "icon": "fas fa-water"
+        }
+      ],
+      "location": {
+        "mapEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3711.696142718816!2d39.18567!3d21.52354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c3d002f2a74c11%3A0xe9f79024c0840ee!2sMushrifah%2C%20Jeddah!5e0!3m2!1sar!2ssa!4v1710000000000!5m2!1sar!2ssa"
+      },
+      "advertiser": {
+        "name": "شركة رسوخ العقارية",
+        "license": "وسيط عقاري معتمد — رخصة فال #1200004360",
+        "phone": "+966566399523",
+        "whatsapp": "966566399523",
+        "isVerified": true,
+        "logo": "assets/images/rsoukh.webp"
+      }
+    },
+    {
+      "id": "droaza-u1",
+      "adNumber": "droaza-u1",
+      "title": "شقة للبيع في رسوخ دروازة — 124 م²",
+      "badge": "غرفة عاملة",
+      "categoryName": "شقة تمليك",
+      "purpose": "للبيع",
+      "price": 560000,
+      "priceFormatted": "560,000 ريال",
+      "city": "جدة",
+      "district": "حي الشرفية",
+      "street": "حي الشرفية",
+      "status": "متاح للحجز",
+      "description": "مجمع رسوخ دروازة بحي الشرفية يمثل نقلة نوعية في المجمعات السكنية التمليك بجدة، بمرافق عصرية متكاملة تشمل نادياً رياضياً، منطقة ألعاب للأطفال، ومساحات لاندسكيب خضراء.",
+      "mainImage": "assets/images/al-sharafiyah-droaza/al-sharafiyah-droaza-1.webp",
+      "images": [
+        "assets/images/al-sharafiyah-droaza/al-sharafiyah-droaza-1.webp"
+      ],
+      "specs": {
+        "totalArea": "124 م²",
+        "bedrooms": "3 غرف",
+        "bathrooms": "4 دورة مياه",
+        "livingRooms": "صالة معيشة",
+        "maidRoom": "غرفة عاملة",
+        "kitchens": "مطبخ",
+        "statusNote": "إفراغ فوري"
+      },
+      "features": [
+        {
+          "name": "نادي رياضي",
+          "icon": "fas fa-dumbbell"
+        },
+        {
+          "name": "منطقة ألعاب أطفال",
+          "icon": "fas fa-child"
+        },
+        {
+          "name": "لاند سكيب ومساحات خضراء",
+          "icon": "fas fa-tree"
+        }
+      ],
+      "warranties": [
+        {
+          "title": "الهيكل الإنشائي",
+          "duration": "15 سنة",
+          "icon": "fas fa-shield-alt"
+        },
+        {
+          "title": "الأفياش والمفاتيح",
+          "duration": "25 سنة",
+          "icon": "fas fa-plug"
+        },
+        {
+          "title": "ماكينة المصعد",
+          "duration": "20 سنة",
+          "icon": "fas fa-arrow-circle-up"
+        },
+        {
+          "title": "السباكة والكهرباء",
+          "duration": "سنتان",
+          "icon": "fas fa-tools"
+        },
+        {
+          "title": "العزل المائي والحراري",
+          "duration": "10 سنوات",
+          "icon": "fas fa-water"
+        }
+      ],
+      "location": {
+        "mapEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3712.179326442654!2d39.1912!3d21.5034!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c3cf26e38b3afb%3A0x619ff0f4a259223!2sAsh%20Sharafiyah%2C%20Jeddah!5e0!3m2!1sar!2ssa!4v1710000000000!5m2!1sar!2ssa"
+      },
+      "advertiser": {
+        "name": "شركة رسوخ العقارية",
+        "license": "وسيط عقاري معتمد — رخصة فال #1200004360",
+        "phone": "+966566399523",
+        "whatsapp": "966566399523",
+        "isVerified": true,
+        "logo": "assets/images/rsoukh.webp"
+      }
+    },
+    {
+      "id": "droaza-u2",
+      "adNumber": "droaza-u2",
+      "title": "شقة للبيع في رسوخ دروازة — 92 م²",
+      "badge": "إفراغ فوري",
+      "categoryName": "شقة تمليك",
+      "purpose": "للبيع",
+      "price": 410000,
+      "priceFormatted": "410,000 ريال",
+      "city": "جدة",
+      "district": "حي الشرفية",
+      "street": "حي الشرفية",
+      "status": "متاح للحجز",
+      "description": "مجمع رسوخ دروازة بحي الشرفية يمثل نقلة نوعية في المجمعات السكنية التمليك بجدة، بمرافق عصرية متكاملة تشمل نادياً رياضياً، منطقة ألعاب للأطفال، ومساحات لاندسكيب خضراء.",
+      "mainImage": "assets/images/al-sharafiyah-droaza/al-sharafiyah-droaza-2.webp",
+      "images": [
+        "assets/images/al-sharafiyah-droaza/al-sharafiyah-droaza-2.webp"
+      ],
+      "specs": {
+        "totalArea": "92 م²",
+        "bedrooms": "2 غرف",
+        "bathrooms": "2 دورة مياه",
+        "kitchens": "مطبخ",
+        "livingRooms": "صالة معيشة",
+        "statusNote": "إفراغ فوري"
+      },
+      "features": [
+        {
+          "name": "نادي رياضي",
+          "icon": "fas fa-dumbbell"
+        },
+        {
+          "name": "منطقة ألعاب أطفال",
+          "icon": "fas fa-child"
+        },
+        {
+          "name": "لاند سكيب ومساحات خضراء",
+          "icon": "fas fa-tree"
+        }
+      ],
+      "warranties": [
+        {
+          "title": "الهيكل الإنشائي",
+          "duration": "15 سنة",
+          "icon": "fas fa-shield-alt"
+        },
+        {
+          "title": "الأفياش والمفاتيح",
+          "duration": "25 سنة",
+          "icon": "fas fa-plug"
+        },
+        {
+          "title": "ماكينة المصعد",
+          "duration": "20 سنة",
+          "icon": "fas fa-arrow-circle-up"
+        },
+        {
+          "title": "السباكة والكهرباء",
+          "duration": "سنتان",
+          "icon": "fas fa-tools"
+        },
+        {
+          "title": "العزل المائي والحراري",
+          "duration": "10 سنوات",
+          "icon": "fas fa-water"
+        }
+      ],
+      "location": {
+        "mapEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3712.179326442654!2d39.1912!3d21.5034!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c3cf26e38b3afb%3A0x619ff0f4a259223!2sAsh%20Sharafiyah%2C%20Jeddah!5e0!3m2!1sar!2ssa!4v1710000000000!5m2!1sar!2ssa"
+      },
+      "advertiser": {
+        "name": "شركة رسوخ العقارية",
+        "license": "وسيط عقاري معتمد — رخصة فال #1200004360",
+        "phone": "+966566399523",
+        "whatsapp": "966566399523",
+        "isVerified": true,
+        "logo": "assets/images/rsoukh.webp"
+      }
+    },
+    {
+      "id": "droaza-u3",
+      "adNumber": "droaza-u3",
+      "title": "شقة للبيع في رسوخ دروازة — 90 م²",
+      "badge": "إفراغ فوري",
+      "categoryName": "شقة تمليك",
+      "purpose": "للبيع",
+      "price": 410000,
+      "priceFormatted": "410,000 ريال",
+      "city": "جدة",
+      "district": "حي الشرفية",
+      "street": "حي الشرفية",
+      "status": "متاح للحجز",
+      "description": "مجمع رسوخ دروازة بحي الشرفية يمثل نقلة نوعية في المجمعات السكنية التمليك بجدة، بمرافق عصرية متكاملة تشمل نادياً رياضياً، منطقة ألعاب للأطفال، ومساحات لاندسكيب خضراء.",
+      "mainImage": "assets/images/al-sharafiyah-droaza/al-sharafiyah-droaza-3.webp",
+      "images": [
+        "assets/images/al-sharafiyah-droaza/al-sharafiyah-droaza-3.webp"
+      ],
+      "specs": {
+        "totalArea": "90 م²",
+        "bedrooms": "2 غرف",
+        "bathrooms": "2 دورة مياه",
+        "kitchens": "مطبخ",
+        "livingRooms": "صالة معيشة",
+        "statusNote": "إفراغ فوري"
+      },
+      "features": [
+        {
+          "name": "نادي رياضي",
+          "icon": "fas fa-dumbbell"
+        },
+        {
+          "name": "منطقة ألعاب أطفال",
+          "icon": "fas fa-child"
+        },
+        {
+          "name": "لاند سكيب ومساحات خضراء",
+          "icon": "fas fa-tree"
+        }
+      ],
+      "warranties": [
+        {
+          "title": "الهيكل الإنشائي",
+          "duration": "15 سنة",
+          "icon": "fas fa-shield-alt"
+        },
+        {
+          "title": "الأفياش والمفاتيح",
+          "duration": "25 سنة",
+          "icon": "fas fa-plug"
+        },
+        {
+          "title": "ماكينة المصعد",
+          "duration": "20 سنة",
+          "icon": "fas fa-arrow-circle-up"
+        },
+        {
+          "title": "السباكة والكهرباء",
+          "duration": "سنتان",
+          "icon": "fas fa-tools"
+        },
+        {
+          "title": "العزل المائي والحراري",
+          "duration": "10 سنوات",
+          "icon": "fas fa-water"
+        }
+      ],
+      "location": {
+        "mapEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3712.179326442654!2d39.1912!3d21.5034!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c3cf26e38b3afb%3A0x619ff0f4a259223!2sAsh%20Sharafiyah%2C%20Jeddah!5e0!3m2!1sar!2ssa!4v1710000000000!5m2!1sar!2ssa"
+      },
+      "advertiser": {
+        "name": "شركة رسوخ العقارية",
+        "license": "وسيط عقاري معتمد — رخصة فال #1200004360",
+        "phone": "+966566399523",
+        "whatsapp": "966566399523",
+        "isVerified": true,
+        "logo": "assets/images/rsoukh.webp"
+      }
+    },
+    {
+      "id": "droaza-u4",
+      "adNumber": "droaza-u4",
+      "title": "شقة للبيع في رسوخ دروازة — 125 م² (بلكونة + عاملة)",
+      "badge": "بلكونة + عاملة",
+      "categoryName": "شقة تمليك",
+      "purpose": "للبيع",
+      "price": 560000,
+      "priceFormatted": "560,000 ريال",
+      "city": "جدة",
+      "district": "حي الشرفية",
+      "street": "حي الشرفية",
+      "status": "متاح للحجز",
+      "description": "مجمع رسوخ دروازة بحي الشرفية يمثل نقلة نوعية في المجمعات السكنية التمليك بجدة، بمرافق عصرية متكاملة تشمل نادياً رياضياً، منطقة ألعاب للأطفال، ومساحات لاندسكيب خضراء.",
+      "mainImage": "assets/images/al-sharafiyah-droaza/al-sharafiyah-droaza-4.webp",
+      "images": [
+        "assets/images/al-sharafiyah-droaza/al-sharafiyah-droaza-4.webp"
+      ],
+      "specs": {
+        "totalArea": "125 م²",
+        "bedrooms": "3 غرف",
+        "bathrooms": "4 دورة مياه",
+        "livingRooms": "صالة معيشة",
+        "maidRoom": "غرفة عاملة",
+        "kitchens": "مطبخ",
+        "balconies": "بلكونة",
+        "statusNote": "إفراغ فوري"
+      },
+      "features": [
+        {
+          "name": "نادي رياضي",
+          "icon": "fas fa-dumbbell"
+        },
+        {
+          "name": "منطقة ألعاب أطفال",
+          "icon": "fas fa-child"
+        },
+        {
+          "name": "لاند سكيب ومساحات خضراء",
+          "icon": "fas fa-tree"
+        }
+      ],
+      "warranties": [
+        {
+          "title": "الهيكل الإنشائي",
+          "duration": "15 سنة",
+          "icon": "fas fa-shield-alt"
+        },
+        {
+          "title": "الأفياش والمفاتيح",
+          "duration": "25 سنة",
+          "icon": "fas fa-plug"
+        },
+        {
+          "title": "ماكينة المصعد",
+          "duration": "20 سنة",
+          "icon": "fas fa-arrow-circle-up"
+        },
+        {
+          "title": "السباكة والكهرباء",
+          "duration": "سنتان",
+          "icon": "fas fa-tools"
+        },
+        {
+          "title": "العزل المائي والحراري",
+          "duration": "10 سنوات",
+          "icon": "fas fa-water"
+        }
+      ],
+      "location": {
+        "mapEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3712.179326442654!2d39.1912!3d21.5034!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c3cf26e38b3afb%3A0x619ff0f4a259223!2sAsh%20Sharafiyah%2C%20Jeddah!5e0!3m2!1sar!2ssa!4v1710000000000!5m2!1sar!2ssa"
+      },
+      "advertiser": {
+        "name": "شركة رسوخ العقارية",
+        "license": "وسيط عقاري معتمد — رخصة فال #1200004360",
+        "phone": "+966566399523",
+        "whatsapp": "966566399523",
+        "isVerified": true,
+        "logo": "assets/images/rsoukh.webp"
+      }
+    },
+    {
+      "id": "droaza-u5",
+      "adNumber": "droaza-u5",
+      "title": "شقة للبيع في رسوخ دروازة — 126 م²",
+      "badge": "بلكونة",
+      "categoryName": "شقة تمليك",
+      "purpose": "للبيع",
+      "price": 570000,
+      "priceFormatted": "570,000 ريال",
+      "city": "جدة",
+      "district": "حي الشرفية",
+      "street": "حي الشرفية",
+      "status": "متاح للحجز",
+      "description": "مجمع رسوخ دروازة بحي الشرفية يمثل نقلة نوعية في المجمعات السكنية التمليك بجدة، بمرافق عصرية متكاملة تشمل نادياً رياضياً، منطقة ألعاب للأطفال، ومساحات لاندسكيب خضراء.",
+      "mainImage": "assets/images/al-sharafiyah-droaza/al-sharafiyah-droaza-5.webp",
+      "images": [
+        "assets/images/al-sharafiyah-droaza/al-sharafiyah-droaza-5.webp"
+      ],
+      "specs": {
+        "totalArea": "126 م²",
+        "bedrooms": "3 غرف",
+        "bathrooms": "3 دورة مياه",
+        "livingRooms": "صالة معيشة",
+        "balconies": "بلكونة",
+        "kitchens": "مطبخ",
+        "statusNote": "إفراغ فوري"
+      },
+      "features": [
+        {
+          "name": "نادي رياضي",
+          "icon": "fas fa-dumbbell"
+        },
+        {
+          "name": "منطقة ألعاب أطفال",
+          "icon": "fas fa-child"
+        },
+        {
+          "name": "لاند سكيب ومساحات خضراء",
+          "icon": "fas fa-tree"
+        }
+      ],
+      "warranties": [
+        {
+          "title": "الهيكل الإنشائي",
+          "duration": "15 سنة",
+          "icon": "fas fa-shield-alt"
+        },
+        {
+          "title": "الأفياش والمفاتيح",
+          "duration": "25 سنة",
+          "icon": "fas fa-plug"
+        },
+        {
+          "title": "ماكينة المصعد",
+          "duration": "20 سنة",
+          "icon": "fas fa-arrow-circle-up"
+        },
+        {
+          "title": "السباكة والكهرباء",
+          "duration": "سنتان",
+          "icon": "fas fa-tools"
+        },
+        {
+          "title": "العزل المائي والحراري",
+          "duration": "10 سنوات",
+          "icon": "fas fa-water"
+        }
+      ],
+      "location": {
+        "mapEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3712.179326442654!2d39.1912!3d21.5034!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c3cf26e38b3afb%3A0x619ff0f4a259223!2sAsh%20Sharafiyah%2C%20Jeddah!5e0!3m2!1sar!2ssa!4v1710000000000!5m2!1sar!2ssa"
+      },
+      "advertiser": {
+        "name": "شركة رسوخ العقارية",
+        "license": "وسيط عقاري معتمد — رخصة فال #1200004360",
+        "phone": "+966566399523",
+        "whatsapp": "966566399523",
+        "isVerified": true,
+        "logo": "assets/images/rsoukh.webp"
+      }
+    },
+    {
+      "id": "droaza-u6",
+      "adNumber": "droaza-u6",
+      "title": "شقة للبيع في رسوخ دروازة — 199 م² (غرفة طعام)",
+      "badge": "غرفة طعام",
+      "categoryName": "شقة تمليك",
+      "purpose": "للبيع",
+      "price": 710000,
+      "priceFormatted": "710,000 ريال",
+      "city": "جدة",
+      "district": "حي الشرفية",
+      "street": "حي الشرفية",
+      "status": "متاح للحجز",
+      "description": "مجمع رسوخ دروازة بحي الشرفية يمثل نقلة نوعية في المجمعات السكنية التمليك بجدة، بمرافق عصرية متكاملة تشمل نادياً رياضياً، منطقة ألعاب للأطفال، ومساحات لاندسكيب خضراء.",
+      "mainImage": "assets/images/al-sharafiyah-droaza/al-sharafiyah-droaza-6.webp",
+      "images": [
+        "assets/images/al-sharafiyah-droaza/al-sharafiyah-droaza-6.webp"
+      ],
+      "specs": {
+        "totalArea": "199 م²",
+        "bedrooms": "4 غرف",
+        "diningRooms": "غرفة طعام",
+        "balconies": "بلكونة",
+        "bathrooms": "3 دورة مياه",
+        "kitchens": "مطبخ",
+        "livingRooms": "صالة معيشة",
+        "statusNote": "إفراغ فوري"
+      },
+      "features": [
+        {
+          "name": "نادي رياضي",
+          "icon": "fas fa-dumbbell"
+        },
+        {
+          "name": "منطقة ألعاب أطفال",
+          "icon": "fas fa-child"
+        },
+        {
+          "name": "لاند سكيب ومساحات خضراء",
+          "icon": "fas fa-tree"
+        }
+      ],
+      "warranties": [
+        {
+          "title": "الهيكل الإنشائي",
+          "duration": "15 سنة",
+          "icon": "fas fa-shield-alt"
+        },
+        {
+          "title": "الأفياش والمفاتيح",
+          "duration": "25 سنة",
+          "icon": "fas fa-plug"
+        },
+        {
+          "title": "ماكينة المصعد",
+          "duration": "20 سنة",
+          "icon": "fas fa-arrow-circle-up"
+        },
+        {
+          "title": "السباكة والكهرباء",
+          "duration": "سنتان",
+          "icon": "fas fa-tools"
+        },
+        {
+          "title": "العزل المائي والحراري",
+          "duration": "10 سنوات",
+          "icon": "fas fa-water"
+        }
+      ],
+      "location": {
+        "mapEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3712.179326442654!2d39.1912!3d21.5034!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c3cf26e38b3afb%3A0x619ff0f4a259223!2sAsh%20Sharafiyah%2C%20Jeddah!5e0!3m2!1sar!2ssa!4v1710000000000!5m2!1sar!2ssa"
+      },
+      "advertiser": {
+        "name": "شركة رسوخ العقارية",
+        "license": "وسيط عقاري معتمد — رخصة فال #1200004360",
+        "phone": "+966566399523",
+        "whatsapp": "966566399523",
+        "isVerified": true,
+        "logo": "assets/images/rsoukh.webp"
+      }
+    },
+    {
+      "id": "droaza-u7",
+      "adNumber": "droaza-u7",
+      "title": "شقة للبيع في رسوخ دروازة — 125 م²",
+      "badge": "بلكونة",
+      "categoryName": "شقة تمليك",
+      "purpose": "للبيع",
+      "price": 570000,
+      "priceFormatted": "570,000 ريال",
+      "city": "جدة",
+      "district": "حي الشرفية",
+      "street": "حي الشرفية",
+      "status": "متاح للحجز",
+      "description": "مجمع رسوخ دروازة بحي الشرفية يمثل نقلة نوعية في المجمعات السكنية التمليك بجدة، بمرافق عصرية متكاملة تشمل نادياً رياضياً، منطقة ألعاب للأطفال، ومساحات لاندسكيب خضراء.",
+      "mainImage": "assets/images/al-sharafiyah-droaza/al-sharafiyah-droaza-7.webp",
+      "images": [
+        "assets/images/al-sharafiyah-droaza/al-sharafiyah-droaza-7.webp"
+      ],
+      "specs": {
+        "totalArea": "125 م²",
+        "bedrooms": "3 غرف",
+        "bathrooms": "3 دورة مياه",
+        "livingRooms": "صالة معيشة",
+        "balconies": "بلكونة",
+        "kitchens": "مطبخ",
+        "statusNote": "إفراغ فوري"
+      },
+      "features": [
+        {
+          "name": "نادي رياضي",
+          "icon": "fas fa-dumbbell"
+        },
+        {
+          "name": "منطقة ألعاب أطفال",
+          "icon": "fas fa-child"
+        },
+        {
+          "name": "لاند سكيب ومساحات خضراء",
+          "icon": "fas fa-tree"
+        }
+      ],
+      "warranties": [
+        {
+          "title": "الهيكل الإنشائي",
+          "duration": "15 سنة",
+          "icon": "fas fa-shield-alt"
+        },
+        {
+          "title": "الأفياش والمفاتيح",
+          "duration": "25 سنة",
+          "icon": "fas fa-plug"
+        },
+        {
+          "title": "ماكينة المصعد",
+          "duration": "20 سنة",
+          "icon": "fas fa-arrow-circle-up"
+        },
+        {
+          "title": "السباكة والكهرباء",
+          "duration": "سنتان",
+          "icon": "fas fa-tools"
+        },
+        {
+          "title": "العزل المائي والحراري",
+          "duration": "10 سنوات",
+          "icon": "fas fa-water"
+        }
+      ],
+      "location": {
+        "mapEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3712.179326442654!2d39.1912!3d21.5034!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c3cf26e38b3afb%3A0x619ff0f4a259223!2sAsh%20Sharafiyah%2C%20Jeddah!5e0!3m2!1sar!2ssa!4v1710000000000!5m2!1sar!2ssa"
+      },
+      "advertiser": {
+        "name": "شركة رسوخ العقارية",
+        "license": "وسيط عقاري معتمد — رخصة فال #1200004360",
+        "phone": "+966566399523",
+        "whatsapp": "966566399523",
+        "isVerified": true,
+        "logo": "assets/images/rsoukh.webp"
+      }
+    },
+    {
+      "id": "droaza-u8",
+      "adNumber": "droaza-u8",
+      "title": "شقة للبيع في رسوخ دروازة — 116 م²",
+      "badge": "بلكونة",
+      "categoryName": "شقة تمليك",
+      "purpose": "للبيع",
+      "price": 560000,
+      "priceFormatted": "560,000 ريال",
+      "city": "جدة",
+      "district": "حي الشرفية",
+      "street": "حي الشرفية",
+      "status": "متاح للحجز",
+      "description": "مجمع رسوخ دروازة بحي الشرفية يمثل نقلة نوعية في المجمعات السكنية التمليك بجدة، بمرافق عصرية متكاملة تشمل نادياً رياضياً، منطقة ألعاب للأطفال، ومساحات لاندسكيب خضراء.",
+      "mainImage": "assets/images/al-sharafiyah-droaza/al-sharafiyah-droaza-8.webp",
+      "images": [
+        "assets/images/al-sharafiyah-droaza/al-sharafiyah-droaza-8.webp"
+      ],
+      "specs": {
+        "totalArea": "116 م²",
+        "bedrooms": "3 غرف",
+        "bathrooms": "3 دورة مياه",
+        "kitchens": "مطبخ",
+        "livingRooms": "صالة معيشة",
+        "balconies": "بلكونة",
+        "statusNote": "إفراغ فوري"
+      },
+      "features": [
+        {
+          "name": "نادي رياضي",
+          "icon": "fas fa-dumbbell"
+        },
+        {
+          "name": "منطقة ألعاب أطفال",
+          "icon": "fas fa-child"
+        },
+        {
+          "name": "لاند سكيب ومساحات خضراء",
+          "icon": "fas fa-tree"
+        }
+      ],
+      "warranties": [
+        {
+          "title": "الهيكل الإنشائي",
+          "duration": "15 سنة",
+          "icon": "fas fa-shield-alt"
+        },
+        {
+          "title": "الأفياش والمفاتيح",
+          "duration": "25 سنة",
+          "icon": "fas fa-plug"
+        },
+        {
+          "title": "ماكينة المصعد",
+          "duration": "20 سنة",
+          "icon": "fas fa-arrow-circle-up"
+        },
+        {
+          "title": "السباكة والكهرباء",
+          "duration": "سنتان",
+          "icon": "fas fa-tools"
+        },
+        {
+          "title": "العزل المائي والحراري",
+          "duration": "10 سنوات",
+          "icon": "fas fa-water"
+        }
+      ],
+      "location": {
+        "mapEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3712.179326442654!2d39.1912!3d21.5034!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c3cf26e38b3afb%3A0x619ff0f4a259223!2sAsh%20Sharafiyah%2C%20Jeddah!5e0!3m2!1sar!2ssa!4v1710000000000!5m2!1sar!2ssa"
+      },
+      "advertiser": {
+        "name": "شركة رسوخ العقارية",
+        "license": "وسيط عقاري معتمد — رخصة فال #1200004360",
+        "phone": "+966566399523",
+        "whatsapp": "966566399523",
+        "isVerified": true,
+        "logo": "assets/images/rsoukh.webp"
+      }
+    },
+    {
+      "id": "droaza-rove-u1",
+      "adNumber": "droaza-rove-u1",
+      "title": "روف للبيع في رسوخ دروازة — 218 م² (سطح + سائق وعاملة)",
+      "badge": "سطح + سائق وعاملة",
+      "categoryName": "ملحق روف",
+      "purpose": "للبيع",
+      "price": 800000,
+      "priceFormatted": "800,000 ريال",
+      "city": "جدة",
+      "district": "حي الشرفية",
+      "street": "حي الشرفية",
+      "status": "متاح للحجز",
+      "description": "مجموعة روفات رسوخ دروازة بحي الشرفية، تجمع بين فخامة الإطلالة والأسطح الخاصة والمساحات الرحبة التي تلبي راحة العائلة، مع مرافق وخدمات فندقية متكاملة.",
+      "mainImage": "assets/images/al-sharafiyah-droaza-rove/al-sharafiyah-droaza-rove-1.webp",
+      "images": [
+        "assets/images/al-sharafiyah-droaza-rove/al-sharafiyah-droaza-rove-1.webp"
+      ],
+      "specs": {
+        "totalArea": "218 م²",
+        "bedrooms": "3 غرف",
+        "bathrooms": "4 دورة مياه",
+        "livingRooms": "صالة معيشة",
+        "maidRoom": "غرفة عاملة",
+        "kitchens": "مطبخ",
+        "diningRooms": "غرفة طعام",
+        "driverRoom": "غرفة سائق",
+        "roof": "سطح خاص",
+        "statusNote": "إفراغ فوري"
+      },
+      "features": [
+        {
+          "name": "نادي رياضي",
+          "icon": "fas fa-dumbbell"
+        },
+        {
+          "name": "منطقة ألعاب أطفال",
+          "icon": "fas fa-child"
+        },
+        {
+          "name": "لاند سكيب ومساحات خضراء",
+          "icon": "fas fa-tree"
+        }
+      ],
+      "warranties": [
+        {
+          "title": "الهيكل الإنشائي",
+          "duration": "15 سنة",
+          "icon": "fas fa-shield-alt"
+        },
+        {
+          "title": "الأفياش والمفاتيح",
+          "duration": "25 سنة",
+          "icon": "fas fa-plug"
+        },
+        {
+          "title": "ماكينة المصعد",
+          "duration": "20 سنة",
+          "icon": "fas fa-arrow-circle-up"
+        },
+        {
+          "title": "السباكة والكهرباء",
+          "duration": "سنتان",
+          "icon": "fas fa-tools"
+        },
+        {
+          "title": "العزل المائي والحراري",
+          "duration": "10 سنوات",
+          "icon": "fas fa-water"
+        }
+      ],
+      "location": {
+        "mapEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3712.179326442654!2d39.1912!3d21.5034!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c3cf26e38b3afb%3A0x619ff0f4a259223!2sAsh%20Sharafiyah%2C%20Jeddah!5e0!3m2!1sar!2ssa!4v1710000000000!5m2!1sar!2ssa"
+      },
+      "advertiser": {
+        "name": "شركة رسوخ العقارية",
+        "license": "وسيط عقاري معتمد — رخصة فال #1200004360",
+        "phone": "+966566399523",
+        "whatsapp": "966566399523",
+        "isVerified": true,
+        "logo": "assets/images/rsoukh.webp"
+      }
+    },
+    {
+      "id": "droaza-rove-u2",
+      "adNumber": "droaza-rove-u2",
+      "title": "روف للبيع في رسوخ دروازة — 219 م² (سطح + سائق وعاملة)",
+      "badge": "سطح + سائق وعاملة",
+      "categoryName": "ملحق روف",
+      "purpose": "للبيع",
+      "price": 800000,
+      "priceFormatted": "800,000 ريال",
+      "city": "جدة",
+      "district": "حي الشرفية",
+      "street": "حي الشرفية",
+      "status": "متاح للحجز",
+      "description": "مجموعة روفات رسوخ دروازة بحي الشرفية، تجمع بين فخامة الإطلالة والأسطح الخاصة والمساحات الرحبة التي تلبي راحة العائلة، مع مرافق وخدمات فندقية متكاملة.",
+      "mainImage": "assets/images/al-sharafiyah-droaza-rove/al-sharafiyah-droaza-rove-2.webp",
+      "images": [
+        "assets/images/al-sharafiyah-droaza-rove/al-sharafiyah-droaza-rove-2.webp"
+      ],
+      "specs": {
+        "totalArea": "219 م²",
+        "bedrooms": "3 غرف",
+        "maidRoom": "غرفة عاملة",
+        "driverRoom": "غرفة سائق",
+        "roof": "سطح خاص",
+        "bathrooms": "4 دورة مياه",
+        "kitchens": "مطبخ",
+        "livingRooms": "صالة معيشة",
+        "diningRooms": "غرفة طعام",
+        "statusNote": "إفراغ فوري"
+      },
+      "features": [
+        {
+          "name": "نادي رياضي",
+          "icon": "fas fa-dumbbell"
+        },
+        {
+          "name": "منطقة ألعاب أطفال",
+          "icon": "fas fa-child"
+        },
+        {
+          "name": "لاند سكيب ومساحات خضراء",
+          "icon": "fas fa-tree"
+        }
+      ],
+      "warranties": [
+        {
+          "title": "الهيكل الإنشائي",
+          "duration": "15 سنة",
+          "icon": "fas fa-shield-alt"
+        },
+        {
+          "title": "الأفياش والمفاتيح",
+          "duration": "25 سنة",
+          "icon": "fas fa-plug"
+        },
+        {
+          "title": "ماكينة المصعد",
+          "duration": "20 سنة",
+          "icon": "fas fa-arrow-circle-up"
+        },
+        {
+          "title": "السباكة والكهرباء",
+          "duration": "سنتان",
+          "icon": "fas fa-tools"
+        },
+        {
+          "title": "العزل المائي والحراري",
+          "duration": "10 سنوات",
+          "icon": "fas fa-water"
+        }
+      ],
+      "location": {
+        "mapEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3712.179326442654!2d39.1912!3d21.5034!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c3cf26e38b3afb%3A0x619ff0f4a259223!2sAsh%20Sharafiyah%2C%20Jeddah!5e0!3m2!1sar!2ssa!4v1710000000000!5m2!1sar!2ssa"
+      },
+      "advertiser": {
+        "name": "شركة رسوخ العقارية",
+        "license": "وسيط عقاري معتمد — رخصة فال #1200004360",
+        "phone": "+966566399523",
+        "whatsapp": "966566399523",
+        "isVerified": true,
+        "logo": "assets/images/rsoukh.webp"
+      }
+    },
+    {
+      "id": "droaza-rove-u3",
+      "adNumber": "droaza-rove-u3",
+      "title": "روف للبيع في رسوخ دروازة — 198 م² (سطح + 2 بلكونة)",
+      "badge": "سطح + 2 بلكونة",
+      "categoryName": "ملحق روف",
+      "purpose": "للبيع",
+      "price": 750000,
+      "priceFormatted": "750,000 ريال",
+      "city": "جدة",
+      "district": "حي الشرفية",
+      "street": "حي الشرفية",
+      "status": "متاح للحجز",
+      "description": "مجموعة روفات رسوخ دروازة بحي الشرفية، تجمع بين فخامة الإطلالة والأسطح الخاصة والمساحات الرحبة التي تلبي راحة العائلة، مع مرافق وخدمات فندقية متكاملة.",
+      "mainImage": "assets/images/al-sharafiyah-droaza-rove/al-sharafiyah-droaza-rove-3.webp",
+      "images": [
+        "assets/images/al-sharafiyah-droaza-rove/al-sharafiyah-droaza-rove-3.webp"
+      ],
+      "specs": {
+        "totalArea": "198 م²",
+        "bedrooms": "3 غرف",
+        "balconies": "2 بلكونة",
+        "bathrooms": "3 دورة مياه",
+        "kitchens": "مطبخ",
+        "livingRooms": "صالة معيشة",
+        "roof": "سطح خاص",
+        "driverRoom": "غرفة سائق",
+        "statusNote": "إفراغ فوري"
+      },
+      "features": [
+        {
+          "name": "نادي رياضي",
+          "icon": "fas fa-dumbbell"
+        },
+        {
+          "name": "منطقة ألعاب أطفال",
+          "icon": "fas fa-child"
+        },
+        {
+          "name": "لاند سكيب ومساحات خضراء",
+          "icon": "fas fa-tree"
+        }
+      ],
+      "warranties": [
+        {
+          "title": "الهيكل الإنشائي",
+          "duration": "15 سنة",
+          "icon": "fas fa-shield-alt"
+        },
+        {
+          "title": "الأفياش والمفاتيح",
+          "duration": "25 سنة",
+          "icon": "fas fa-plug"
+        },
+        {
+          "title": "ماكينة المصعد",
+          "duration": "20 سنة",
+          "icon": "fas fa-arrow-circle-up"
+        },
+        {
+          "title": "السباكة والكهرباء",
+          "duration": "سنتان",
+          "icon": "fas fa-tools"
+        },
+        {
+          "title": "العزل المائي والحراري",
+          "duration": "10 سنوات",
+          "icon": "fas fa-water"
+        }
+      ],
+      "location": {
+        "mapEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3712.179326442654!2d39.1912!3d21.5034!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c3cf26e38b3afb%3A0x619ff0f4a259223!2sAsh%20Sharafiyah%2C%20Jeddah!5e0!3m2!1sar!2ssa!4v1710000000000!5m2!1sar!2ssa"
+      },
+      "advertiser": {
+        "name": "شركة رسوخ العقارية",
+        "license": "وسيط عقاري معتمد — رخصة فال #1200004360",
+        "phone": "+966566399523",
+        "whatsapp": "966566399523",
+        "isVerified": true,
+        "logo": "assets/images/rsoukh.webp"
+      }
+    },
+    {
+      "id": "droaza-rove-u4",
+      "adNumber": "droaza-rove-u4",
+      "title": "روف للبيع في رسوخ دروازة — 257 م² (سطح واسع + طعام وسائق)",
+      "badge": "سطح واسع 257 م²",
+      "categoryName": "ملحق روف",
+      "purpose": "للبيع",
+      "price": 1000000,
+      "priceFormatted": "1,000,000 ريال",
+      "city": "جدة",
+      "district": "حي الشرفية",
+      "street": "حي الشرفية",
+      "status": "متاح للحجز",
+      "description": "مجموعة روفات رسوخ دروازة بحي الشرفية، تجمع بين فخامة الإطلالة والأسطح الخاصة والمساحات الرحبة التي تلبي راحة العائلة، مع مرافق وخدمات فندقية متكاملة.",
+      "mainImage": "assets/images/al-sharafiyah-droaza-rove/al-sharafiyah-droaza-rove-4.webp",
+      "images": [
+        "assets/images/al-sharafiyah-droaza-rove/al-sharafiyah-droaza-rove-4.webp"
+      ],
+      "specs": {
+        "totalArea": "257 م²",
+        "bedrooms": "4 غرف",
+        "maidRoom": "غرفة عاملة",
+        "driverRoom": "غرفة سائق",
+        "roof": "سطح خاص",
+        "bathrooms": "4 دورة مياه",
+        "kitchens": "مطبخ",
+        "livingRooms": "صالة معيشة",
+        "diningRooms": "غرفة طعام",
+        "statusNote": "إفراغ فوري"
+      },
+      "features": [
+        {
+          "name": "نادي رياضي",
+          "icon": "fas fa-dumbbell"
+        },
+        {
+          "name": "منطقة ألعاب أطفال",
+          "icon": "fas fa-child"
+        },
+        {
+          "name": "لاند سكيب ومساحات خضراء",
+          "icon": "fas fa-tree"
+        }
+      ],
+      "warranties": [
+        {
+          "title": "الهيكل الإنشائي",
+          "duration": "15 سنة",
+          "icon": "fas fa-shield-alt"
+        },
+        {
+          "title": "الأفياش والمفاتيح",
+          "duration": "25 سنة",
+          "icon": "fas fa-plug"
+        },
+        {
+          "title": "ماكينة المصعد",
+          "duration": "20 سنة",
+          "icon": "fas fa-arrow-circle-up"
+        },
+        {
+          "title": "السباكة والكهرباء",
+          "duration": "سنتان",
+          "icon": "fas fa-tools"
+        },
+        {
+          "title": "العزل المائي والحراري",
+          "duration": "10 سنوات",
+          "icon": "fas fa-water"
+        }
+      ],
+      "location": {
+        "mapEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3712.179326442654!2d39.1912!3d21.5034!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c3cf26e38b3afb%3A0x619ff0f4a259223!2sAsh%20Sharafiyah%2C%20Jeddah!5e0!3m2!1sar!2ssa!4v1710000000000!5m2!1sar!2ssa"
+      },
+      "advertiser": {
+        "name": "شركة رسوخ العقارية",
+        "license": "وسيط عقاري معتمد — رخصة فال #1200004360",
+        "phone": "+966566399523",
+        "whatsapp": "966566399523",
+        "isVerified": true,
+        "logo": "assets/images/rsoukh.webp"
+      }
+    },
+    {
+      "id": "droaza-rove-u5",
+      "adNumber": "droaza-rove-u5",
+      "title": "روف للبيع في رسوخ دروازة — 232 م² (سطح + بلكونة)",
+      "badge": "سطح + بلكونة",
+      "categoryName": "ملحق روف",
+      "purpose": "للبيع",
+      "price": 850000,
+      "priceFormatted": "850,000 ريال",
+      "city": "جدة",
+      "district": "حي الشرفية",
+      "street": "حي الشرفية",
+      "status": "متاح للحجز",
+      "description": "مجموعة روفات رسوخ دروازة بحي الشرفية، تجمع بين فخامة الإطلالة والأسطح الخاصة والمساحات الرحبة التي تلبي راحة العائلة، مع مرافق وخدمات فندقية متكاملة.",
+      "mainImage": "assets/images/al-sharafiyah-droaza-rove/al-sharafiyah-droaza-rove-5.webp",
+      "images": [
+        "assets/images/al-sharafiyah-droaza-rove/al-sharafiyah-droaza-rove-5.webp"
+      ],
+      "specs": {
+        "totalArea": "232 م²",
+        "bedrooms": "3 غرف",
+        "maidRoom": "غرفة عاملة",
+        "driverRoom": "غرفة سائق",
+        "roof": "سطح خاص",
+        "balconies": "بلكونة",
+        "bathrooms": "4 دورة مياه",
+        "kitchens": "مطبخ",
+        "livingRooms": "صالة معيشة",
+        "diningRooms": "غرفة طعام",
+        "statusNote": "إفراغ فوري"
+      },
+      "features": [
+        {
+          "name": "نادي رياضي",
+          "icon": "fas fa-dumbbell"
+        },
+        {
+          "name": "منطقة ألعاب أطفال",
+          "icon": "fas fa-child"
+        },
+        {
+          "name": "لاند سكيب ومساحات خضراء",
+          "icon": "fas fa-tree"
+        }
+      ],
+      "warranties": [
+        {
+          "title": "الهيكل الإنشائي",
+          "duration": "15 سنة",
+          "icon": "fas fa-shield-alt"
+        },
+        {
+          "title": "الأفياش والمفاتيح",
+          "duration": "25 سنة",
+          "icon": "fas fa-plug"
+        },
+        {
+          "title": "ماكينة المصعد",
+          "duration": "20 سنة",
+          "icon": "fas fa-arrow-circle-up"
+        },
+        {
+          "title": "السباكة والكهرباء",
+          "duration": "سنتان",
+          "icon": "fas fa-tools"
+        },
+        {
+          "title": "العزل المائي والحراري",
+          "duration": "10 سنوات",
+          "icon": "fas fa-water"
+        }
+      ],
+      "location": {
+        "mapEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3712.179326442654!2d39.1912!3d21.5034!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c3cf26e38b3afb%3A0x619ff0f4a259223!2sAsh%20Sharafiyah%2C%20Jeddah!5e0!3m2!1sar!2ssa!4v1710000000000!5m2!1sar!2ssa"
+      },
+      "advertiser": {
+        "name": "شركة رسوخ العقارية",
+        "license": "وسيط عقاري معتمد — رخصة فال #1200004360",
+        "phone": "+966566399523",
+        "whatsapp": "966566399523",
+        "isVerified": true,
+        "logo": "assets/images/rsoukh.webp"
+      }
+    },
+    {
+      "id": "droaza-rove-u6",
+      "adNumber": "droaza-rove-u6",
+      "title": "روف للبيع في رسوخ دروازة — 250 م² (سطح + 4 غرف)",
+      "badge": "سطح + 4 غرف",
+      "categoryName": "ملحق روف",
+      "purpose": "للبيع",
+      "price": 1000000,
+      "priceFormatted": "1,000,000 ريال",
+      "city": "جدة",
+      "district": "حي الشرفية",
+      "street": "حي الشرفية",
+      "status": "متاح للحجز",
+      "description": "مجموعة روفات رسوخ دروازة بحي الشرفية، تجمع بين فخامة الإطلالة والأسطح الخاصة والمساحات الرحبة التي تلبي راحة العائلة، مع مرافق وخدمات فندقية متكاملة.",
+      "mainImage": "assets/images/al-sharafiyah-droaza-rove/al-sharafiyah-droaza-rove-6.webp",
+      "images": [
+        "assets/images/al-sharafiyah-droaza-rove/al-sharafiyah-droaza-rove-6.webp"
+      ],
+      "specs": {
+        "totalArea": "250 م²",
+        "bedrooms": "4 غرف",
+        "bathrooms": "4 دورة مياه",
+        "livingRooms": "صالة معيشة",
+        "maidRoom": "غرفة عاملة",
+        "diningRooms": "غرفة طعام",
+        "kitchens": "مطبخ",
+        "roof": "سطح خاص",
+        "driverRoom": "غرفة سائق",
+        "statusNote": "إفراغ فوري"
+      },
+      "features": [
+        {
+          "name": "نادي رياضي",
+          "icon": "fas fa-dumbbell"
+        },
+        {
+          "name": "منطقة ألعاب أطفال",
+          "icon": "fas fa-child"
+        },
+        {
+          "name": "لاند سكيب ومساحات خضراء",
+          "icon": "fas fa-tree"
+        }
+      ],
+      "warranties": [
+        {
+          "title": "الهيكل الإنشائي",
+          "duration": "15 سنة",
+          "icon": "fas fa-shield-alt"
+        },
+        {
+          "title": "الأفياش والمفاتيح",
+          "duration": "25 سنة",
+          "icon": "fas fa-plug"
+        },
+        {
+          "title": "ماكينة المصعد",
+          "duration": "20 سنة",
+          "icon": "fas fa-arrow-circle-up"
+        },
+        {
+          "title": "السباكة والكهرباء",
+          "duration": "سنتان",
+          "icon": "fas fa-tools"
+        },
+        {
+          "title": "العزل المائي والحراري",
+          "duration": "10 سنوات",
+          "icon": "fas fa-water"
+        }
+      ],
+      "location": {
+        "mapEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3712.179326442654!2d39.1912!3d21.5034!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c3cf26e38b3afb%3A0x619ff0f4a259223!2sAsh%20Sharafiyah%2C%20Jeddah!5e0!3m2!1sar!2ssa!4v1710000000000!5m2!1sar!2ssa"
+      },
+      "advertiser": {
+        "name": "شركة رسوخ العقارية",
+        "license": "وسيط عقاري معتمد — رخصة فال #1200004360",
+        "phone": "+966566399523",
+        "whatsapp": "966566399523",
+        "isVerified": true,
+        "logo": "assets/images/rsoukh.webp"
+      }
+    }
+  ]
+}

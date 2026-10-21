@@ -98,30 +98,26 @@ document.addEventListener('DOMContentLoaded', async () => {
     observer.observe(statsSection);
   }
 
-  // ================= 2. بناء كارت العقار الفردي ديناميكياً من بيانات properties.json =================
+  // ================= 2. بناء كارت المشروع في الصفحة الرئيسية (مع صورة ابوت وبدون شريط مواصفات الوحدة) =================
   const renderCardHTML = (card, type) => {
-    // توحيد ارتفاع وأبعاد الصور لجميع كروت الشبكة بنسبة مربعة 1/1 لتعطي ارتفاعاً ممتازاً وبارزاً للبوستر
-    const imgContainerClasses = 'relative w-full aspect-[1/1] overflow-hidden bg-neutral-900';
-    const imgClasses = 'w-full h-full object-cover transition-transform duration-700 group-hover:scale-105';
-
-    // استخراج المواصفات الأربعة المحددة بدقة
-    const s = card.specs || {};
-    const areaVal = s.totalArea || s.area || '—';
-    const bedroomsVal = s.bedrooms || s.rooms || '—';
-    const balconiesVal = s.balconies || '—';
-    const bathroomsVal = s.bathrooms || '—';
-
-    const cardImg = card.mainImage || (Array.isArray(card.images) && card.images[0]) || card.image;
-    const propId = card.adNumber || card.id;
-    const badgeText = card.categoryName || (type === 'roofs' ? 'روف فاخر' : 'شقة تمليك');
+    const propId = card.id || card.adNumber;
+    const badgeText = card.badge || 'مشروع سكني فاخر';
+    const statusText = card.status || 'متاح للحجز';
+    const targetUrl = card.projectUrl || `project/?id=${propId}`;
+    const priceFormatted = card.startingPriceFormatted || (card.startingPrice ? `${Number(card.startingPrice).toLocaleString('en-US')} ريال` : (card.priceFormatted || ''));
+    const cardImg = card.mainImage || (Array.isArray(card.images) && card.images[0]) || card.image || 'assets/images/about-luxury-villa.webp';
 
     return `
-      <div class="property-card group bg-white rounded-3xl border border-neutral-200/80 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 flex flex-col text-right">
-        <div class="${imgContainerClasses}">
-          <img src="${cardImg}" alt="${card.title}" class="${imgClasses}">
+      <div class="property-card group bg-white rounded-3xl border border-neutral-200/90 overflow-hidden shadow-xs hover:shadow-xl transition-all duration-500 flex flex-col text-right hover:-translate-y-1">
+        <!-- صورة غلاف المشروع (صورة ابوت) -->
+        <div class="relative w-full aspect-[16/10] sm:aspect-[4/3] overflow-hidden bg-neutral-900">
+          <img src="${cardImg}" alt="${card.title}" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy">
           <div class="absolute top-3.5 right-3.5 flex items-center gap-2">
             <span class="bg-neutral-900/80 backdrop-blur-md text-white text-[11px] font-bold px-3 py-1 rounded-full">${badgeText}</span>
-            ${card.purpose ? `<span class="bg-emerald-500 text-white text-[11px] font-bold px-2.5 py-1 rounded-full">${card.purpose}</span>` : ''}
+            <span class="inline-flex items-center gap-1.5 text-emerald-600 font-bold text-[11px] bg-white/90 backdrop-blur-md px-2.5 py-0.5 rounded-full border border-emerald-200/50">
+              <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
+              ${statusText}
+            </span>
           </div>
           ${card.district ? `
           <div class="absolute bottom-3 right-3 bg-black/60 backdrop-blur-md text-white text-xs px-3 py-1 rounded-xl flex items-center gap-1.5">
@@ -129,33 +125,42 @@ document.addEventListener('DOMContentLoaded', async () => {
             <span>${card.district}</span>
           </div>` : ''}
         </div>
-        <div class="p-5 flex-1 flex flex-col justify-between space-y-4">
+
+        <div class="p-5 sm:p-6 flex-1 flex flex-col justify-between space-y-4">
           <div>
-            <div class="flex items-center justify-between text-xs text-neutral-400 mb-1.5">
-              <span>كود: #${propId}</span>
-              ${card.rating ? `<span class="text-amber-500 font-bold flex items-center gap-1"><i class="fas fa-star text-[10px]"></i> ${card.rating}</span>` : ''}
-            </div>
-            <h4 class="text-base font-bold text-neutral-900 group-hover:text-amber-600 transition-colors line-clamp-1">
+            <h4 class="text-base sm:text-lg font-black text-neutral-900 group-hover:text-amber-600 transition-colors mb-2 leading-snug">
               ${card.title}
             </h4>
+            
+            ${card.tagline ? `
+            <p class="text-xs text-neutral-500 line-clamp-2 leading-relaxed">
+              ${card.tagline}
+            </p>` : ''}
           </div>
-          <div class="grid grid-cols-4 gap-2 py-3 px-2 bg-neutral-50 rounded-2xl text-center border border-neutral-100 text-xs">
-            <div><span class="text-[10px] text-neutral-400 block mb-0.5">المساحة الإجمالية</span><span class="font-bold text-neutral-900 font-sans">${areaVal}</span></div>
-            <div><span class="text-[10px] text-neutral-400 block mb-0.5">غرف النوم</span><span class="font-bold text-neutral-900">${bedroomsVal}</span></div>
-            <div><span class="text-[10px] text-neutral-400 block mb-0.5">البلكونات</span><span class="font-bold text-amber-600">${balconiesVal}</span></div>
-            <div><span class="text-[10px] text-neutral-400 block mb-0.5">دورات المياه</span><span class="font-bold text-neutral-900">${bathroomsVal}</span></div>
-          </div>
-          <div class="pt-3 border-t border-neutral-100 flex items-center justify-between">
-            <div>
-              <div class="flex items-center gap-1.5">
-                <span class="text-[12px] text-neutral-400 block">السعر يبدأ من :</span>
-                ${card.originalPrice && card.originalPrice > card.price ? `<span class="text-[10px] text-rose-500 line-through font-mono font-bold">${card.originalPrice.toLocaleString('en-US')}</span>` : ''}
-              </div>
-              <span class="text-base sm:text-lg font-black text-neutral-900 font-sans">${(card.priceFormatted || `${card.price.toLocaleString('en-US')} ريال`).replace(' ريال', '')} <span class="text-xs font-bold text-amber-600 font-cairo">ريال</span></span>
+
+          <!-- معلومات المشروع المجمعة (بدون شريط مواصفات الشقق الفردية) -->
+          <div class="flex items-center justify-between py-2.5 px-3.5 bg-neutral-50 rounded-2xl border border-neutral-100 text-xs">
+            <div class="flex items-center gap-2 font-bold text-neutral-700">
+              <i class="fas fa-layer-group text-amber-500"></i>
+              <span>${card.unitsCount || 'نماذج متعددة'}</span>
             </div>
-            <a href="${(card.type === 'project' || (Array.isArray(card.models) && card.models.length > 0)) ? `project/?id=${propId}` : `property/?id=${propId}`}" class="inline-flex items-center gap-1.5 px-4 py-2 bg-neutral-100 group-hover:bg-amber-600 group-hover:text-white text-neutral-900 rounded-xl text-xs font-bold transition-all duration-300">
-              <span>${(card.type === 'project' || (Array.isArray(card.models) && card.models.length > 0)) ? 'معاينة المشروع ' : 'التفاصيل'}</span>
-              <i class="fas fa-arrow-left text-[10px]"></i>
+            <div class="flex items-center gap-1.5 text-neutral-500 font-medium">
+              <i class="fas fa-map-marker-alt text-amber-500"></i>
+              <span>${card.district || ''}</span>
+            </div>
+          </div>
+
+          <!-- السعر وزر المعاينة -->
+          <div class="pt-3 border-t border-neutral-100 flex items-center justify-between gap-3">
+            <div>
+              <span class="text-[11px] text-neutral-400 block font-medium">السعر يبدأ من :</span>
+              <span class="text-base sm:text-lg font-black text-neutral-900 font-sans">
+                ${priceFormatted.replace(' ريال', '')} <span class="text-xs font-bold text-amber-600 font-cairo">ريال</span>
+              </span>
+            </div>
+            <a href="${targetUrl}" class="inline-flex items-center gap-2 px-4 py-2 bg-neutral-900 group-hover:bg-amber-600 text-white rounded-xl text-xs font-bold transition-all duration-300 shadow-sm hover:shadow-md">
+              <span>معاينة المشروع</span>
+              <i class="fas fa-arrow-left text-[10px] transform group-hover:-translate-x-1 transition-transform"></i>
             </a>
           </div>
         </div>
@@ -163,7 +168,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     `;
   };
 
-  // ================= 2. تحميل وعرض كروت المشاريع مقسمة حسب الأحياء الخمسة من properties.json =================
+  // ================= 2. تحميل وعرض كروت المشاريع مقسمة حسب الأحياء من projects.json =================
   let allPropertiesData = [];
   const districtsConfig = [
     { key: 'mushrifah', name: 'حي مشرفة', filter: p => Boolean(p.district && p.district.includes('مشرفة')) },
@@ -183,46 +188,42 @@ document.addEventListener('DOMContentLoaded', async () => {
         projectsList = await resProjects.json();
       }
 
-      allPropertiesData = projectsList;
+      // قراءة كروت الهوم سواء من كائن مقسم أو مصفوفة مباشرة
+      const homeList = Array.isArray(projectsList) ? projectsList : (projectsList.homeProjects || []);
+      allPropertiesData = homeList;
 
-        // ترتيب كافة العقارات رقمياً أو أبجدياً حسب الـ id / adNumber تصاعدياً
-        const getNumericId = (item) => {
-          const raw = String(item.id || item.adNumber || '');
-          const match = raw.match(/\d+/);
-          return match ? parseInt(match[0], 10) : 0;
-        };
+      districtsConfig.forEach(dist => {
+        const gridEl = document.getElementById(`${dist.key}-cards-grid`);
+        const sectionEl = document.getElementById(`district-${dist.key}`);
+        if (!gridEl) return;
 
-        allPropertiesData.sort((a, b) => getNumericId(a) - getNumericId(b));
+        let matched = homeList.filter(p => !p.hideFromGrid && dist.filter(p));
 
-        districtsConfig.forEach(dist => {
-          const gridEl = document.getElementById(`${dist.key}-cards-grid`);
-          if (!gridEl) return;
+        // إبقاء جميع أقسام الأحياء ظاهرة دوماً
+        if (sectionEl) {
+          sectionEl.style.display = '';
+        }
 
-          let matched = allPropertiesData.filter(dist.filter);
+        dist.items = matched;
+        gridEl.innerHTML = matched.slice(0, 3)
+          .map(card => renderCardHTML(card, dist.name))
+          .join('');
 
-          // فرز وترتيب كروت الحي حسب الـ id تصاعدياً
-          matched.sort((a, b) => getNumericId(a) - getNumericId(b));
+        const loadMoreBtn = document.getElementById(`load-more-${dist.key}-btn`);
+        const loadMoreContainer = loadMoreBtn ? loadMoreBtn.parentElement : null;
+        const loadMoreText = document.getElementById(`load-more-${dist.key}-text`);
+        const loadMoreIcon = document.getElementById(`load-more-${dist.key}-icon`);
+        let isExpanded = false;
+        let extraElements = [];
 
-          dist.items = matched;
-          gridEl.innerHTML = matched.slice(0, 3)
-            .map(card => renderCardHTML(card, dist.name))
-            .join('');
-
-          const loadMoreBtn = document.getElementById(`load-more-${dist.key}-btn`);
-          const loadMoreContainer = loadMoreBtn ? loadMoreBtn.parentElement : null;
-          const loadMoreText = document.getElementById(`load-more-${dist.key}-text`);
-          const loadMoreIcon = document.getElementById(`load-more-${dist.key}-icon`);
-          let isExpanded = false;
-          let extraElements = [];
-
-          // إخفاء زر عرض المزيد إذا كان عدد كروت الحي 3 أو أقل
-          if (loadMoreContainer) {
-            if (matched.length <= 3) {
-              loadMoreContainer.style.display = 'none';
-            } else {
-              loadMoreContainer.style.display = 'flex';
-            }
+        // إخفاء زر عرض المزيد إذا كان عدد كروت الحي 3 أو أقل
+        if (loadMoreContainer) {
+          if (matched.length <= 3) {
+            loadMoreContainer.style.display = 'none';
+          } else {
+            loadMoreContainer.style.display = 'flex';
           }
+        }
 
           if (loadMoreBtn && matched.length > 3) {
             loadMoreBtn.addEventListener('click', () => {
@@ -292,8 +293,11 @@ document.addEventListener('DOMContentLoaded', async () => {
       console.warn('Could not load projects.json dynamically, fallback applied', e);
     }
 
+    // قراءة مصفوفة تفاصيل الوحدات
+    const allUnits = Array.isArray(propertiesData) ? propertiesData : (propertiesData.unitDetails || []);
+
     // مطابقة العقار المطلوب بواسطة كود الإعلان أو الـ id
-    let currentProp = propertiesData.find(p => {
+    let currentProp = allUnits.find(p => {
       const pIdStr = String(p.id).toLowerCase();
       const pAdStr = String(p.adNumber || '').toLowerCase();
       const searchStr = rawIdParam.toLowerCase();
@@ -302,24 +306,19 @@ document.addEventListener('DOMContentLoaded', async () => {
       return pIdStr === searchStr || 
              pAdStr === searchStr || 
              pAdStr === searchWithAQ || 
-             pIdStr === searchWithAQ;
+             pIdStr === searchWithAQ ||
+             pIdStr.includes(searchStr) ||
+             searchStr.includes(pIdStr);
     });
 
-    if (!currentProp && propertiesData.length > 0) {
-      currentProp = propertiesData.find(p => String(p.id).includes('10001') || p.id === 2) || propertiesData[0];
+    if (!currentProp && allUnits.length > 0) {
+      currentProp = allUnits[0];
     }
 
-    // في حال عدم توفر داتا الجيسون نستخدم عقار الشقة كقيمة افتراضية
-    let galleryImages = [
-      '../assets/images/AQ-10001/AQ-10001.webp',
-      '../assets/images/AQ-62184/01-facade.webp',
-      '../assets/images/AQ-62184/02-living-room.webp',
-      '../assets/images/AQ-62184/03-master-bedroom.webp',
-      '../assets/images/AQ-62184/04-bedroom-2.webp',
-      '../assets/images/AQ-62184/05-kitchen.webp',
-      '../assets/images/AQ-62184/06-bathroom.webp',
-      '../assets/images/AQ-62184/07-balcony-view.webp'
-    ];
+    // تجهيز معرض صور الوحدة من بياناتها
+    let galleryImages = (currentProp && Array.isArray(currentProp.images) && currentProp.images.length > 0)
+      ? currentProp.images.map(img => `../${String(img).replace(/^(\.\.\/)+/, '')}`)
+      : (currentProp && currentProp.mainImage ? [`../${String(currentProp.mainImage).replace(/^(\.\.\/)+/, '')}`] : ['../assets/images/about-luxury-villa.webp']);
 
     if (currentProp) {
       // تحديث عناصر الصفحة ببيانات العقار من الـ JSON
@@ -458,6 +457,10 @@ document.addEventListener('DOMContentLoaded', async () => {
       if (currentProp.advertiser) {
         setText('prop-advertiser-name', currentProp.advertiser.name);
         setText('prop-advertiser-license', currentProp.advertiser.license);
+        const logoEl = document.getElementById('prop-advertiser-logo');
+        if (logoEl && currentProp.advertiser.logo) {
+          logoEl.src = `../${String(currentProp.advertiser.logo).replace(/^(\.\.\/)+/, '')}`;
+        }
       }
 
       // تحديث رابط الخريطة
@@ -474,32 +477,24 @@ document.addEventListener('DOMContentLoaded', async () => {
         if (!specsContainer || !specsObj) return;
 
         const specDefinitions = [
-          { key: 'totalArea', label: 'المساحة الإجمالية', fontSans: true },
-          { key: 'roofArea', label: 'مساحة السطح الخاص', fontSans: true },
-          { key: 'landArea', label: 'مساحة الأرض', fontSans: true },
-          { key: 'bedrooms', label: 'عدد غرف النوم' },
+          { key: 'totalArea', label: 'المساحة', fontSans: true },
+          { key: 'roof', label: 'السطح' },
+          { key: 'bedrooms', label: 'غرف النوم' },
           { key: 'bathrooms', label: 'دورات المياه' },
-          { key: 'livingRooms', label: 'الصالة والمعيشة' },
-          { key: 'diningRooms', label: 'صالة الطعام' },
-          { key: 'maidRoom', label: 'غرفة الخادمة' },
-          { key: 'balconies', label: 'عدد البلكونات' },
-          { key: 'kitchens', label: 'عدد المطابخ' },
-          { key: 'floors', label: 'عدد الأدوار' },
-          { key: 'floorNumber', label: 'رقم الدور' },
-          { key: 'age', label: 'عمر العقار' },
-          { key: 'streetWidth', label: 'عرض الشارع', fontSans: true },
-          { key: 'furnished', label: 'حالة التأثيث' },
-          { key: 'facade', label: 'الواجهة المعمارية' },
-          { key: 'falNumber', label: 'رقم فال', fontSans: true },
-          { key: 'licenseNumber', label: 'رقم الترخيص', fontSans: true }
+          { key: 'livingRooms', label: 'صالة المعيشة' },
+          { key: 'diningRooms', label: 'غرفة الطعام' },
+          { key: 'kitchens', label: 'المطبخ' },
+          { key: 'balconies', label: 'البلكونة' },
+          { key: 'maidRoom', label: 'غرفة العاملة' },
+          { key: 'driverRoom', label: 'غرفة السائق' },
+          { key: 'storage', label: 'المخزن' },
+          { key: 'elevator', label: 'المصعد' },
+          { key: 'statusNote', label: 'حالة العقار' }
         ];
 
         const validSpecsHTML = specDefinitions
           .map(def => {
             let val = specsObj[def.key];
-            if ((val === undefined || val === null || val === '') && (def.key === 'licenseNumber' || def.key === 'falNumber')) {
-              val = currentProp[def.key];
-            }
             if (val === undefined || val === null) return '';
             const trimmed = String(val).trim();
             if (trimmed === '' || trimmed === '—' || trimmed === '-' || trimmed === 'null' || trimmed === 'undefined') {
@@ -523,26 +518,24 @@ document.addEventListener('DOMContentLoaded', async () => {
         renderSpecs(currentProp.specs);
       }
 
-      // تحديث المميزات والتجهيزات Features (إخفاء أي ميزة فارغة تماماً)
+      // تحديث المميزات والتجهيزات Features (إخفاء السكشن بالكامل إذا لم تكن متوفرة)
+      const featuresSection = document.getElementById('prop-features-section');
       const featuresContainer = document.getElementById('features-grid-container');
-      if (featuresContainer && Array.isArray(currentProp.features)) {
-        const validFeaturesHTML = currentProp.features
-          .filter(f => f && f.name && String(f.name).trim() !== '' && String(f.name).trim() !== '—')
-          .map(f => `
+      const rawFeatures = Array.isArray(currentProp.features) ? currentProp.features : [];
+      const validFeatures = rawFeatures.filter(f => f && f.name && String(f.name).trim() !== '' && String(f.name).trim() !== '—');
+
+      if (featuresContainer) {
+        if (validFeatures.length > 0) {
+          featuresContainer.innerHTML = validFeatures.map(f => `
             <div class="flex items-center gap-2.5 p-3 rounded-xl bg-neutral-50 text-neutral-800">
               <i class="${f.icon || 'fas fa-check-circle'} text-amber-600 text-sm"></i>
               <span>${f.name.trim()}</span>
             </div>
           `).join('');
-
-        featuresContainer.innerHTML = validFeaturesHTML;
-        
-        // إذا كانت كل المميزات فارغة نخفي الحاوية بالكامل
-        const featuresSection = featuresContainer.closest('.space-y-4') || featuresContainer.parentElement;
-        if (featuresSection && validFeaturesHTML === '') {
-          featuresSection.classList.add('hidden');
-        } else if (featuresSection) {
-          featuresSection.classList.remove('hidden');
+          if (featuresSection) featuresSection.classList.remove('hidden');
+        } else {
+          featuresContainer.innerHTML = '';
+          if (featuresSection) featuresSection.classList.add('hidden');
         }
       }
 
@@ -568,6 +561,27 @@ document.addEventListener('DOMContentLoaded', async () => {
       galleryImages = images.map(img => img.startsWith('../') ? img : `../${img}`);
       currentIndex = 0;
       if (totalCountLabel) totalCountLabel.textContent = galleryImages.length;
+
+      const thumbnailsWrapper = document.getElementById('thumbnails-wrapper');
+      const counterBadge = document.getElementById('gallery-counter-badge') || (currentIndexLabel ? currentIndexLabel.parentElement : null);
+
+      if (galleryImages.length <= 1) {
+        if (thumbnailsWrapper) thumbnailsWrapper.style.display = 'none';
+        if (prevBtn) prevBtn.style.display = 'none';
+        if (nextBtn) nextBtn.style.display = 'none';
+        if (progressBar && progressBar.parentElement) progressBar.parentElement.style.display = 'none';
+        if (counterBadge) counterBadge.style.display = 'none';
+        
+        mainImage.src = galleryImages[0];
+        mainImage.style.opacity = '1';
+        return;
+      }
+
+      if (thumbnailsWrapper) thumbnailsWrapper.style.display = '';
+      if (prevBtn) prevBtn.style.display = '';
+      if (nextBtn) nextBtn.style.display = '';
+      if (progressBar && progressBar.parentElement) progressBar.parentElement.style.display = '';
+      if (counterBadge) counterBadge.style.display = '';
 
       // بناء المصغرات في الشريط المتحرك
       thumbnailsContainer.innerHTML = '';
@@ -832,12 +846,12 @@ document.addEventListener('DOMContentLoaded', async () => {
     const recScrollLeft = document.getElementById('rec-scroll-left');
     const recScrollRight = document.getElementById('rec-scroll-right');
 
-    if (recContainer && propertiesData.length > 0) {
+    if (recContainer && allUnits.length > 0) {
       const currentPrice = Number(currentProp.price) || 600000;
       const currentId = String(currentProp.id || currentProp.adNumber || '');
 
       // استبعاد العقار الحالي وترتيب بقية العقارات حسب قرب السعر
-      const otherProps = propertiesData.filter(p => {
+      const otherProps = allUnits.filter(p => {
         const otherId = String(p.id || p.adNumber || '');
         return otherId !== currentId;
       });
@@ -860,16 +874,15 @@ document.addEventListener('DOMContentLoaded', async () => {
           const area = s.totalArea || s.area || '—';
           const beds = s.bedrooms || s.rooms || '—';
           const baths = s.bathrooms || '—';
-          const itemImg = item.mainImage || (Array.isArray(item.images) && item.images[0]) || '../assets/images/about-luxury-villa.webp';
-          const isProject = item.type === 'project' || (Array.isArray(item.models) && item.models.length > 0);
-          const linkUrl = isProject ? `../project/?id=${item.adNumber || item.id}` : `../property/?id=${item.adNumber || item.id}`;
-          const badgeTxt = item.categoryName || (item.category === 'roofs' ? 'روف فاخر' : 'شقة تمليك');
+          const itemImg = item.mainImage || (Array.isArray(item.images) && item.images[0]) || 'assets/images/about-luxury-villa.webp';
+          const linkUrl = `../property/?id=${item.id || item.adNumber}`;
+          const badgeTxt = item.badge || item.categoryName || 'شقة تمليك';
           const formattedPrice = (item.priceFormatted || `${Number(item.price).toLocaleString('en-US')} ريال`).replace(' ريال', '');
 
           return `
             <div class="flex-shrink-0 w-[280px] sm:w-[320px] snap-start group bg-white rounded-3xl border border-neutral-200/80 overflow-hidden shadow-xs hover:shadow-xl transition-all duration-300 flex flex-col text-right">
               <div class="relative w-full aspect-[4/3] overflow-hidden bg-neutral-900">
-                <img src="../${itemImg.replace(/^\.\.\//, '')}" alt="${item.title}" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy">
+                <img src="../${itemImg.replace(/^(\.\.\/)+/, '')}" alt="${item.title}" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy">
                 <div class="absolute top-3 right-3 flex items-center gap-1.5">
                   <span class="bg-neutral-900/85 backdrop-blur-md text-white text-[10px] font-bold px-2.5 py-0.5 rounded-full">${badgeTxt}</span>
                 </div>
@@ -897,7 +910,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                     <span class="text-sm sm:text-base font-black text-neutral-900 font-sans">${formattedPrice} <span class="text-[10px] font-bold text-amber-600 font-cairo">ريال</span></span>
                   </div>
                   <a href="${linkUrl}" class="inline-flex items-center gap-1 px-3 py-1.5 bg-neutral-100 group-hover:bg-amber-600 group-hover:text-white text-neutral-900 rounded-xl text-xs font-bold transition-all">
-                    <span>${isProject ? 'معاينة' : 'التفاصيل'}</span>
+                    <span>التفاصيل</span>
                     <i class="fas fa-arrow-left text-[9px]"></i>
                   </a>
                 </div>

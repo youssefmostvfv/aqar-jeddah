@@ -278,9 +278,9 @@
           </div>
 
           <!-- بطاقة المعلن / المسوق العقاري المعتمد -->
-          <div class="flex items-center gap-3 p-3.5 bg-neutral-50 rounded-2xl border border-neutral-100 mb-6">
-            <div class="w-12 h-12 rounded-xl bg-neutral-900 text-white flex items-center justify-center font-bold text-lg shadow-sm">
-              <i class="fas fa-award text-amber-500"></i>
+          <div class="flex items-center gap-3.5 p-3.5 bg-neutral-50 rounded-2xl border border-neutral-100 mb-6">
+            <div class="h-12 w-28 sm:w-32 bg-transparent flex items-center justify-center flex-shrink-0">
+              <img id="prop-advertiser-logo" src="../assets/images/rsoukh.webp" alt="لوجو شركة رسوخ العقارية" class="w-full h-full object-contain">
             </div>
             <div class="flex-1 text-right">
               <div class="flex items-center gap-1.5">
@@ -426,113 +426,19 @@
           </h2>
 
           <div id="specs-grid-container" class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 text-xs sm:text-sm">
-            <div class="p-3.5 bg-neutral-50 rounded-2xl border border-neutral-100">
-              <span class="text-neutral-400 block mb-1">المساحة الإجمالية</span>
-              <span class="font-bold text-neutral-900 font-sans text-base">650 م²</span>
-            </div>
-            <div class="p-3.5 bg-neutral-50 rounded-2xl border border-neutral-100">
-              <span class="text-neutral-400 block mb-1">مساحة الأرض</span>
-              <span class="font-bold text-neutral-900 font-sans text-base">500 م²</span>
-            </div>
-            <div class="p-3.5 bg-neutral-50 rounded-2xl border border-neutral-100">
-              <span class="text-neutral-400 block mb-1">عدد غرف النوم</span>
-              <span class="font-bold text-neutral-900 text-base">5 غرف ماستر</span>
-            </div>
-            <div class="p-3.5 bg-neutral-50 rounded-2xl border border-neutral-100">
-              <span class="text-neutral-400 block mb-1">دورات المياه</span>
-              <span class="font-bold text-neutral-900 text-base">7 دورات مياه</span>
-            </div>
-            <div class="p-3.5 bg-neutral-50 rounded-2xl border border-neutral-100">
-              <span class="text-neutral-400 block mb-1">عدد الصالات</span>
-              <span class="font-bold text-neutral-900 text-base">3 صالات واسعة</span>
-            </div>
-            <div class="p-3.5 bg-neutral-50 rounded-2xl border border-neutral-100">
-              <span class="text-neutral-400 block mb-1">عدد المطابخ</span>
-              <span class="font-bold text-neutral-900 text-base">2 مطبخ (رئيسي + خدمة)</span>
-            </div>
-            <div class="p-3.5 bg-neutral-50 rounded-2xl border border-neutral-100">
-              <span class="text-neutral-400 block mb-1">عدد الأدوار</span>
-              <span class="font-bold text-neutral-900 text-base">3 أدوار + ملحق</span>
-            </div>
-            <div class="p-3.5 bg-neutral-50 rounded-2xl border border-neutral-100">
-              <span class="text-neutral-400 block mb-1">عمر العقار</span>
-              <span class="font-bold text-neutral-900 text-base">جديد (بناء 2026)</span>
-            </div>
-            <div class="p-3.5 bg-neutral-50 rounded-2xl border border-neutral-100">
-              <span class="text-neutral-400 block mb-1">عرض الشارع</span>
-              <span class="font-bold text-neutral-900 text-base font-sans">25 متر شمالي</span>
-            </div>
-            <div class="p-3.5 bg-neutral-50 rounded-2xl border border-neutral-100">
-              <span class="text-neutral-400 block mb-1">حالة التأثيث</span>
-              <span class="font-bold text-neutral-900 text-base">مفروش بالكامل فاخر</span>
-            </div>
-            <div class="p-3.5 bg-neutral-50 rounded-2xl border border-neutral-100">
-              <span class="text-neutral-400 block mb-1">الواجهة المعمارية</span>
-              <span class="font-bold text-neutral-900 text-base">واجهة بحرية مودرن</span>
-            </div>
-            <div class="p-3.5 bg-neutral-50 rounded-2xl border border-neutral-100">
-              <span class="text-neutral-400 block mb-1">الغرض والنوع</span>
-              <span class="font-bold text-neutral-900 text-base">للبيع — فيلا مستقلة</span>
-            </div>
+            <!-- تتولد المواصفات الفنية المكتوبة على الصورة ديناميكياً فقط -->
           </div>
         </div>
 
         <!-- [4] المميزات والتجهيزات (Amenities & Features) -->
-        <div class="bg-white p-6 sm:p-8 rounded-3xl border border-neutral-200/80 shadow-sm text-right">
+        <div id="prop-features-section" class="bg-white p-6 sm:p-8 rounded-3xl border border-neutral-200/80 shadow-sm text-right">
           <h2 class="text-lg sm:text-xl font-bold text-neutral-900 mb-6 flex items-center gap-2">
             <i class="fas fa-star text-amber-600 text-base"></i>
             المميزات والتجهيزات المتاحة
           </h2>
 
           <div id="features-grid-container" class="grid grid-cols-2 sm:grid-cols-3 gap-3.5 text-xs sm:text-sm font-medium">
-            <div class="flex items-center gap-2.5 p-3 rounded-xl bg-neutral-50 text-neutral-800">
-              <i class="fas fa-swimming-pool text-amber-600 text-sm"></i>
-              <span>مسبح خاص خارجي</span>
-            </div>
-            <div class="flex items-center gap-2.5 p-3 rounded-xl bg-neutral-50 text-neutral-800">
-              <i class="fas fa-angle-double-up text-amber-600 text-sm"></i>
-              <span>مصعد إيطالي مرحلتين</span>
-            </div>
-            <div class="flex items-center gap-2.5 p-3 rounded-xl bg-neutral-50 text-neutral-800">
-              <i class="fas fa-snowflake text-amber-600 text-sm"></i>
-              <span>تكييف مركزي دكت</span>
-            </div>
-            <div class="flex items-center gap-2.5 p-3 rounded-xl bg-neutral-50 text-neutral-800">
-              <i class="fas fa-car text-amber-600 text-sm"></i>
-              <span>موقف خاص لسيارتين</span>
-            </div>
-            <div class="flex items-center gap-2.5 p-3 rounded-xl bg-neutral-50 text-neutral-800">
-              <i class="fas fa-tree text-amber-600 text-sm"></i>
-              <span>حديقة وفناء مطل</span>
-            </div>
-            <div class="flex items-center gap-2.5 p-3 rounded-xl bg-neutral-50 text-neutral-800">
-              <i class="fas fa-door-open text-amber-600 text-sm"></i>
-              <span>مدخل خاص ومستقل</span>
-            </div>
-            <div class="flex items-center gap-2.5 p-3 rounded-xl bg-neutral-50 text-neutral-800">
-              <i class="fas fa-user-shield text-amber-600 text-sm"></i>
-              <span>غرفة سائق مستقلة</span>
-            </div>
-            <div class="flex items-center gap-2.5 p-3 rounded-xl bg-neutral-50 text-neutral-800">
-              <i class="fas fa-female text-amber-600 text-sm"></i>
-              <span>غرفة خادمة مع دورة مياه</span>
-            </div>
-            <div class="flex items-center gap-2.5 p-3 rounded-xl bg-neutral-50 text-neutral-800">
-              <i class="fas fa-boxes text-amber-600 text-sm"></i>
-              <span>مستودع وغرفة غسيل</span>
-            </div>
-            <div class="flex items-center gap-2.5 p-3 rounded-xl bg-neutral-50 text-neutral-800">
-              <i class="fas fa-umbrella-beach text-amber-600 text-sm"></i>
-              <span>سطح وجلسة خاصة Roof</span>
-            </div>
-            <div class="flex items-center gap-2.5 p-3 rounded-xl bg-neutral-50 text-neutral-800">
-              <i class="fas fa-bolt text-amber-600 text-sm"></i>
-              <span>كهرباء ومياه وصرف متوفر</span>
-            </div>
-            <div class="flex items-center gap-2.5 p-3 rounded-xl bg-neutral-50 text-neutral-800">
-              <i class="fas fa-video text-amber-600 text-sm"></i>
-              <span>نظام كاميرات مراقبة ذكي</span>
-            </div>
+            <!-- تتولد مميزات المشروع ديناميكياً -->
           </div>
         </div>
 
